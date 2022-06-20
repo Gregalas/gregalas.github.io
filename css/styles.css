@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    
+}
+
+/* Custom Properties, update these for your own design. What you see less than 800px width */
+:root {
+    --ff-primary: 'Fugaz One', cursive;
+    --ff-secondary: 'Work Sans', sans-serif;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-light: #fff;
+    --clr-dark: #2E2E2E;
+    --clr-primary: #1B4C39;
+    --clr-accent: #FCE758;
+    --clr-background: #F4F2F1;
+    
+    --fs-h1: 4.8rem;
+    --fs-h2: 4.25rem;
+    --fs-h3: 1.8rem;
+    --fs-body: 1.2rem;
+    
+}
+
+
+
+/* media queries for the text. What you see at full width */
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 8rem;
+        --fs-h2: 5.5rem;
+        --fs-h3: 2.5rem;
+        --fs-body: 1.4rem;
+    }
+}
+
+
+
+
+/* General styles */
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    margin: auto;
+}
+
+
+strong {
+    font-weight: 700;
+    color: var(--clr-dark);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    margin: auto;
+  }
+
+.body__paragraph--break {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+  }
+  
+
+
+ /* Intro section - entier green container */
+ .header {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background: var(--clr-primary);
+    margin-bottom: 0em;
+    margin: auto;
+    
+}
+
+
+.page__content {
+    position: relative;
+    z-index: 1;
+    max-width: 58rem;
+    min-width: 12rem;
+    margin: 0 auto;
+    padding: 1.5em 2em;
+}
+
+
+.page {
+    transition: transform .2s ease-in-out;
+    background: var(--clr-background);
+    padding-top: 1em;
+}
+
+
+
+
+
+
+.img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Typography */
+
+.numbered-list__item strong {
+    display: block;
+    margin: 1.5em 0 0.1em;
+    line-height: 1;
+    
+
+}
+
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+h1,
+h2,
+h3 {
+    line-height: 0.8;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+
+
+
+
+/* nav */
+.nav { display: none; }
+
+
+/* Type styles */
+
+/* Image and Hi i'm Greg Schwartz... */
+.intro {
+    max-width: 68rem;
+    min-width: 12rem;
+    padding: 1.5em 1.5em;
+    margin: auto;
+  }
+
+
+
+/* Icon styles */
+.u-nowrap {
+    white-space: nowrap;
+}
+
+.porti-icon {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    border-radius: 2em 1.4em;
+    vertical-align: middle;
+    margin: -0.1em 0.2em 0 0.1em;
+    transform: scale(1.15);
+    transition: transform .2s ease-in-out;
+}
+
+.porti-icon--plain {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    border-radius: 0;
+    vertical-align: middle;
+    margin: -0.1em 0.1em 0.2em 0.2em;
+    transform: scale(1.15);
+}
+
+
+.porti-icon--photo {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    border-radius: 2em 1.4em;
+    vertical-align: middle;
+    margin: -0.1em 0.2em 0 0.1em;
+    transform: scale(1.15);
+    transition: transform .2s ease-in-out
+
+}
+
+
+a {
+    font-weight: 1000;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: var(--clr-accent);
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+    -webkit-text-decoration-color: #ffb23e;
+    text-decoration-color: #ffb23e;
+    -webkit-text-decoration-color: var(--color-theme);
+    text-decoration-color: var(--color-theme);
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 0.04em;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
+}
+
+
+
+/* Hi, I'm Greg Schwartz</strong> */
+.section__introtitle { 
+    color:  var(--clr-light);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h1);
+    line-height: 1.3;
+    
+}
+    
+    
+
+/* I'm a Senior Product Designer at MetaLab... */
+.section__introsubtitle {
+    color:  var(--clr-light);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+    max-width: 1400px;
+    min-width: 360px;
+    margin-top: 1em;
+    
+   
+}
+
+
+
+.section__title {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
+    line-height: 1.3;
+    margin-top: 0.8em;
+    
+}
+
+
+/* Principle Title */
+.section__subtitletwo {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    line-height: 1.5;
+    margin-bottom: 0.1em;
+    min-width: 360px;
+    
+}
+
+
+.principles {
+    margin-bottom: 2.25em;
+    margin-top: 2.25em;
+    max-width: 1400px;
+    min-width: 360px;
+}
+
+/* Portfolio Images */
+.captioned-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 1.8em;
+    
+    border: 0;
+    box-shadow: none;
+}
+
+.captioned-image figcaption {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    color: var(--clr-dark);
+    font-size: 80%;
+    font-weight: var(--fw-bold);
+    padding: 0.5em 1em;
+    transform: skewY(-2deg);
+    border-top: 2px solid var(--clr-dark);
+    border-bottom: 2px solid var(--clr-dark);
+    max-width: 25%;
+    margin: -1.5em -1px 0 0;
+    background: var(--clr-light);
+
+    letter-spacing: -.025em;
+}
