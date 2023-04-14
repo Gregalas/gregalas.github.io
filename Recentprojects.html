@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("button");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+        </script>
+
+        <script>      document.addEventListener('click', function(e) {
+          if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+            document.querySelector('.site-nav__menu').removeAttribute('open');
+          }
+        });</script>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Greg Schwartz Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+      
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css">
+        </head>
+
+
+
+<!-- Navigtion -->
+<div class="navheader">
+  <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
+      <span class="logo__byline"><br>From Cape Town with ♥</span></a>
+
+  <div class="navheader-right">
+    <details class="site-nav" data-controller="nav" closed="">
+    <summary for="menu">
+      <div class="site-nav__button">"Menu "<span class="site-nav__button-line1"></span> 
+      <span class="site-nav__button-line2"></span> 
+      <span class="site-nav__button-bg"></span></div>
+    </summary>
+    
+    <ul class="site-nav__menu">
+      <li class="site-nav__item site-nav__item--home"><a href="index.html" class="site-nav__link">Home</a></li>
+      <li class="site-nav__item"><a href="Recentprojects.html" class="site-nav__link">Projects</a></li>
+      <li class="site-nav__item"><a href="/writing" class="site-nav__link">Writing</a></li>
+      <li class="site-nav__item"><a href="/about" class="site-nav__link">About</a></li>
+      <li class="site-nav__item"><a href="/contact" class="site-nav__link">Contact</a></li>
+    </ul>
+    
+  </details>
+  </div>
+
+</div>
+<!-- End of navigtion --> 
+
+
+   
+
+<!-- Page content -->
+<section class="page">
+<div class="page__project-content">
+
+
+  <!-- Project Header -->
+  <div class="header-projectsection">
+    <a href="index.html" class="undecorated txt--normal backlink">← Home</a>
+    <h1 class="section__introtitle">PROJECTS</h1>
+    <h3 class="subheader"><strong>These are my most recent projects</strong></h3>
+    <body class="body__paragraph"></body>Most of this work is from my time at MetaLab, where I was part of several multi-disciplinary teams solving impactful problems for startups accross many different industries.</body>
+</div>
+ <!-- End of project Header -->
+
+
+
+ <div class="page__project-content">
+  <div class="projects">
+          <a href="Project_Zleague.html" class="project"><figure><img src="images/Thumbnails/Zleague_Thumb.png" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Z League</h2></a>
+          <a href="Project_Coliseum.html" class="project"><figure><img src="images/Thumbnails/Coliseum_Thumb.png" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Coliseum</h2></a>
+          <a href="Project_Thrivent.html" class="project"><figure><img src="images/Thumbnails/Thrivent_Thumb.png" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Thrivent</h2></a>
+          <a href="ProjectAcapapela.html" class="project"><figure><img src="images/Thumbnails/Acapela_Thumb.png" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Acapela</h2></a>
+          <a href="ProjectZleague.html" class="project"><figure><img src="images/Portfolio__Thumb.svg" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Rain</h2></a>
+          <a href="ProjectZleague.html" class="project"><figure><img src="images/Portfolio__Thumb.svg" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">TBC</h2></a>
+  </div>
+
+
+
+
+
+<!-- Close page__content div -->
+</div>
+<!-- Close page section div -->
+    </section>
+
+
+
+    
+<!-- Footer -->
+<footer class="page page--footer">
+
+  <div class="page__content">
+      <p class="footer--header">Stay in touch</p>
+  <div class="flex flex--column flex--center push--top">
+  
+    <a class="contact-card contact-card--email" href="mailto:gregals@gmail.com"><span class="contact-card__type">Email: </span>gregalas@gmail.com</a>
+    <a class="contact-card contact-card--linkedin" href="https://twitter.com/therealgregalas" rel="noopener noreferrer" target="_blank"><span class="contact-card__type">LinkedIn: </span>@therealgregalas</a>  
+  
+  </footer>
+  </div>
+
+
+ <!-- Closes the menu when clicking outside of it -->
+ <script>
+  // Get the menu and its summary element
+  const menu = document.querySelector('.site-nav');
+  const summary = menu.querySelector('summary');
+
+  // Add a click event listener to the document
+  document.addEventListener('click', (event) => {
+    // Check if the click occurred inside or outside the menu
+    if (!menu.contains(event.target) && !summary.contains(event.target)) {
+      // Click occurred outside the menu, so close it
+      menu.removeAttribute('open');
+    }
+  });
+</script>

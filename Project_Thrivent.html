@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("button");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+        </script>
+
+        <script>      document.addEventListener('click', function(e) {
+          if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+            document.querySelector('.site-nav__menu').removeAttribute('open');
+          }
+        });</script>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Greg Schwartz Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+      
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css">
+        </head>
+
+
+
+<!-- Navigtion -->
+<div class="navheader">
+  <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
+      <span class="logo__byline"><br>From Cape Town with ♥</span></a>
+
+  <div class="navheader-right">
+    <details class="site-nav" data-controller="nav" closed="">
+    <summary for="menu">
+      <div class="site-nav__button">"Menu "<span class="site-nav__button-line1"></span> 
+      <span class="site-nav__button-line2"></span> 
+      <span class="site-nav__button-bg"></span></div>
+    </summary>
+    
+    <ul class="site-nav__menu">
+      <li class="site-nav__item site-nav__item--home"><a href="index.html" class="site-nav__link">Home</a></li>
+      <li class="site-nav__item"><a href="Recentprojects.html" class="site-nav__link">Projects</a></li>
+      <li class="site-nav__item"><a href="/writing" class="site-nav__link">Writing</a></li>
+      <li class="site-nav__item"><a href="/about" class="site-nav__link">About</a></li>
+      <li class="site-nav__item"><a href="/contact" class="site-nav__link">Contact</a></li>
+    </ul>
+    
+  </details>
+  </div>
+
+</div>
+<!-- End of navigtion --> 
+
+
+
+
+   
+
+<!-- Page content -->
+<section class="page">
+<div class="page__project-content">
+
+
+  <!-- Project Header -->
+  <div class="header-projectsection">
+    <a href="Recentprojects.html" class="undecorated txt--normal backlink">← All Projects</a>
+    <h1 class="section__introtitle">COLISEUM</h1>
+    <h3 class="subheader"><strong>Talk motorsport, together with the best racing personalities.</strong></h3>
+</div>
+ <!-- End of project Header -->
+
+
+
+<!-- Header image -->
+<div class="largeimage__content">
+      <figure class="captioned-image"><img src="images/Project_Coliseum/Coliseum Header.png"></figure>
+</div>
+<!-- End of header image -->
+
+<!-- Prototype video -->
+<div class="largeimage__content">
+  <figure class="captioned-video__centered">
+    <video class="video" controls autoplay loop muted src="images/Project_Coliseum/Coliseum prototype.mp4" type="video/mp4" video width="374" height="812"></video>
+  <figcaption>The Colisuem tournament feed</figcaption></figure>
+</div>
+<!-- End of video -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">THE BRIEF</h2>
+  <body class="body__paragraph">This project was about helping an early-stage startup called Coliseum design a vision for how to better engage motorsport fans and grow the sport organically within the USA. Our client saw a business opportunity in tapping into and growing the younger generations of motorsport fans by renewing their connection to the sport and other fans using social media.
+  <br><br> These types of projects are often the most fun, as I really get to push my imagination and am not confined by the usual limitations of an end-to-end build. Don’t get me wrong, I love working end-to-end and using technical constraints to to help mould an outcome, but at times it's great to have complete creative freedom, too!</body>
+</div>
+<!-- End of project section -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image__centered"><img src="images/Project_Coliseum/Feed and audio room experience.png">
+  <figcaption>Live audio rooms that and empower users with topics and reactions</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">A 2 MONTH RACE TO DEVELOP A CONCEPT MVP</h2>
+  <body class="body__paragraph">As with most projects like this, we started with an idea of what the product could be and used competitor research to begin validating our direction and drawing on inspiration from products like HiHo, Twitter Spaces, Clubhouse, Spotify Live and even Twitch. I ran the competitor audit and worked with our researcher to interview motorsports fans that fit our “gamer motorsport fan” persona – we saw this cohort as the most likely to adopt the product. Within a few weeks we landed on some really solid <strong> insights and opportunities which informed our design concepts. </strong>  </body> 
+  <br><br>
+    <li><strong>Clear barriers to entry</strong> still exist within motorsports.</li>
+    <li><strong>Motorsport content does not adapt</strong> to fans' learning styles or knowledge levels.</li>
+    <li><strong>The current fan experience facilitates passive spectatorship</strong> as opposed to active participation.</li></ul>
+    <li><strong>Building psychological safety in digital spaces is a challenge,</strong> particularly as communities scale.</li></ul>
+</div>
+<!-- End of project section -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image__centered"><img src="images/Project_Coliseum/Early concepts.png">
+  <figcaption>Early concepts for previewing stream content before diving in</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">THE SOLVE: EMPOWERING FANS and creating equality</h2>
+  <body class="body__paragraph">One of the issues we picked up in our research was that some people love to just listen in, and don't have the desire to contribute in the same way others do. We weren't 100% clear on why, but had the theory that a lot of the time discussions are dominated by certain individuals, and that affects participation from others significantly. We also found that transparency around disucssions isn't always clear. So an important product and user problem became about finding ways to empower listeners to participate in the conversation in ways that made them comfortable and creating a more democratic environment. This had both user and business value by means of increasing retention rate. 
+    <br><br> To make live audio rooms more conversational and fair, we gave fans the capacity to submit and vote on topics that matter to them, which are then discussed alongside their favorite motorsport heroes. We also designed the ability to proview streams and topics before diving in, empowering people to understand context before comitting to diving in completely. Additionally, we developed a set of basic reactions that allow people to emotionally connect without speaking up in the channel. </body> 
+</div>
+<!-- End of project section -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Coliseum/Topics.png">
+</div>
+<!-- End of image content -->
+
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">THE RESULT</h2>
+  <body class="body__paragraph">Our solution invloved a unique streaming experience that set Coliseum apart from its competitors. It's immersive, and interactive, and allows people to engage with their motorsport heoroes, such as Max Verstappen and Louis Hamilton, as well as other fans in a way that makes them feel like they're not just another voice in the crowd. 
+    <br><br> Working closely with Eilís (our researcher) to develop and test concepts was a dream. I also got a chance to grow my time and stakeholder management skills having had to develop the designs and running our concepting phase. I had a blast collaborating with Nuno (our Principal Designer) and Cam (Design lead) to bring our strategic direction to life and designing out and prototyping solutions. To the best of my knowledge, the designs have yet to be built, but I'm eager to see if this takes off in the future!</body>
+</div>
+<!-- End of project section -->
+
+
+<!-- Prototype video -->
+<div class="largeimage__content">
+  <figure class="captioned-video__centered">
+    <video class="video" controls autoplay loop muted src="images/Project_Coliseum/Topics.mp4" type="video/mp4" video width="378" height="812"></video>
+  <figcaption>Empowering fans with topic creation voting features</figcaption></figure>
+</div>
+<!-- End of video -->
+
+
+<div class="credits-projectsection">
+<h2 class="section__title">SHOUTOUTS AND CREDITS</h2>
+<ul>
+  <li class="item">
+    <span>Design Director</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com">James Hobbs</a></span>
+  </li>
+  <li class="item">
+    <span>Design Lead</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com">Cam Strobel</a></span>
+  </li>
+  <li class="item">
+    <span>Principal Designer</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Nuno Lezon Mendes</a></span>
+  </li>
+  <li class="item">
+    <span>Researcher.</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Eilís Delany</a></span>
+  </li>
+  <li class="item">
+    <span>Project Delivery Manager</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Scott McConnell</a></span>
+  </li>
+</ul>
+</div>
+
+
+
+
+
+
+<!-- Close page__content div -->
+</div>
+<!-- Close page section div -->
+    </section>
+
+    
+
+
+    
+<!-- Footer -->
+<footer class="page page--footer">
+
+  <div class="page__content">
+      <p class="footer--header">Stay in touch</p>
+  <div class="flex flex--column flex--center push--top">
+  
+    <a class="contact-card contact-card--email" href="mailto:gregals@gmail.com"><span class="contact-card__type">Email: </span>gregalas@gmail.com</a>
+    <a class="contact-card contact-card--linkedin" href="https://twitter.com/therealgregalas" rel="noopener noreferrer" target="_blank"><span class="contact-card__type">LinkedIn: </span>@therealgregalas</a>  
+  
+  </footer>
+  </div>
+
+
+</html>
+
+
+ <!-- Closes the menu when clicking outside of it -->
+ <script>
+  // Get the menu and its summary element
+  const menu = document.querySelector('.site-nav');
+  const summary = menu.querySelector('summary');
+
+  // Add a click event listener to the document
+  document.addEventListener('click', (event) => {
+    // Check if the click occurred inside or outside the menu
+    if (!menu.contains(event.target) && !summary.contains(event.target)) {
+      // Click occurred outside the menu, so close it
+      menu.removeAttribute('open');
+    }
+  });
+</script>

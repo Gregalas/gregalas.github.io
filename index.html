@@ -13,7 +13,14 @@
           });
         }
         </script>
-        
+
+        <script>      document.addEventListener('click', function(e) {
+          if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+            document.querySelector('.site-nav__menu').removeAttribute('open');
+          }
+        });</script>
+
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Greg Schwartz Portfolio Website</title>
@@ -35,19 +42,34 @@
 
 <!-- Navigtion -->
 <div class="navheader">
+  <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
+      <span class="logo__byline"><br>From Cape Town with ♥</span></a>
 
-  <a href="logo"><a class="logo" href="/"><span class="logo__name">Mindful</span> 
-    <span class="logo__byline">Design<br>Since · 2009</span></a></a>
 
 
+
+      
   <div class="navheader-right">
-    <a class="active" href="#home">Home</a> 
-    <a href="#contact">Contact</a>
-    <a class="#projects" href="Projects.html">Projects</a> 
-   </div>
-
+    <details class="site-nav" data-controller="nav" closed="">
+    <summary for="menu">
+      <div class="site-nav__button">"Menu "<span class="site-nav__button-line1"></span> 
+      <span class="site-nav__button-line2"></span> 
+      <span class="site-nav__button-bg"></span></div>
+    </summary>
+    
+    <ul class="site-nav__menu">
+      <li class="site-nav__item site-nav__item--home"><a href="index.html" class="site-nav__link">Home</a></li>
+      <li class="site-nav__item"><a href="Recentprojects.html" class="site-nav__link">Projects</a></li>
+      <li class="site-nav__item"><a href="/writing" class="site-nav__link">Writing</a></li>
+      <li class="site-nav__item"><a href="/about" class="site-nav__link">About</a></li>
+      <li class="site-nav__item"><a href="/contact" class="site-nav__link">Contact</a></li>
+    </ul>
+    
+  </details>
   </div>
+
 </div>
+<!-- End of navigtion --> 
 
 
 
@@ -55,11 +77,11 @@
  <!-- Introduction -->
 <div class="header">
     <section class="intro" id="home">
-            <h1 class="section__introtitle section__introtitle--intro">HI, MY NAME IS <span class="porti-icon--greg"><img src="images/Greg Schwartz Designer.jpg" class="porti-icon porti-icon--photo"></span>GREG</h1>
+            <h1 class="section__introtitle">HI, MY NAME IS <span class="porti-icon--greg"><img src="images/Greg Schwartz Designer.jpg" class="porti-icon porti-icon--photo"></span>GREG</h1>
 
              <!-- Introduction description -->
-             <p class="section__introsubtitle section__introsubtitle--introsub">I'm a Senior Product Designer at <span class="u-nowrap porti-icon"><img src="images/MetaLab Logo.png" class="porti-icon--plain"></span> <a href="https://metalab.com" rel="noopener noreferrer" target="_blank">MetaLab</a>, where my focus has largely been around building and scaling early stage startups from proof of concept to launch, executing at all stages of the product design process.</p>
-             <p class="section__introsubtitle section__introsubtitle--introsub">Previously I was a Lead Product Designer at a startup called 22seven and have worked at several other award-winning digital design agencies. </p>
+             <p class="section__introsubtitle section__introsubtitle--introsub">I'm a Senior Product Designer at <span class="u-nowrap porti-icon"><img src="images/Metalab logo.svg" class="porti-icon--plain"></span> <a href="https://metalab.com" rel="noopener noreferrer" target="_blank">MetaLab</a>, where my focus has largely been around building and scaling early stage startups from proof of concept to launch, executing at all stages of the product design process.</p>
+             <p class="section__introsubtitle section__introsubtitle--introsub">Previously I was a Lead Product Designer at a startup called <span class="u-nowrap porti-icon"><img src="images/22Seven logo.svg" class="porti-icon--plain"></span> <a href="https://22seven.com" rel="noopener noreferrer" target="_blank">22seven</a> and have worked at several other award-winning digital design agencies. </p>
     </div>
         </section>
 
@@ -68,61 +90,77 @@
 <!-- New principles section -->
 <section class="page">
 <div class="page__content">
-    <article class="page__body page__body--longform">
-        <h2 class="section__title section__title--principles">FIRST, PRINCIPLES</h2>
-        <body class="body__paragraph"></body>These principles provide a snapshot of how I like to think about leadership, product, and design and lean on these whenever I can.</body>
+        <h2 class="section__title">FIRST, PRINCIPLES</h2>
+        <body class="body__paragraph">These principles provide a snapshot of how I like to think about leadership, product, and design and lean on these whenever I can.</body>
         <ol class="numbered-list">
-            <li class="numbered-list__item push--bottom"><strong>Go beyond solving important problems</strong> <span class="numbered-list__text">Never settle for mediocre. Be the person asking the questions. Push product to be the best version of itself. </span></li>
-            <li class="numbered-list__item push--bottom"><strong>Make digital wellbeing a priority.</strong> <span class="numbered-list__text">Design with people's mental and physical wellness in mind.</span></li>
-            <li class="numbered-list__item push--bottom"><strong>Great design will take you far, great communication will take you even further</strong> <span class="numbered-list__text">Speak with passion, influence people, and move things forward.</span></li>
-            <li class="numbered-list__item push--bottom"><strong>Build great products, not an MVP: </strong> <span class="numbered-list__text">Build products that are charming, interesting, and of the highest quality. Craft with the intent to make things functional and beautiful.</span></li>
-            <li class="numbered-list__item push--bottom"><strong>“With great power comes great responsibility”. - Uncle Ben</strong> <span class="numbered-list__text">Design products and build teams that promote objectivity and truth.</span></li>
+            <li class="numbered-list__item push--bottom"><strong>Go beyond problem solving.</strong> <span class="numbered-list__text">Never settle for mediocre. Push products to be the best version of itself.</span></li>
+            <li class="numbered-list__item push--bottom"><strong>Eliminate suffering and increase happiness</strong> <span class="numbered-list__text">Design software that is 'meaningful', and which in some way increases the happiness, or reduces the suffering of others.  </span></li>
+            <li class="numbered-list__item push--bottom"><strong>Trust your voice and speak with passion.</strong> <span class="numbered-list__text">Your voice is a design tool. Use it to motivate teams, and accelerate product toward being beautiful and useful. </span></li>
+            <li class="numbered-list__item push--bottom"><strong>Promote independence and curiosity.</strong> <span class="numbered-list__text">Build and be part of teams that that are innovative, curious and independent-minded. These are often the result of one another.</span></li>
+            <li class="numbered-list__item push--bottom"><strong>“With great power comes great responsibility”. - Uncle Ben</strong> <span class="numbered-list__text">Design products and build teams that promote objectivity and truth. Call out and eliminate bias, and use technology to help humans, for good. </span></li>
         </ol>
 
 
 <!-- Into the work section -->
-<h2 class="section__title section__title--principles">INTO THE WORK</h2>
+<h2 class="section__title">INTO THE WORK</h2>
         <body class="body__paragraph"></body>I am T-shaped. My inclination is to attack a problem by constructing a narrative and iteratively build a mosaic of potential solutions. I believe this requires a broad understanding of various expertise and systems. So I'm continuously learning about design, UX, business, product thinking, coding, leadership, and the other million things there are to learn in the world of product design.</body>
-        <h3 class="body__paragraph--break"><strong>Here are some of my latest projects.</strong> </h1>
-
-           <!-- Older project cards -->
-          <!-- <figure class="captioned-image"><img src="images/portfolio01.jpg"><p><a href="" class="btn">COLISUEM →</a></p></figure>
-            <figure class="captioned-image"><img src="images/portfolio02.png"><p><a href="ProjectZleague.html" class="btn">ZLEAGUE →</a></p></figure> -->
+        <h3 class="body__paragraph break"><strong>Here are some of my latest projects.</strong> </h1>
 
 
 <!-- Latest projects section -->
-<section class="section--project" id="Projects"></section>
+<section class="sectionproject" id="Projects"></section>
 <div class="page--project-content">
 <div class="projects">
-<a href="ProjectZleague.html" class="project"><figure><img src="images/Portfolio__Thumb.svg" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Z LEAGUE</h2></a>
-<a href="ProjectZleague.html" class="project"><figure><img src="images/Portfolio__Thumb.svg" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Z LEAGUE</h2></a>
-<a href="ProjectZleague.html" class="project"><figure><img src="images/Portfolio__Thumb.svg" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Z LEAGUE</h2></a>
+<a href="Project_zleague.html" class="project"><figure><img src="images/Thumbnails/Zleague_Thumb.png" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Z LEAGUE</h2></a>
+<a href="Project_Coliseum.html" class="project"><figure><img src="images/Thumbnails/Coliseum_Thumb.png" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Coliseum</h2></a>
+<a href="ProjectZleague.html" class="project"><figure><img src="images/Thumbnails/Zleague_Thumb.png" class="project__thumbnail"></figure><h2 class="project__title push_quarter--top flush--bottom">Thrivent: Thrive Money</h2></a>
 
 </div>
-<a href="Projects.html" class="undecorated txt--normal backlink">All Projects → </a>
 </div>
-</section>
-           
+
+<div class="arrowlink">
+  <a href="Recentprojects.html" class="undecorated txt--normal backlink">View all projects → </a>
+      </div>
+
+
+
+<!-- Close page__content div -->
+</div>
+<!-- Close page section div -->
     </section>
 
 
 
-    
-<!-- Footer -->
 
+<!-- Footer -->
 <footer class="page page--footer">
 
-<div class="page__content">
-    <p class="footer--header">Stay in touch</p>
-<div class="flex flex--column flex--center push--top">
+  <div class="page__content">
+      <p class="footer--header">Stay in touch</p>
+  <div class="flex flex--column flex--center push--top">
+  
+    <a class="contact-card contact-card--email" href="mailto:gregals@gmail.com"><span class="contact-card__type">Email: </span>gregalas@gmail.com</a>
+    <a class="contact-card contact-card--linkedin" href="https://twitter.com/therealgregalas" rel="noopener noreferrer" target="_blank"><span class="contact-card__type">LinkedIn: </span>@therealgregalas</a>  
+  
+  </footer>
+  </div>
+  
 
-            <a class="contact-card contact-card--email" href="mailto:gregals@gmail.com"><span class="contact-card__type">Email</span>gregalas@gmail.com</a>
-            <a class="contact-card contact-card--twitter" href="https://twitter.com/therealgregalas" rel="noopener noreferrer" target="_blank"><span class="contact-card__type">Tweet</span>@therealgregalas</a> 
-
-</footer>
-</div>
-
-
-</html>
-
-
+  </html>
+  
+  
+  <!-- Closes the menu when clicking outside of it -->
+  <script>
+    // Get the menu and its summary element
+    const menu = document.querySelector('.site-nav');
+    const summary = menu.querySelector('summary');
+  
+    // Add a click event listener to the document
+    document.addEventListener('click', (event) => {
+      // Check if the click occurred inside or outside the menu
+      if (!menu.contains(event.target) && !summary.contains(event.target)) {
+        // Click occurred outside the menu, so close it
+        menu.removeAttribute('open');
+      }
+    });
+  </script>
