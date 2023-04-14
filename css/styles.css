@@ -95,7 +95,7 @@ strong {
 
 
 .arrowlink {
-  padding: 3em 0em;
+  padding: 1em 0em;
   margin-bottom: em;
   margin: auto;
   margin: auto;
@@ -1557,12 +1557,12 @@ a:hover {
 
 
 /* Projects */
-@media (min-width: 40em) {
+@media only screen and (max-width: 480px) {
   .projects {
-      margin-top: 4em;
-      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
   }
-}
+
 
 @media (min-width: 40em) {
   .project {
