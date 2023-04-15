@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("button");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+        </script>
+
+        <script>      document.addEventListener('click', function(e) {
+          if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+            document.querySelector('.site-nav__menu').removeAttribute('open');
+          }
+        });</script>
+
+ 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Greg Schwartz Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+      
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css">
+        </head>
+
+
+
+<!-- Navigtion -->
+<div class="navheader">
+  <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
+      <span class="logo__byline"><br>From Cape Town with ♥</span></a>
+
+  <div class="navheader-right">
+    <details class="site-nav" data-controller="nav" closed="">
+    <summary for="menu">
+      <div class="site-nav__button">"Menu "<span class="site-nav__button-line1"></span> 
+      <span class="site-nav__button-line2"></span> 
+      <span class="site-nav__button-bg"></span></div>
+    </summary>
+    
+    <ul class="site-nav__menu">
+      <li class="site-nav__item site-nav__item--home"><a href="index.html" class="site-nav__link">Home</a></li>
+      <li class="site-nav__item"><a href="Recentprojects.html" class="site-nav__link">Projects</a></li>
+      <li class="site-nav__item"><a href="/writing" class="site-nav__link">Writing</a></li>
+      <li class="site-nav__item"><a href="/about" class="site-nav__link">About</a></li>
+      <li class="site-nav__item"><a href="/contact" class="site-nav__link">Contact</a></li>
+    </ul>
+    
+  </details>
+  </div>
+
+</div>
+<!-- End of navigtion --> 
+
+
+
+
+   
+
+<!-- Page content -->
+<section class="page">
+<div class="page__project-content">
+
+
+  <!-- Project Header -->
+  <div class="header-projectsection">
+    <div class="arrowlink">
+      <a href="Recentprojects.html" class="undecorated txt--normal backlink">← All Projects</a>
+    </div>
+    <h1 class="section__introtitle">Z LEAGUE</h1>
+    <h3 class="subheader"><strong>The world's first skill-based tournament platform casual gamers.</strong></h3>
+</div>
+ <!-- End of project Header -->
+
+
+
+<!-- Header image -->
+<div class="largeimage__content">
+      <figure class="captioned-image"><img src="images/Project_ZLeague/Z League Header.png"></figure>
+</div>
+<!-- End of header image -->
+
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">THE BRIEF</h2>
+  <body class="body__paragraph">Z League exists because some amateur gamers like watching streamers and pros compete in tournaments, but there were no good options to compete themselves.</body> <br><br>
+  <body class="body__paragraph">The ask from Z League was to take their proprietary technology – which uses of a powerful algorithm that eliminates bias in matches and places people into skill based divisions – and re-imagine their product on mobile in a way that would empower amateur gamers to compete for cash and level the playing field in esports.</body>
+</div>
+<!-- End of project section -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_ZLeague/Design system.png">
+  <figcaption>DESIGN SYSTEM ASSETS</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">WHAT WE DID</h2>
+  <body class="body__paragraph"><strong>The experience was centered around tournament discovery and buildup.</strong> Because of the business and user needs around the speed at which people re-enter tournaments, we never wanted gamers to lose sight of the “find a tournament” entry point. The tournament schedule was designed to be dynamic and adaptive – depending on how close your tournament is to being live would determine its position and design treatment. We used a “dark zone” for upcoming and live tournament cards, that inherit an immersive and darker feel to create excitement and exaggerate the buildup. 
+  </body> <br><br>
+</div>
+<!-- End of project section -->
+
+
+
+<!-- Prototype video -->
+<div class="largeimage__content">
+  <figure class="captioned-video__centered">
+    <video class="video" controls autoplay loop muted src="images/Project_ZLeague/Tournament registration.mp4" type="video/mp4" video width="374" height="812"></video>
+  <figcaption>A lightening speed tournament registration flow</figcaption></figure>
+</div>
+<!-- End of video -->
+
+
+<!-- Prototype video -->
+<div class="largeimage__content">
+  <figure class="captioned-video__centered">
+    <video class="video" controls autoplay loop muted src="images/Project_ZLeague/Live tournament.mp4" type="video/mp4" video width="374" height="812"></video>
+  <figcaption>The immersive live tounament experience.</figcaption></figure>
+</div>
+<!-- End of video -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_ZLeague/Tournament feed.png">
+  <figcaption>Cards adapt within the feed depending on their live status. Live cards move into the "dark zone"</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">RESEARCH DRIVEN</h2>
+  <body class="body__paragraph">Not being an avid gamer motivated me to be even more in tune with our research outputs, and to be learning about the idiosyncrasies of our unique audience. Aside from strengthening my "gamer street slang" , we picked up several key insights that influenced feature decisions both acutely for immediate product and design decisions, and in terms of macro-prioritisation. <br><br> For example, it was important we provided options for you to jump into a game at just about any time while considering the insight that amateur gamers prefer to play with their close circle of friends. For them, it wasn't only about the cash, but the camaraderie around teams, too! As a result, we designed the registration experience and teams feature to prioritise your close circle of friends over playing with random folk with whom you may not 'click'.
+  </body> 
+</div>
+<!-- End of project section -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_ZLeague/Registration.png">
+  <figcaption>Shots from the registration flow</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_ZLeague/Game select.png">
+  <figcaption>Captivating the audience through an immersive game onboarding</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">THE RESULT</h2>
+  <body class="body__paragraph"><strong>Within seven months</strong> my team and I designed and built the Z League MVP and released it to market while running a parallel vision track for design to establish a solid runway for the Z League team to help elevate their product with features such as a customizable profile and teams – many of these features are in their app today.
+  </body> <br><br> <body class="body__paragraph"><strong>I worked end-to-end executing at all stages of the product design process</strong> all the way from influencing the strategic direction of the project to the experience and visual design working hand-in-hand with our developers to ensure we had spec-ready designs for build.
+
+  </body>
+</div>
+<!-- End of project section -->
+
+
+
+<div class="credits-projectsection">
+<h2 class="section__title">SHOUTOUTS AND CREDITS</h2>
+<ul>
+  <li class="item">
+    <span>Design Lead</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com">Bradley Gab-ryn</a></span>
+  </li>
+  <li class="item">
+    <span>Design Director</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Chris Robinson</a></span>
+  </li>
+  <li class="item">
+    <span>Creative Director</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Shaun Gardner</a></span>
+  </li>
+  <li class="item">
+    <span>Engineer Director</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Wesley Yu</a></span>
+  </li>
+  <li class="item">
+    <span>Researcher.</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Nicole Stol</a></span>
+  </li>
+  <li class="item">
+    <span>Engineering Lead</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Chris Gat</a></span>
+  </li>
+  <li class="item">
+    <span>Engineer</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Devin Lumley</a></span>
+  </li>
+  <li class="item">
+    <span>Engineer</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Tamara Chu</a></span>
+  </li>
+  <li class="item">
+    <span>Engineer</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Paul Hoepfner-Homme</a></span>
+  </li>
+  
+</ul>
+</div>
+
+
+
+
+
+
+<!-- Close page__content div -->
+</div>
+<!-- Close page section div -->
+    </section>
+
+    
+
+
+    
+<!-- Footer -->
+<footer class="page page--footer">
+
+  <div class="page__content">
+      <p class="footer--header">Stay in touch</p>
+  <div class="flex flex--column flex--center push--top">
+  
+    <a class="contact-card contact-card--email" href="mailto:gregals@gmail.com"><span class="contact-card__type">Email: </span>gregalas@gmail.com</a>
+    <a class="contact-card contact-card--linkedin" href="https://twitter.com/therealgregalas" rel="noopener noreferrer" target="_blank"><span class="contact-card__type">LinkedIn: </span>@therealgregalas</a>  
+  
+  </footer>
+  </div>
+</div>
+
+
+</html>
+
+
+ <!-- Closes the menu when clicking outside of it -->
+ <script>
+  // Get the menu and its summary element
+  const menu = document.querySelector('.site-nav');
+  const summary = menu.querySelector('summary');
+
+  // Add a click event listener to the document
+  document.addEventListener('click', (event) => {
+    // Check if the click occurred inside or outside the menu
+    if (!menu.contains(event.target) && !summary.contains(event.target)) {
+      // Click occurred outside the menu, so close it
+      menu.removeAttribute('open');
+    }
+  });
+</script>
