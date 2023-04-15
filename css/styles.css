@@ -95,12 +95,13 @@ strong {
 
 
 .arrowlink {
-  padding: 1em 0em;
+  padding: 3em 0em 0em 0em;
   margin-bottom: em;
   margin: auto;
   margin: auto;
   display:inline-block;
 }
+
 
 .page__content {
     position: relative;
@@ -167,7 +168,7 @@ strong {
   font-size: var(--fs-h1);
   text-transform: uppercase;
   line-height: 1.3;
-  padding: 0.8em 0em 0em 0em; 
+  padding: 0.3em 0em 0em 0em; 
 }
 
 
@@ -178,8 +179,6 @@ strong {
     display: block;
     margin: 1.5em 0 0.1em;
     line-height: 1.6;
-    
-
 }
 
 
@@ -267,16 +266,33 @@ h3 { font-size: var(--fs-h3) }
 
 
 .porti-icon--photo {
-    display: inline-flex;
-    width: 1em;
-    height: 1em;
-    border-radius: 2em 1.4em;
-    vertical-align: middle;
-    margin: -0.1em 0.2em 0 0.1em;
-    transform: scale(1.15);
-    transition: transform .2s ease-in-out
-
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  border-radius: 2em 1.4em;
+  vertical-align: middle;
+  margin: -0.1em 0.2em 0 0.1em;
+  transform: scale(1.15);
+  transition: transform .2s ease-in-out; /* Add a semicolon here */
+  white-space: nowrap;
 }
+
+
+.porti-icon--greg {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.porti-icon--greg img {
+    max-width: 100%;
+}
+
+.porti-icon--greg {
+    white-space: nowrap;
+}
+
+
+
 
 
 
@@ -306,8 +322,8 @@ a {
 .undecorated {
   text-decoration: none;
   color: var(--clr-dark);
-  
 }
+
 .txt--normal {
   font-weight: var(--ff-body);
 }
@@ -327,12 +343,7 @@ a:active {
 }
 
 
-.logocopy {
-    color:  var(--clr-dark);
-    font-family: var(--ff-tertiary);
-    font-size: var(--fs-body);
-    line-height: 1.3;
-}
+
     
     
 
@@ -342,10 +353,7 @@ a:active {
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     max-width: 1400px;
-    min-width: 360px;
     margin-top: 1em;
-    
-   
 }
 
 
@@ -703,7 +711,7 @@ ul {
 /* Style the header with a grey background and some padding */
 .navheader {
     overflow: visible;
-    padding: 20px 10px;
+    padding: 0px 16px;
     position: absolute;
     background-color: var(--clr-accent);
     z-index: 1;
@@ -733,13 +741,13 @@ ul {
     text-align: center;
 }
 
-  .logo {
+.logo {
     text-align: center;
     display: block;
     margin: auto;
     text-transform: uppercase;
     text-decoration: none;
-    color: color: var(--clr-dark);
+    color: var(--clr-dark); /* removed the duplicate "color:" */
     position: absolute;
     top: 1.25em;
     left: 1.75em;
@@ -749,37 +757,79 @@ ul {
     transition: transform .1s ease-in-out;
 }
 
-  .navheader a.logo {
-    font-family: BatonTurbo,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  }
+.nav header a.logo {
+    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
 
-  a.logo {
-    font-family: BatonTurbo,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+a.logo {
+    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 1em;
     color: var(--clr-dark);
-  }
+}
 
-
-  .logo__name {
-    font-family: BatonTurbo,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    padding: 0 1rem 0.4rem;
+.logo__name {
+    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    padding: 1rem 0.4rem;
     border-bottom: 1px solid var(--clr-dark);
     color: var(--clr-ink);
     font-size: 55%;
     font-weight: 400;
-    
-    }
+}
 
-
-
-    .logo__byline {
-    font-family: BatonTurbo,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+.logo__byline {
+    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     padding: 1rem 0.4rem;
     color: var(--clr-ink);
     font-size: 55%;
     font-weight: 300;
-      
-    }
+}
+.logo, .nav {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--clr-dark); /* removed the duplicate "color:" */
+  position: absolute;
+  top: 1.25em;
+  left: 1.75em;
+  padding: 0.5em 1em 0.5em;
+  border: 2px solid var(--clr-dark);
+  line-height: 1.6;
+  transition: transform .1s ease-in-out;
+}
+
+.nav header a.logo {
+  font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+a.logo {
+  font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: var(--clr-dark);
+}
+
+.logo__name {
+  font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  padding: 1rem 0.4rem;
+  border-bottom: 1px solid var(--clr-dark);
+  color: var(--clr-ink);
+  font-size: 55%;
+  font-weight: 400;
+}
+
+.logo__byline {
+  font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  padding: 1rem 0.4rem;
+  color: var(--clr-ink);
+  font-size: 55%;
+  font-weight: 300;
+}
+
 
   
     
@@ -790,7 +840,7 @@ ul {
     }
 
   
-/* Heart */
+
 
 
 
@@ -1292,38 +1342,21 @@ a:hover {
 
 
 /* media queries for the text. What you see at full width ------------------------------------------------------------------------------------------------------ */
-/* @media (min-width: 800px) {
-  :root {
-      --fs-h1: 4.8rem;
-      --fs-h2: 4rem;
-      --fs-h3: 2rem;
-      --fs-body: 1.5rem;
-  }
-} */
+
 
 
 /* Media queries for the text: */
 /* Small screens */
 @media screen and (max-width: 480px) {
   :root {
-    --fs-h1: 4rem;
-    --fs-h2: 2.5rem;
-    --fs-h3: 1.8rem;
-    --fs-body: 1.5rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.8rem;
+    --fs-h3: 1.6rem;
+    --fs-body: 1.2rem;
     --fs-caption: 0.8rem;
   }
 }
 
-/* Medium screens */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 4rem;
-    --fs-h3: 2.2rem;
-    --fs-body: 1.5rem;
-    --fs-caption: 1rem;
-  }
-}
 
 /* Large screens */
 @media screen and (min-width: 769px) {
@@ -1371,13 +1404,9 @@ a:hover {
   }
 }
 
-
-
-
-/* As logo disappears, nav flo left */
-@media screen and (max-width: 600px) {
-  .logo {
-    display: none;
+@media screen and (min-width: 65em) {
+  .section__introsubtitle {
+    padding: 0.5em 1em 0em 0em;
   }
 }
 
@@ -1409,7 +1438,6 @@ a:hover {
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
-      display: block;
       text-align: left;
     }
 
@@ -1435,32 +1463,42 @@ a:hover {
 }
 
 
-/* Start of footer css
-@media (min-width: 65em) {
-  .page--footer:before {
-    top: -2.75em;
-  }
-} */ 
-
-
-
-
-  /* If the screen size is 600px wide or less, hide the element */
-  /* @media only screen and (max-width: 490px) {
-    .logo {
-      display: none;
-    }
-  } */
 
   /* Media queries for logo */
-  @media only screen and (max-width: 600px) {
-    .logo__name{
-    font-size: 0.8em;
-    }
+ /* Medium screens */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+    line-height: 1.9;
+    padding: 0.2em 1em 0.5em;
   }
 
+  .logo__name {
+    font-size: 1rem;
+  }
 
+  .logo__byline {
+    font-size: 0.8rem;
+  }
+}
 
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+    line-height: 1.9;
+    padding: 0.2em 0.3em 0.3em 0.5;
+    padding: ;
+  }
+
+  .logo__name {
+    font-size: 0.8rem;
+  }
+
+  .logo__byline {
+    font-size: 0.8rem;
+  }
+}
 
 
 
@@ -1627,3 +1665,5 @@ a:hover {
     left: 0.6em;
   }
 }
+
+
