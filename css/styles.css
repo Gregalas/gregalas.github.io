@@ -2,15 +2,16 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
 }
 
 /* Custom Properties, update these for your own design. What you see less than 800px width */
 :root {
-    --ff-primary: 'Fugaz One', cursive;
-    --ff-secondary: 'Work Sans', sans-serif;
-    --ff-tertiary: 'Work Sans', sans-serif;
-    --ff-caption: 'Roboto Condensed', sans-serif;
+    --ff-primary: 'Lexend', sans-serif;
+    --ff-secondary: 'Lexend', sans-serif;
+    --ff-tertiary: 'Lexend', sans-serif;
+    --ff-caption: 'Lexend', sans-serif;
 
     --fw-reg: 300;
     --fw-med:500;
@@ -35,9 +36,6 @@
 
 
 
-html, body {
-  overflow-x: hidden;
-}
 
 
 
@@ -152,7 +150,7 @@ strong {
     display: block;
     max-width: 100%;
     overflow: visible;
-  overflow-wrap: normal;
+    overflow-wrap: normal;
 }
 
 
@@ -168,7 +166,6 @@ strong {
   color: var(--clr-dark);
   font-family: var(--ff-primary);
   font-size: var(--fs-h1);
-  text-transform: uppercase;
   line-height: 1.3;
   padding: 0.3em 0em 0em 0em; 
 }
@@ -311,14 +308,15 @@ a {
   color: var(--clr-dark);
   -webkit-text-decoration-style: wavy;
   text-decoration-style: wavy;
-  text-decoration-color: var(--clr-accent)
-  -webkit-text-decoration-color: var(--clr-light)
+  text-decoration-color: var(--clr-accent);
+  -webkit-text-decoration-color: var(--clr-light);
   text-decoration-color: var(--color-theme);
   text-underline-offset: 0.15em;
   text-decoration-thickness: 0.04em;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
+
 
 
 .undecorated {
@@ -365,7 +363,6 @@ a:active {
     font-size: var(--fs-h2);
     line-height: 1.3;
     margin-top: 0.8em;
-    text-transform: uppercase; 
 }
 
 .section__project-title {
@@ -1194,7 +1191,6 @@ ul {
   position:absolute;
   top: 4.5em;
   right: 0.5em;
-  text-transform: uppercase;
   z-index: 999; /* ensures no menu items are selected */
 }
 
@@ -1487,23 +1483,21 @@ a:hover {
 /* Small screens */
 @media screen and (max-width: 480px) {
   .logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.9;
-    padding: 0.2em 0.3em 0.3em 0.5;
-    padding: ;
+    padding: 0.2em 1em 0.2em 1em;
   }
 
   .logo__name {
     font-size: 0.8rem;
+    padding-top: 1em;
   }
 
   .logo__byline {
     font-size: 0.8rem;
+    
   }
 }
-
-
-
 
 
 
