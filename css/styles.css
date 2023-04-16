@@ -606,8 +606,8 @@ line-height: 1.8;
 /* Numbered list items */
 .numbered-list__item:before {
     position: absolute;
-    top: -0.05em;
-    left: 0.3em;
+    top: -0.1em;
+    left: 0.4em;
     display: block;
     content: counter(numbered);
     font-family: var(--ff-primary);
