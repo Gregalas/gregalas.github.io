@@ -1221,6 +1221,7 @@ summary {
   list-style: none;
   cursor: pointer;
   outline: none;
+  appearance: none;
 }
 
 
