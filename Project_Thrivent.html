@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("button");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
-        }
-        </script>
+      <head>
+        <script>document.addEventListener('click', function(e) {
+          if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+            document.querySelector('.site-nav__menu').removeAttribute('open');
+          }
+        });</script>
 
         <script>      document.addEventListener('click', function(e) {
           if (!document.querySelector('.site-nav__menu').contains(e.target)) {
@@ -40,7 +34,7 @@
 <!-- Navigtion -->
 <div class="navheader">
   <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
-      <span class="logo__byline"><br>From Cape Town with ♥</span></a>
+      <span class="logo__byline"><br>Designed & coded with ♥</span></a>
 
   <div class="navheader-right">
     <details class="site-nav" data-controller="nav" closed="">
@@ -80,8 +74,7 @@
       <a href="Recentprojects.html" class="undecorated txt--normal backlink">← All Projects</a>
     </div>
     <h1 class="section__introtitle">Thrivent</h1>
-    <h3 class="subheader"><strong>Building a neo bank for a US finance giant</strong></h3>
-    <body class="body__paragraph">In progress...</strong></body> <br><br>
+    <p class="section__introsubtitle">Honest banking, that's personal.</p>
 </div>
  <!-- End of project Header -->
 
@@ -94,20 +87,106 @@
 
 <!-- Project Section - Copy and Edit -->
 <div class="header-projectsection">
-  <h2 class="section__title">Starting off...</h2>
-  <body class="body__paragraph">Thrivent is a finance company who has roots in insurance and charity. They wanted to start progressing toward the banking sector and they asked my team at MetaLab to help them get there. Here's a sneak peek at how we helped them build a product for their NeoBank.</body>
+  <h2 class="section__title">The brief</h2>
+  <body class="body__paragraph">Thrivent is a Fortune 500 company who has roots in insurance and charity. They wanted to start progressing toward the banking sector and  asked MetaLab to help them get there.
+  <br><br>The ask was to help design Thrivent’s digital product for their neobank. The vision was to create a bank that is purpose-based, and highly individualised providing resources and services to younger folks who are kicking off their financial careers on a hyper personalised level. Our goal was to help help Thrivent differentiate and win in banking against other banks.</body>
+</div>
+<!-- End of project section -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image__centered"><img src="images/Project_Thrivent/Thrivent personalised banking.png">
+  <figcaption>Helping users feel closer to their support champions</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">Humanising banking</h2>
+  <body class="body__paragraph">Although we work on a ton of features to design this vision mvp, one of the most awesome parts of the project was working on the support experience where we put the focus on the humans behind your human support, always giving users access to a human Champion if they’d like one. Photos and a small profile help users build an instant relationship with whoever it is they’re talking to.
+  <br><br>We really needed to find ways to remove any friction from users getting support when they need it. You know what its like calling your bank, only to be handed over to a chatbot (which didn’t fair well during research and testing) or to wait for ages on the line. It’s never easy to know for sure exactly how a person might want to engage with customer support when they have a concern or need a problem solved. We took these pain points seriously, and derived amazing insights from research that guided many of our design decisions. For example, we found that <strong>people would much prefer to talk to a human on the phone rather than use text message if the problem is urgent, but if the problem is less urgent then chat is fine. </strong>So we designed a triage experience to help our users define their point of contact as quickly as possible, and to give them the flexibility of an omni-channel chat experience where users can toggle between voice and chat with their Thrive champion of choice.</body>
 </div>
 <!-- End of project section -->
 
 
 
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Thrivent/Thrivent triage card.png">
+</div>
+<!-- End of image content -->
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image__centered"><img src="images/Project_Thrivent/Thrivent early testing.png">
+  <figcaption>Some early concepts for an “always-on” user chat interface</figcaption></figure>
+</div>
+<!-- End of image content -->
 
 
 
 
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">Financial clarity</h2>
+  <body class="body__paragraph">One of the concepts we developed was the financial clarity barometer which helps you visualise a financial score across four key money areas. This idea, along with several others evolved really nicely as we shifted between design -> research  -> insights and back to design. My favourite way to work!The visual is a call back to the concept of money being fluid, based on the notion that people wealth can increase and decrease, and that’s totally ok so long as you stick to a financial plan.</body>
+</div>
+<!-- End of project section -->
+
+
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image__centered"><img src="images/Project_Thrivent/Thrivent financial clarity.png">
+  <figcaption>The visual metaphor of fluidity to illustrate your financial status</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">Quick, take aways</h2>
+  <body class="body__paragraph">Here's what i leanred on this project.</body>
+</div>
+<!-- End of project section -->
+
+<!-- Credits section -->
+<div class="credits-projectsection">
+  <h2 class="section__title">Shoutouts and credits</h2>
+  <ul>
+    <li class="item">
+      <span>Design Director</span>
+      <span class="dots"></span>
+      <span><a class="blue" href="http://linkedin.com">Shiera Rovillard</a></span>
+    </li>
+    <li class="item">
+      <span>Design Lead</span>
+      <span class="dots"></span>
+      <span><a class="blue" href="http://linkedin.com">Jeremy Newcombe</a></span>
+    </li>
+    <li class="item">
+      <span>Senior Product Designer</span>
+      <span class="dots"></span>
+      <span><a class="blue" href="http://linkedin.com/">Carry Booth</a></span>
+    </li>
+    <li class="item">
+      <span>Producer</span>
+      <span class="dots"></span>
+      <span><a class="blue" href="http://linkedin.com/">Stevie Wild</a></span>
+    </li>
+  </ul>
+  </div>
+  
+  
+
+
+<!-- Next project -->
  <div class="arrowlink">
   <a href="Project_Acapela.html" class="undecorated txt--normal backlink">Next project → </a>
 </div>
+<!-- End of next project -->
 
 
 <!-- Close page__content div -->

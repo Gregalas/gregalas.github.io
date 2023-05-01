@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("button");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
-        }
-        </script>
+  <head>
+    <script>document.addEventListener('click', function(e) {
+      if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+        document.querySelector('.site-nav__menu').removeAttribute('open');
+      }
+    });</script>
 
         <script>      document.addEventListener('click', function(e) {
           if (!document.querySelector('.site-nav__menu').contains(e.target)) {
@@ -40,7 +33,7 @@
 <!-- Navigtion -->
 <div class="navheader">
   <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
-      <span class="logo__byline"><br>From Cape Town with ♥</span></a>
+      <span class="logo__byline"><br>Designed & coded with ♥</span></a>
 
   <div class="navheader-right">
     <details class="site-nav" data-controller="nav" closed="">
@@ -80,7 +73,7 @@
       <a href="Recentprojects.html" class="undecorated txt--normal backlink">← All Projects</a>
     </div>
     <h1 class="section__introtitle">Coliseum</h1>
-    <h3 class="subheader"><strong>Talk motorsport, together with the best racing personalities.</strong></h3>
+    <p class="section__introsubtitle">Talk motorsport, together with the best racing personalities.</p>
 </div>
  <!-- End of project Header -->
 
@@ -173,7 +166,7 @@
 </div>
 <!-- End of video -->
 
-
+<!-- Credits section -->
 <div class="credits-projectsection">
 <h2 class="section__title">Shoutouts and credits</h2>
 <ul>
@@ -209,7 +202,7 @@
 <div class="arrowlink">
   <a href="Project_Thrivent.html" class="undecorated txt--normal backlink">Next project → </a>
 </div>
-
+<!-- End of credits section -->
 
 
 <!-- Close page__content div -->

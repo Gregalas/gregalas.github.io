@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("button");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
-        }
-        </script>
 
-        <script>      document.addEventListener('click', function(e) {
+        <script> document.addEventListener('click', function(e) {
           if (!document.querySelector('.site-nav__menu').contains(e.target)) {
             document.querySelector('.site-nav__menu').removeAttribute('open');
           }
@@ -40,7 +28,7 @@
 <!-- Navigtion -->
 <div class="navheader">
   <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
-      <span class="logo__byline"><br>From Cape Town with ♥</span></a>
+      <span class="logo__byline"><br>Designed & coded with ♥</span></a>
 
 
 
@@ -89,11 +77,13 @@
         <h2 class="section__title">First, philosophy</h2>
         <body class="body__paragraph">These principles provide a snapshot of how I like to think about leadership, product, and design and lean on these whenever I can when making decicions.</body>
         <ol class="numbered-list">
-            <li class="numbered-list__item push--bottom"><strong>"A game of chess is like a sword fight, you must think before you move!"</strong> <span class="numbered-list__text">Take the time to craft your diagnosis. Without it, solutions aren't worth much.</span></li>
+            <li class="numbered-list__item push--bottom"><strong>Keep it simple</strong> <span class="numbered-list__text">Being overly clever or innovating unnecessarily will hide your ideas. The simpler a design the more deeply people will engage with it, the less energy they’ll expend understanding it, and they’ll have more time to enjoy and derive value from it.
+            </span></li>
             <li class="numbered-list__item push--bottom"><strong>Build products that are real, and beautiful.</strong> <span class="numbered-list__text">Make things that people can actually use and enjoy, no matter how small the project is. Keep looking for chances to make a difference.</span></li>
-            <li class="numbered-list__item push--bottom"><strong>Be fiercely curious, and insatiably hungry to learn.</strong> <span class="numbered-list__text">You'll never have to motivate yourself if you remain curious about the world.</span></li>
+            <li class="numbered-list__item push--bottom"><strong>Innovate responsibly.</strong> <span class="numbered-list__text">Designing innovative products also means creating new rules around responsibility. Create with the intent to help others, and don’t be naive about how tech could be harmful. “With great power comes great responsibility”. - Uncle Ben</span></li>
+            <li class="numbered-list__item push--bottom"><strong>Be fiercely curious.</strong> <span class="numbered-list__text">There's no such thing as being too curious. Curiosity is also contagious, and it infects teams with a powerful creative energy.</span></li>
             <li class="numbered-list__item push--bottom"><strong>Promote objectivity and find the truth.</strong> <span class="numbered-list__text">Focus efforts on getting things right, as opposed to being right.</span></li>
-            <li class="numbered-list__item push--bottom"><strong>Put others on.</strong> <span class="numbered-list__text">Not eveyone's had the same chances you've had in life. Share knowledge, teach skills, pay it forward.</span></li>
+            <li class="numbered-list__item push--bottom"><strong>Pay it forward by creating opportunities.</strong> <span class="numbered-list__text">People internanlise knowledge and learn the most through actions. Teach skills by giving people a chance.</span></li>
         </ol>
 
 
