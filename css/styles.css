@@ -88,7 +88,7 @@ strong {
  /* Intro section for projects - light container */
  .header-project {
   padding-top: 4em;
-  padding-bottom: 2em;
+  padding-bottom: 0em;
   margin-bottom: 0em;
   margin: auto;
 }
@@ -1402,7 +1402,7 @@ a:hover {
 }
 
 @media (max-width: 65em) {
-  .header-projectsection {
+  .header-project {
     padding: 1em 0em 0em 0em;
   }
 }
@@ -1416,9 +1416,10 @@ a:hover {
 
 @media screen and (min-width: 65em) {
   .section__introsubtitle {
-    padding: 0.2em 1em 0em 0em;
+    padding: 0.2em 0em 0em 0em;
   }
 }
+
 
 
 /* Navheader reduces height*/
