@@ -95,7 +95,7 @@ strong {
 
 
 .arrowlink {
-  padding: 3em 0em 0em 0em;
+  padding: 0.5em 0em 0em 0em;
   margin-bottom: em;
   margin: auto;
   margin: auto;
@@ -703,7 +703,6 @@ ul {
 }
 
 
-
 /* Start of nav */
 /* Style the header with a grey background and some padding */
 .navheader {
@@ -972,8 +971,10 @@ gap: 16px;
 
 
 .contact-card__type {
-  font-weight: 400;
-  font-family: var(--ff-body);
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: var(--ff-caption);
+  font-size: 66%;
   color: var(--clr-light);
 }
 
@@ -1127,7 +1128,6 @@ a:hover {
 
 .credits-projectsection {
   margin-top: 3em;
-  margin-bottom: 3em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1173,7 +1173,7 @@ ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
-  margin-block-end: 3em;
+  margin-block-end: 1em;
   margin-inline-start: -20px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
@@ -1349,6 +1349,17 @@ a:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+/* Spacer */
+.spacer {
+  height: 2em;
+  width: 100%;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 
 /* media queries for the text. What you see at full width ------------------------------------------------------------------------------------------------------ */
@@ -1674,4 +1685,18 @@ a:hover {
     left: 0.6em;
   }
 }
+}
+
+
+/* Spacer media queries */
+@media screen and (max-width: 769px) {
+  .spacer {
+    height: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .spacer {
+    height: 1em;
+  }
 }
