@@ -502,7 +502,7 @@ line-height: 1.8;
 /* Captioned videos */
 .captioned-video__centered {
   position: relative;
-  margin: 2em 0em 0em;
+  margin: 0em 0em 0em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -711,7 +711,6 @@ ul {
 
 
 /* Start of nav */
-/* Style the header with a grey background and some padding */
 .navheader {
     overflow: visible;
     padding: 0px 16px;
@@ -799,7 +798,7 @@ a.logo {
   color: var(--clr-dark); /* removed the duplicate "color:" */
   position: absolute;
   top: 1.25em;
-  left: 1.75em;
+  left: 3.2em;
   padding: 0.5em 1em 0.5em;
   border: 2px solid var(--clr-dark);
   line-height: 1.6;
@@ -863,14 +862,14 @@ a.logo {
 
 
 /* Float the link section to the right */
-.navheader-right {
+/* .navheader-right {
 float: right;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap: 16px;
-}
+} */
 
 
 
@@ -1194,6 +1193,11 @@ ul {
 
 /* Start of Burger menu----------------------------------------- */
 
+.site-nav {
+  float: right;
+  }
+  
+
 .site-nav__item--home {
   display: none;
 }
@@ -1244,7 +1248,15 @@ summary {
   appearance: none;
 }
 
+summary {
+  display: list-item;
+}
 
+details > summary:first-of-type {
+  display: list-item;
+  counter-increment: list-item 0;
+  list-style: none;
+}
 
 .site-nav__button {
   display: block;
@@ -1281,12 +1293,9 @@ summary {
 }
 
 
-
-
-
 .site-nav__button-bg {
   position: absolute;
-  background: #ffb23e;
+  background: var(--clr-accent);
   top: -0.55em;
   left: -0.75em;
   right: 0;
@@ -1358,6 +1367,13 @@ a:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* End of nav button */
 
 /* Spacer */
 .spacer {
@@ -1502,7 +1518,10 @@ a:hover {
     font-size: 2rem;
     line-height: 1.9;
     padding: 0.2em 1em 0.5em;
+    left: 1.5em;
   }
+
+
 
   .logo__name {
     font-size: 1rem;
@@ -1519,6 +1538,7 @@ a:hover {
     font-size: 1rem;
     line-height: 1.9;
     padding: 0.2em 1em 0.2em 1em;
+    left: 1em;
   }
 
   .logo__name {
@@ -1583,14 +1603,14 @@ a:hover {
 /* Media query for screen width of 769px and above */
 @media screen and (min-width: 769px) {
   .captioned-video__centered {
-    margin-top: 4em;
+    margin-top: 2.5em;
   }
 }
 
 /* Media query for screen width of 480px and above */
 @media screen and (max-width: 480px) {
   .captioned-video__centered {
-    margin-top: -2em;
+    margin-top: -6em;
   }
 }
 
@@ -1663,20 +1683,20 @@ a:hover {
 
 
 /* Site nav */
-@media (max-width: 40em) {
+/* @media (max-width: 40em) {
   .site-nav__menu {
     left: auto;
     top: 4.5em;
     right: 0.25em;
   }
-}
+} */
 
 /* Site  link */
-@media (max-width: 40em) {
+/* @media (max-width: 40em) {
   .site-nav__link {
     font-size: 2.5rem;
   }
-}
+} */
 
 
 
