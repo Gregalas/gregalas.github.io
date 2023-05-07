@@ -691,7 +691,7 @@ ol, p, ul {
     font-size: 120%;
     font-size: var(--font-small);
     margin: 0 0 1em;
-    padding: 0;
+    padding: 0em;
     line-height: 1.4;
     letter-spacing: -.015em;
 }
@@ -798,7 +798,7 @@ a.logo {
   color: var(--clr-dark); /* removed the duplicate "color:" */
   position: absolute;
   top: 1.25em;
-  left: 3.2em;
+  left: 1.2em;
   padding: 0.5em 1em 0.5em;
   border: 2px solid var(--clr-dark);
   line-height: 1.6;
