@@ -1439,7 +1439,7 @@ summary::-webkit-details-marker {
 
 @media (max-width: 65em) {
   .header-project {
-    padding: 3.5em 1em 0em 1em;
+    padding: 5.5em 0em 0em 0em;
   }
 }
 
