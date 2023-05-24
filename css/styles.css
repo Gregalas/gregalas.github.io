@@ -237,9 +237,10 @@ h3 { font-size: var(--fs-h3) }
   margin: auto;
 }
 
+
 /* Icon styles */
 .u-nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .porti-icon {
@@ -253,23 +254,12 @@ h3 { font-size: var(--fs-h3) }
   transition: transform .2s ease-in-out;
 }
 
-
 .porti-icon img {
   width: 100%;
   height: auto;
+  transform: scale(1);
+  transition: transform .3s cubic-bezier(.3,.7,.4,1.5); /* Add a transition property with a cubic-bezier timing function */
 }
-
-/* 
-.porti-icon--plain {
-    display: inline-flex;
-    width: 1em;
-    height: 1em;
-    border-radius: 0;
-    vertical-align: middle;
-    margin: 0em 0em 0em 0em;
-    transform: scale(1.15);
-} */
-
 
 .porti-icon--photo {
   display: inline-flex;
@@ -278,25 +268,20 @@ h3 { font-size: var(--fs-h3) }
   border-radius: 2em 1.4em;
   vertical-align: middle;
   margin: 0em 0.2em 0em 0em;
-  transform: scale(1.15);
-  transition: transform .2s ease-in-out; /* Add a semicolon here */
+  transform: scale(1);
+  transition: transform .3s cubic-bezier(.3,.7,.4,1.5); /* Add a transition property with a cubic-bezier timing function */
   white-space: nowrap;
+  cursor: pointer; /* Add a cursor pointer to show it's clickable */
+}
+
+.porti-icon--photo.enlarged,
+.porti-icon img.enlarged {
+  transform: scale(2) translate(-5px, -5px);
+  transition: transform .3s cubic-bezier(.3, .7, .4, 1.5);
 }
 
 
-.porti-icon--greg {
-    display: inline-block;
-    margin-right: 0.1em;
-}
-
-.porti-icon--greg img {
-    max-width: 100%;
-}
-
-.porti-icon--greg {
-    white-space: nowrap;
-}
-
+/* icon modal end */
 
 
 
@@ -351,68 +336,7 @@ a:active {
 
 
 /* CSS for the modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: none;
-  background-color: none;
-}
 
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-.modal-content img {
-  width: 30%;
-  height: auto;
-  border-radius: 30em 18em 30em 18em;
-  vertical-align: middle;
-  margin: 0em 0.2em 0em 0em;
-  transform: scale(1.15);
-  animation: scale 0.3s ease-out;
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1.15);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-  100% {
-    transform: scale(1.15);
-  }
-}
-/* end of modal content */
-
-/* CSS for the close button */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-  color: #f1f1f1;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* end of model */
     
     
 
@@ -1785,7 +1709,7 @@ summary::-webkit-details-marker {
     left: 0.6em;
   }
 }
-}
+
 
 
 /* Spacer media queries */
