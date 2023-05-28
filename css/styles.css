@@ -251,14 +251,16 @@ h3 { font-size: var(--fs-h3) }
   vertical-align: middle;
   margin: -0.1em 0.2em 0 0.1em;
   transform: scale(1.15);
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
-.porti-icon img {
+.porti-icon img,
+.porti-icon--photo img {
   width: 100%;
   height: auto;
+  cursor: zoom-in;
   transform: scale(1);
-  transition: transform .3s cubic-bezier(.3,.7,.4,1.5); /* Add a transition property with a cubic-bezier timing function */
+  transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
 .porti-icon--photo {
@@ -269,17 +271,20 @@ h3 { font-size: var(--fs-h3) }
   vertical-align: middle;
   margin: 0em 0.2em 0em 0em;
   transform: scale(1);
-  transition: transform .3s cubic-bezier(.3,.7,.4,1.5); /* Add a transition property with a cubic-bezier timing function */
+  transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.4, 1.5);
   white-space: nowrap;
-  cursor: pointer; /* Add a cursor pointer to show it's clickable */
+  cursor: zoom-in;
+}
+
+.porti-icon--photo:hover img {
+  cursor: zoom-in;
 }
 
 .porti-icon--photo.enlarged,
 .porti-icon img.enlarged {
   transform: scale(2) translate(-5px, -5px);
-  transition: transform .3s cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-
 
 /* icon modal end */
 
