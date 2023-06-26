@@ -421,13 +421,19 @@ line-height: 1.8;
 }
 
 .video {
+  max-width: 100% ;
   border-radius: 24px;
   overflow: hidden;
   position: relative;
 }
 
+.desktop_video {
+width: 100% ;
+border-radius: 24px;
+overflow: hidden;
+position: relative;
+}
 
-/* End of two column content for images and video */
 
 
 
@@ -545,27 +551,6 @@ line-height: 1.8;
     text-decoration-skip-ink: auto;
 }
 
-/* Can delete if all is working */
-/* .btn {
-    position: relative;
-    right: 24px;
-    font-family: var(--ff-primary);
-    display: inline-flex;
-    margin-top: -1.75em;
-    padding: 0.5em 0.5em 0.4em;
-    background: var(--clr-accent);
-    text-decoration-style: wavy;
-    text-decoration-color: var(--clr-dark);
-    text-underline-offset: 0.15em;
-    text-decoration-thickness: 0.04em;
-    -webkit-text-decoration-skip: ink;
-    text-decoration-skip-ink: auto;
-    transition: all .1s ease-in-out;
-    transform: skewY(-2deg);
-    border: 0;
-    max-width: 25%;
-    box-shadow: none;
-} */
 
 
 .btn {
@@ -1556,8 +1541,8 @@ summary::-webkit-details-marker {
 
 
 
-/* Video protos */
-/* Large screens */
+/* Mobile Video protos */
+/* Large screens
 @media screen and (min-width: 769px) {
   .video {
     max-width: 40%;
@@ -1565,14 +1550,14 @@ summary::-webkit-details-marker {
     border-radius: 24px;
     overflow: hidden;
   }
-}
+} */
 
 /* Medium screens */
 @media screen and (max-width: 768px) {
   .video {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
-    border-radius: 24px;
+    border-radius: 12px;
     overflow: hidden;
     transform: scale(0.8);
   }
@@ -1583,11 +1568,49 @@ summary::-webkit-details-marker {
   .video {
     max-width: 100%;
     height: auto;
-    border-radius: 24px;
+    border-radius: 16px;
     overflow: hidden;
     transform: scale(0.6);
   }
 }
+
+
+/* Desktop Video protos */
+/* Large screens
+@media screen and (min-width: 769px) {
+  .video {
+    max-width: 40%;
+    height: auto;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+} */
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+  .desktop_video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .desktop_video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+
 
 
 /* Top margin of captioned video */
@@ -1601,11 +1624,11 @@ summary::-webkit-details-marker {
 /* Media query for screen width of 480px and above */
 @media screen and (max-width: 480px) {
   .captioned-video__centered {
-    margin-top: -6em;
+    margin-top: -4em;
   }
 }
 
-/* fig caption - captioned video*/
+/* fig caption - captioned mobile video*/
 /* For screens with a maximum width of 769px */
 @media only screen and (max-width: 769px) {
   .captioned-video__centered figcaption {
@@ -1627,6 +1650,33 @@ summary::-webkit-details-marker {
   content: '';
   }
 }
+
+
+
+/* fig caption - captioned desktop video*/
+/* For screens with a maximum width of 769px */
+@media only screen and (max-width: 769px) {
+  .desktop_video figcaption {
+    margin-top: -5.8em;
+  }
+}
+
+/* For screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  .desktop_video figcaption {
+    margin-top: -13.2em;
+  }
+}
+
+
+ /* Media queries for dots in lists */
+ @media only screen and (max-width: 600px) {
+  .desktop_video .dots:after {
+  content: '';
+  }
+}
+
+
 
 /* Projects */
 /* For screens with a maximum width of 480px */
