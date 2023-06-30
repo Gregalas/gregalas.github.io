@@ -837,29 +837,77 @@ a.logo {
   
 
 
-/* Float the link section to the right */
-/* .navheader-right {
-float: right;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-} */
+/* cards on inspo page */
+.cards {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fill,minmax(6em,1fr));
+  justify-items: end;
+  margin-bottom: 1em;
+}
+
+
+.card__meta {
+  color: var(--clr-dark);
+  font-family: var(--ff-caption);
+  font-size: var(--fs-caption);
+  line-height: 1.6;
+  margin: auto;
+}
+
+.card__title {
+  color: var(--clr-dark);
+  font-family: var(--ff-caption);
+  font-size: var(--fs-caption);
+  font-weight: 800;
+  line-height: 1.6;
+  margin: auto;
+}
+
+.card__description {
+  color: var(--clr-dark);
+  font-family: var(--ff-caption);
+  font-size: var(--fs-caption);
+  line-height: 1.6;
+  font-weight: 300;
+  margin: auto;
+}
+
+.card__image {
+  margin: 0 0 0.25em;
+}
+
+.card__image img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 0.5em;
+  -webkit-clip-path: inset(1px 1px 1px 1px);
+  clip-path: inset(1px 1px 1px 1px);
+}
 
 
 
-  /* .header-right {
-    float: none;
-  } */
+figure {
+  margin: 0px;
+}
+
+.card {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  transition: all .1s ease;
+}
+
+.card:hover {
+  transform: scale(1.02) translateY(-0.3em);
+}
 
 
 
-  /* Float the link section to the right
-  .header-right {
-    float: right;
-  }
-   */
+
+/* End of cards */
 
 
 
@@ -1721,34 +1769,6 @@ summary::-webkit-details-marker {
 
 
 
-
-
-/* Site nav */
-/* @media (max-width: 40em) {
-  .site-nav__menu {
-    left: auto;
-    top: 4.5em;
-    right: 0.25em;
-  }
-} */
-
-/* Site  link */
-/* @media (max-width: 40em) {
-  .site-nav__link {
-    font-size: 2.5rem;
-  }
-} */
-
-
-
-
- /* @media (max-width: 39.95em)
-.madlib-icon--photo {
-    transform: scale(1.05);
-} */
-
-
-
 /* For screens with a maximum width of 769px */
 @media only screen and (max-width: 769px) {
   .numbered-list__item:before {
@@ -1777,5 +1797,13 @@ summary::-webkit-details-marker {
 @media screen and (max-width: 480px) {
   .spacer {
     height: 1em;
+  }
+}
+
+/* cards */
+@media (min-width: 40em) {
+  .cards {
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
   }
 }
