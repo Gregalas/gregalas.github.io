@@ -21,6 +21,10 @@
     --clr-dark: #2E2E2E;
     --clr-primary: #F8F5EF;
     --clr-accent: #ffd53e;
+    --clr-accent-pink: #ec61ae;
+    --clr-accent-purple: #c94fe7;
+    --clr-accent-blue: #75d4f6;
+    --clr-accent-orange: #f9a154;
     --clr-background: #F4F2F1;
     --clr-ink: #090408;
     
@@ -924,7 +928,7 @@ figure {
 
 .faves-playlist:first-child {
   background-color: #ffffff;
-  background-image: radial-gradient(var(--clr-accent) 0.5rem, transparent 0), radial-gradient(#ffffff 0.5rem, #ffffff 0);
+  background-image: radial-gradient(var(--clr-accent-pink) 0.5rem, transparent 0), radial-gradient(#ffffff 0.5rem, #ffffff 0);
   background-size: 26px 26px;
   background-position: 0 0, 13px 13px;
 }
@@ -932,7 +936,7 @@ figure {
 
 .faves-playlist:nth-child(2) {
   background-color: #fefefe;
-  background-image: linear-gradient(135deg, var(--clr-accent) 25%, transparent 0), linear-gradient(225deg, var(--clr-accent) 25%, transparent 0), linear-gradient(45deg, var(--clr-accent) 25%, transparent 0), linear-gradient(315deg, var(--clr-accent) 25%, #fefefe 0);
+  background-image: linear-gradient(135deg, var(--clr-accent-blue) 25%, transparent 0), linear-gradient(225deg, var(--clr-accent-blue) 25%, transparent 0), linear-gradient(45deg, var(--clr-accent-blue) 25%, transparent 0), linear-gradient(315deg, var(--clr-accent-blue) 25%, #fefefe 0);
   background-position: 13px 0, 13px 0, 0 0, 0 0;
   background-size: 26px 26px;
   background-repeat: repeat;
@@ -940,15 +944,22 @@ figure {
 
 .faves-playlist:nth-child(3) {
   background-color: #fefefe;
-  background-image: linear-gradient(90deg, var(--clr-accent), var(--clr-accent) 10px, #fefefe 0, #fefefe);
+  background-image: linear-gradient(90deg, var(--clr-accent-orange), var(--clr-accent-orange) 10px, #fefefe 0, #fefefe);
   background-size: 20px 100%;
 }
 
+
 .faves-playlist:nth-child(4) {
   background-color: #fefefe;
-  background: radial-gradient(circle, transparent 20%, #fefefe 0, #fefefe 80%, transparent 0, transparent), radial-gradient(circle, transparent 20%, #fefefe 0, #fefefe 80%, transparent 0, transparent) 20px 20px, linear-gradient(var(--clr-accent) 3px, transparent 0) 0 -1.5px, linear-gradient(90deg, var(--clr-accent) 3px, #fefefe 0) -1.5px 0;
+  background: radial-gradient(circle, transparent 20%, #fefefe 0, #fefefe 80%, transparent 0, transparent), radial-gradient(circle, transparent 20%, #fefefe 0, #fefefe 80%, transparent 0, transparent) 20px 20px, linear-gradient(var(--clr-accent-purple) 3px, transparent 0) 0 -1.5px, linear-gradient(90deg, var(--clr-accent-purple) 3px, #fefefe 0) -1.5px 0;
   background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 }
+
+/* .faves-playlist:nth-child(4) {
+  background-color: #fefefe;
+  background: radial-gradient(circle, transparent 20%, #fefefe 0, #fefefe 80%, transparent 0, transparent), radial-gradient(circle, transparent 20%, #fefefe 0, #fefefe 80%, transparent 0, transparent) 20px 20px, linear-gradient (var(--clr-accent-purple) 3px, transparent 0) 0 -1.5px, linear-gradient(90deg, var(--clr-accent-purple) 3px, #fefefe 0) -1.5px 0;
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+} */
 
 
 
@@ -971,7 +982,7 @@ figure {
 
 
 .faves-playlist:before {
-    background: #639;
+    background: var(--clr-accent-pink);
     top: 3em;
     left: 3em;
     right: 3em;
@@ -979,6 +990,7 @@ figure {
     z-index: 1;
     box-shadow: 0 0 0 0.5em #000;
 }
+
 .faves-playlist:after, .faves-playlist:before {
     content: " ";
     position: absolute;
@@ -1006,6 +1018,7 @@ figure {
   border-radius: 100%;
   transition: all .2s;
 }
+
 .faves-playlist:after {
   background: #010101;
   top: 0.25em;
@@ -1033,7 +1046,23 @@ figure {
 }
 
 
-  
+.faves-playlist:nth-child(1):before {
+  background: #76087c;
+}
+
+.faves-playlist:nth-child(2):before {
+  background: #097bbd;
+}
+
+.faves-playlist:nth-child(3):before {
+  background: #d84709;
+}
+
+.faves-playlist:nth-child(4):before {
+  background: #aa117f;
+}
+
+
 
 /* footer start */
 .page--footer:before {
