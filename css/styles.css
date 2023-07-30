@@ -10,17 +10,20 @@
 :root {
     --ff-primary: 'Lexend', sans-serif;
     --ff-secondary: 'Lexend', sans-serif;
-    --ff-tertiary: 'Lexend', sans-serif;
+    --ff-tertiary: 'Lexendk', sans-serif;
     --ff-caption: 'Lexend', sans-serif;
+  
+
 
     --fw-reg: 300;
     --fw-med:500;
     --fw-bold: 900;
+    --font-style-italic: italic;
     
     --clr-light: #fff;
     --clr-dark: #2E2E2E;
     --clr-primary: #F8F5EF;
-    --clr-accent: #ffd53e;
+    --clr-accent: #F8CD5D;
     --clr-accent-pink: #ec61ae;
     --clr-accent-purple: #c94fe7;
     --clr-accent-blue: #75d4f6;
@@ -161,22 +164,6 @@ strong {
 
 
 
-
-
-
-
-/* Sections */
-.section__introtitle {
-  color: var(--clr-dark);
-  font-family: var(--ff-primary);
-  font-size: var(--fs-h1);
-  line-height: 1.3;
-  padding: 0.3em 0em 0em 0em; 
-}
-
-
-
-
 /* Typography */
 .numbered-list__item strong {
     display: block;
@@ -214,6 +201,17 @@ h3 { font-size: var(--fs-h3) }
 
 
 /* Type styles */
+
+/* Page title */
+.section__introtitle {
+  color: var(--clr-dark);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h1);
+  line-height: 1.3;
+  padding: 0.3em 0em 0em 0em; 
+}
+
 
 /* Home - Image and Hi i'm Greg Schwartz... */
 .intro {
@@ -364,6 +362,7 @@ a:active {
 .section__title {
     font-family: var(--ff-primary);
     font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
     line-height: 1.3;
     margin-top: 0.8em;
 }
@@ -387,13 +386,13 @@ a:active {
     
 }
 
-.section__introtitledark {
+/* .section__introtitledark {
 color: var(--clr-dark);
 font-family: var(--ff-primary);
 font-size: var(--fs-h1);
 line-height: 1.8;
 
-}
+} */
 
 
 .principles {
@@ -720,109 +719,80 @@ ul {
 
 
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.logo, .nav {
+.primarybutt, .nav {
     text-align: center;
 }
 
-.logo {
-    text-align: center;
-    display: block;
-    margin: auto;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--clr-dark); /* removed the duplicate "color:" */
-    position: absolute;
-    top: 1.25em;
-    left: 1.75em;
-    padding: 0.5em 1em 0.5em;
-    border: 2px solid var(--clr-dark);
-    line-height: 1.4;
-    transition: transform .1s ease-in-out;
+.primarybutt button {
+  /* Your existing button styles here */
+  text-decoration-line: none;
+  text-decoration-style: none;
 }
 
-.nav header a.logo {
-    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-}
-
-a.logo {
-    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    color: var(--clr-dark);
-}
-
-.logo__name {
-    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    padding: 1rem 0.4rem;
-    border-bottom: 1px solid var(--clr-dark);
-    color: var(--clr-ink);
-    font-size: 55%;
-    font-weight: 400;
-}
-
-.logo__byline {
-    font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    padding: 1rem 0.4rem;
-    color: var(--clr-ink);
-    font-size: 55%;
-    font-weight: 300;
-}
-.logo, .nav {
-  text-align: center;
-}
-
-.logo {
-  text-align: center;
-  display: block;
-  margin: auto;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--clr-dark); /* removed the duplicate "color:" */
+.primarybutt {
   position: absolute;
-  top: 1.25em;
-  left: 1.2em;
-  padding: 0.5em 1em 0.5em;
-  border: 2px solid var(--clr-dark);
-  line-height: 1.6;
-  transition: transform .1s ease-in-out;
+  top: 1.8em;
+  left: 1em;
+  display: inline-flex;
+  align-items: center;
 }
 
-.nav header a.logo {
-  font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-}
+.primarybutt button {
+  display: flex;
+  align-items: center;
+  gap: -5.0rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  background: var(--clr-accent);
+  box-shadow: 0 0 0 1px #f8cc5d, 0.em 0.4em 0 0.25em #f8cc5d;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-style: var(--font-style-italic);
+  border: none; /* Remove the border */
+  font-size: 32px; /* Change the font size */
+  text-transform: uppercase; /* Apply text transform */
+  text-decoration: none; /* Remove text underline */
+  color: var(--clr-dark); /* Text color */
+  cursor: pointer;
 
-a.logo {
-  font-family: BatonTurbo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  color: var(--clr-dark);
-}
-
-.logo__name {
-  font-family: var(--ff-caption);
-  padding: 1rem 0rem 0.7rem 0.4rem;
-  border-bottom: 1px solid var(--clr-dark);
-  color: var(--clr-ink);
-  font-size: 55%;
-  font-weight: 400;
-}
-
-.logo__byline {
-  font-family: var(--ff-caption);
-  padding: 1rem 0.4rem;
-  color: var(--clr-ink);
-  font-size: 55%;
-  font-weight: 300;
+  /* Add the transition property to control the animation behavior */
+  transition: all 0.2s ease;
 }
 
 
-  
+
+/* .primarybutt button:hover {
+  color: #f5d072;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 3px #e8be52, 0.2em 0.2em 0 0.25em #e8be52;
+  transform: rotate(-1deg) translateY(-0.3em);
+ */
+
+
+
+
+
+
+  /* Add the styles for the button text in the hover state */
+  font-size: 32px; /* Change the font size */
+  text-transform: uppercase; /* Apply text transform */
+  text-decoration: none; /* Remove text underline */
+  color: var(--clr-dark); /* Text color */
+}
+
+
+
+.primarybutt img {
+  /* Adjust the custom icon styles here, if needed */
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+
+
+
     
-    *, :after, :before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-  
 
 
 
@@ -1303,6 +1273,7 @@ a:hover {
   transform: rotate(-1deg) translateY(-0.3em);
   box-shadow: 0 0 0 3px #edece8, 0.4em 0.4em 0 0.25em #edece8;
 }
+
 
 
 /* Start of shoutouts and credits -----------------------------------------  */

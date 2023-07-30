@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <!-- <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("button");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
-        }
-        </script> -->
 
-        <script>      document.addEventListener('click', function(e) {
+        <script> document.addEventListener('click', function(e) {
           if (!document.querySelector('.site-nav__menu').contains(e.target)) {
             document.querySelector('.site-nav__menu').removeAttribute('open');
           }
         });</script>
 
- 
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Greg Schwartz Portfolio Website</title>
+        <title>Greg Schwartz's Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
       
         <!-- Update these with your own fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         </head>
 
 
-
-<!-- Navigtion -->
+<!-- start of nav -->
 <div class="navheader">
-  <a class="logo" href="index.html"><span class="logo__name">Greg Schwartz</span> 
-      <span class="logo__byline"><br>Designed & coded with ♥</span></a>
+  <div class="primarybutt">
+    <a href="index.html" class="undecorated txt--normal backlink"> <!-- Add the anchor tag with the href attribute -->
+      <button><img src="images/Lightening icon.svg" alt="Greg's Icon">Greg</button>
+    </a>
+  </div>
 
   <div class="navheader-right">
     <details class="site-nav" data-controller="nav" closed="">
