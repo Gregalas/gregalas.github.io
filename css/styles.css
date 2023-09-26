@@ -761,32 +761,12 @@ ul {
 
 
 
-/* .primarybutt button:hover {
-  color: #f5d072;
-  border-radius: 1rem;
-  box-shadow: 0 0 0 3px #e8be52, 0.2em 0.2em 0 0.25em #e8be52;
-  transform: rotate(-1deg) translateY(-0.3em);
- */
-
-
-
-
-
-
-  /* Add the styles for the button text in the hover state */
-  font-size: 32px; /* Change the font size */
-  text-transform: uppercase; /* Apply text transform */
-  text-decoration: none; /* Remove text underline */
-  color: var(--clr-dark); /* Text color */
-}
-
-
 
 .primarybutt img {
   /* Adjust the custom icon styles here, if needed */
   width: 24px;
   height: 24px;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 
