@@ -730,24 +730,23 @@ ul {
 }
 
 .primarybutt {
-  position: absolute;
-  top: 1.8em;
-  left: 1em;
-  display: inline-flex;
-  align-items: center;
+    position: absolute;
+    top: 1.8em;
+    left: 1em;
+    display: inline-flex;
+    align-items: center;
 }
 
 .primarybutt button {
   display: flex;
+  justify-content: flex-start; /* Align content to the left */
   align-items: center;
-  gap: -5.0rem;
   padding: 0.2rem 1rem;
   border-radius: 1rem;
-  background: var(--clr-accent);
-  box-shadow: 0 0 0 1px #f8cc5d, 0.em 0.4em 0 0.25em #f8cc5d;
+  background: #ffec4200;
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
-  font-style: var(--font-style-italic);
+  /* font-style: var(--font-style-italic); */
   border: none; /* Remove the border */
   font-size: 32px; /* Change the font size */
   text-transform: uppercase; /* Apply text transform */
@@ -762,13 +761,13 @@ ul {
 
 
 
+
 .primarybutt img {
   /* Adjust the custom icon styles here, if needed */
-  width: 24px;
-  height: 24px;
-  margin-right: 0px;
+  /* Do not set width and height to 100% */
+  margin-right: 8px; /* Adjust the margin as per your desired spacing */
+  vertical-align: middle; /* Align the icon vertically within the button */
 }
-
 
 
 
@@ -1933,4 +1932,20 @@ summary::-webkit-details-marker {
 }
 }
 
+
+
+/* Greg icon media query */
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .primarybutt {
+    left: -0.5em; /* Adjust the left position for small screens */
+  }
+}
+
+/* Large screens */
+@media screen and (max-width: 1040px) {
+  .primarybutt {
+    left: -0.5em; /* Reset the left position for large screens */
+  }
+}
 
