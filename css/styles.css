@@ -745,10 +745,10 @@ ul {
   border-radius: 1rem;
   background: #ffec4200;
   font-family: var(--ff-primary);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-reg);
   /* font-style: var(--font-style-italic); */
   border: none; /* Remove the border */
-  font-size: 32px; /* Change the font size */
+  font-size: 20px; /* Change the font size */
   text-transform: uppercase; /* Apply text transform */
   text-decoration: none; /* Remove text underline */
   color: var(--clr-dark); /* Text color */
