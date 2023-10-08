@@ -24,11 +24,10 @@
 
 
 <!-- start of nav -->
-<div class="navheader">
+<div class="navheader" id="header">
   <div class="primarybutt">
     <a href="index.html" class="undecorated txt--normal backlink"> 
       <button><img src="images/Greg Icon.svg" alt="Greg's Icon"><span id="buttonText">Greg Schwartz</span></button>
-      
     </a>
   </div>
 
@@ -161,49 +160,63 @@
   
   
   <!-- Closes the menu when clicking outside of it -->
-  <script>
-    // Get the menu and its summary element
-    const menu = document.querySelector('.site-nav');
-    const summary = menu.querySelector('summary');
-  
-    // Add a click event listener to the document
-    document.addEventListener('click', (event) => {
-      // Check if the click occurred inside or outside the menu
-      if (!menu.contains(event.target) && !summary.contains(event.target)) {
-        // Click occurred outside the menu, so close it
-        menu.removeAttribute('open');
-      }
-    });
+<script>
+  // Get the menu and its summary element
+  const menu = document.querySelector('.site-nav');
+  const summary = menu.querySelector('summary');
 
-    
-  </script>
+  // Add a click event listener to the document
+  document.addEventListener('click', (event) => {
+    // Check if the click occurred inside or outside the menu
+    if (!menu.contains(event.target) && !summary.contains(event.target)) {
+      // Click occurred outside the menu, so close it
+      menu.removeAttribute('open');
+    }
+  });
+</script>
 
 <script>
-// Function to toggle image enlargement
-
-function toggleImage(img) {
-  var icon = img.closest(".porti-icon--photo") || img.closest(".porti-icon").querySelector("img");
-  if (icon) {
-    icon.classList.toggle("enlarged");
-  }
-}
-
-// Function to close the enlarged image when clicking outside of it
-document.addEventListener("click", function(event) {
-  var icons = document.querySelectorAll(".porti-icon--photo.enlarged, .porti-icon img.enlarged");
-  for (var i = 0; i < icons.length; i++) {
-    if (!event.target.closest(".porti-icon--photo") && !event.target.closest(".porti-icon img") && !icons[i].contains(event.target)) {
-      icons[i].classList.remove("enlarged");
+  // Function to toggle image enlargement
+  function toggleImage(img) {
+    var icon = img.closest(".porti-icon--photo") || img.closest(".porti-icon").querySelector("img");
+    if (icon) {
+      icon.classList.toggle("enlarged");
     }
   }
-});
-
-
-
-
 </script>
 
 
+<script>
+  function handleTransparentHeaderOnScroll() {
+  var header = document.querySelector('.navheader');
+  var lastScrollY = window.scrollY;
+  var beforeElement = document.querySelector('.navheader::before');
 
+  function updateHeaderBackground() {
+    var currentScrollY = window.scrollY;
 
+    if (currentScrollY > 0 && currentScrollY > lastScrollY) {
+      // Scrolling down, make the header transparent
+      header.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+      // Change the background color of the ::before element to white
+      beforeElement.style.backgroundColor = 'white';
+    } else {
+      // Scrolling up or at the top, restore the original background color
+      header.style.backgroundColor = 'var(--clr-accent)';
+      // Restore the background color of the ::before element to its original color
+      beforeElement.style.backgroundColor = 'var(--clr-primary)';
+    }
 
+    lastScrollY = currentScrollY;
+  }
+
+  // Add an event listener for the scroll event
+  window.addEventListener('scroll', updateHeaderBackground);
+
+  // Call the function initially to set the header's initial state
+  updateHeaderBackground();
+}
+
+// Call the function to initialize the transparent header functionality
+handleTransparentHeaderOnScroll();
+</script>

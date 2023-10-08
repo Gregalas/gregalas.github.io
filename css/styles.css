@@ -692,27 +692,32 @@ ul {
 
 /* Start of nav */
 .navheader {
-    overflow: visible;
-    padding: 0px 16px;
-    position: absolute;
-    background-color: var(--clr-accent);
-    z-index: 1;
-    position: sticky; top: 0;
-  }
+  overflow: visible;
+  padding: 0px 16px;
+  position: absolute;
+  /* background-color: var(--clr-accent); */
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
 
- 
-  .navheader::before {
-    content: '';
-    display: block;
-    height: 5em;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    background-color: var(--clr-accent);
-    transform: skew(0, -1deg);
-    transform-origin: top left;
+.navheader.transparent-bg {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navheader::before {
+  content: '';
+  display: block;
+  height: 5em;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-primary); /* Use the --clr-primary variable */
+  transform: skew(0, 0deg);
+  transform-origin: top left;
 }
 
 
@@ -1418,7 +1423,7 @@ details > summary:first-of-type {
 
 .site-nav__button-bg {
   position: absolute;
-  background: var(--clr-accent);
+  background: var(--clr-primary);
   top: -0.55em;
   left: -0.75em;
   right: 0;
@@ -1427,6 +1432,7 @@ details > summary:first-of-type {
   border-radius: 3em;
   width: 3em;
   height: 3em;
+  border: 1px solid var(--clr-ink); /* Add a 1px solid border with a color of your choice */
 }
 
 
