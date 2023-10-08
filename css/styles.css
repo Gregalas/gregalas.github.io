@@ -1524,7 +1524,7 @@ summary::-webkit-details-marker {
 /* Small screens */
 @media screen and (max-width: 480px) {
   :root {
-    --fs-h1: 2.2rem;
+    --fs-h1: 2.8rem;
     --fs-h2: 2rem;
     --fs-h3: 1.6rem;
     --fs-body: 1.2rem;
@@ -1951,7 +1951,7 @@ summary::-webkit-details-marker {
 /* Large screens */
 @media screen and (max-width: 1040px) {
   .primarybutt {
-    left: -0.5em; /* Reset the left position for large screens */
+    left: 0.5em; /* Reset the left position for large screens */
   }
 }
 
