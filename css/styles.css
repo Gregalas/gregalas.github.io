@@ -7,12 +7,29 @@
 }
 
 /* Custom Properties, update these for your own design. What you see less than 800px width */
+/* Updated @font-face rule with multiple font weights */
 @font-face {
   font-family: 'Graphik';
   src: url('/fonts/graphik-regular-webfont.woff') format('woff'),
        url('/fonts/graphik-regular-webfont.woff2') format('woff2');
-  font-weight: var(--fw-reg); /* Use --fw-reg (300) as font weight */
-  font-style: normal; /* Use normal (non-italic) style */
+  font-weight: 300; /* Regular (300) weight */
+  font-style: normal; /* Normal (non-italic) style */
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik-medium-webfont.woff') format('woff'),
+       url('/fonts/graphik-medium-webfont.woff2') format('woff2');
+  font-weight: 500; /* Medium (500) weight */
+  font-style: normal; /* Normal (non-italic) style */
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik-bold-webfont.woff') format('woff'),
+       url('/fonts/graphik-bold-webfont.woff2') format('woff2');
+  font-weight: 700; /* Bold (700) weight */
+  font-style: normal; /* Normal (non-italic) style */
 }
 
 :root {
