@@ -7,11 +7,19 @@
 }
 
 /* Custom Properties, update these for your own design. What you see less than 800px width */
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik-regular-webfont.woff') format('woff'),
+       url('/fonts/graphik-regular-webfont.woff2') format('woff2');
+  font-weight: var(--fw-reg); /* Use --fw-reg (300) as font weight */
+  font-style: normal; /* Use normal (non-italic) style */
+}
+
 :root {
-    --ff-primary: 'Lexend', sans-serif;
-    --ff-secondary: 'Lexend', sans-serif;
-    --ff-tertiary: 'Lexendk', sans-serif;
-    --ff-caption: 'Lexend', sans-serif;
+    --ff-primary: 'Graphik', sans-serif;
+    --ff-secondary: 'Graphik', sans-serif;
+    --ff-tertiary: 'Graphik', sans-serif;
+    --ff-caption: 'Graphik', sans-serif;
   
 
 
@@ -592,7 +600,7 @@ position: relative;
 .numbered-list__item:before {
     position: absolute;
     top: -0.1em;
-    left: 0.4em;
+    left: 0.55em;
     display: block;
     content: counter(numbered);
     font-family: var(--ff-primary);
@@ -715,10 +723,13 @@ ul {
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: var(--clr-primary); /* Use the --clr-primary variable */
+  /* border-bottom: solid #e4e1d9; */
+  background-color: var(--clr-primary);
   transform: skew(0, 0deg);
   transform-origin: top left;
 }
+
+
 
 
 
@@ -1023,7 +1034,7 @@ figure {
     bottom: -4em;
     left: 0;
     right: 0;
-    transform: skewY(-2deg);
+    transform: skewY(0deg);
     background: var(--clr-dark);
     
 
