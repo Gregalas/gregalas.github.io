@@ -78,6 +78,7 @@ body {
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
+    font-weight: 400;
     line-height: 1.6;
     margin: auto;
 }
@@ -233,7 +234,7 @@ h3 { font-size: var(--fs-h3) }
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
   font-size: var(--fs-h1);
-  line-height: 1.3;
+  line-height: 1.2;
   padding: 0.3em 0em 0em 0em; 
 }
 
@@ -377,6 +378,7 @@ a:active {
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
+    font-weight: 400;
     max-width: 1400px;
     margin: 0.5em 0 0.3em;
     line-height: 1.3;
@@ -1625,6 +1627,7 @@ summary::-webkit-details-marker {
 /* Section intro reduces */
 @media (max-width: 65em) {
   .section__introtitle {
+    line-height: 1.1;
     padding: 0.5em 0em 0em 0em; 
   }
 }
