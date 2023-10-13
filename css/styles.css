@@ -78,7 +78,7 @@ body {
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
-    font-weight: var(--fw-med);
+    font-weight: 400;
     line-height: 1.6;
     margin: auto;
 }
@@ -782,7 +782,7 @@ ul {
   border-radius: 1rem;
   background: #ffec4200;
   font-family: var(--ff-primary);
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-med);
   /* font-style: var(--font-style-italic); */
   border: none; /* Remove the border */
   font-size: 20px; /* Change the font size */
@@ -1501,6 +1501,7 @@ ol, ul {
 .site-nav__link {
   font-family: var(--ff-primary);
   font-size: 3rem;
+  font-weight: 700;
   text-decoration: none;
   padding: 0.5em 1em 0.3em;
   display: block;
