@@ -782,7 +782,7 @@ ul {
   border-radius: 1rem;
   background: #ffec4200;
   font-family: var(--ff-primary);
-  font-weight: var(--fw-med);
+  font-weight: var(--fw-reg);
   /* font-style: var(--font-style-italic); */
   border: none; /* Remove the border */
   font-size: 20px; /* Change the font size */
