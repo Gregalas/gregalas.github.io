@@ -48,6 +48,22 @@
   font-style: normal; /* Normal (non-italic) style */
 }
 
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik-light-webfont.woff') format('woff'),
+       url('/fonts/graphik-light-webfont.woff2') format('woff2');
+  font-weight: 300; /* Light (300) weight */
+  font-style: normal; /* Normal (non-italic) style */
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik-lightitalic-webfont.woff') format('woff'),
+       url('/fonts/graphik-lightitalic-webfont.woff2') format('woff2');
+  font-weight: 300; /* Light (300) weight */
+  font-style: italic; /* Light italic style */
+}
+
 :root {
   --ff-primary: 'Graphik', sans-serif;
   --ff-secondary: 'Graphik', sans-serif;
@@ -59,10 +75,9 @@
   --fw-semi-bold: 600;
   --fw-bold: 700;
   --fw-black: 900;
+  --fw-light: 300;
+  --fw-lightitalic: 300;
   --font-style-italic: italic;
-
-  /* Other custom properties */
-  /* ... */
 }
 
 /* Your other CSS styles */
@@ -663,12 +678,12 @@ position: relative;
 .numbered-list__item:before {
     position: absolute;
     top: -0.1em;
-    left: 0.50em;
+    left: 0.45em;
     display: block;
     content: counter(numbered);
     font-family: var(--ff-primary);
     font-style: italic;
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-lightitalic);
     font-size: 210%;
     font-size: var(--fs-h3);
 }
