@@ -12,7 +12,7 @@
   font-family: 'Graphik';
   src: url('/fonts/graphik-regular-webfont.woff') format('woff'),
        url('/fonts/graphik-regular-webfont.woff2') format('woff2');
-  font-weight: 100; /* Regular (300) weight */
+  font-weight: 300; /* Regular (300) weight */
   font-style: normal; /* Normal (non-italic) style */
 }
 
@@ -78,7 +78,7 @@ body {
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
-    font-weight: 400;
+    font-weight: var(--fw-med);
     line-height: 1.6;
     margin: auto;
 }
