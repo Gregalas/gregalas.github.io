@@ -12,7 +12,7 @@
   font-family: 'Graphik';
   src: url('/fonts/graphik-regular-webfont.woff') format('woff'),
        url('/fonts/graphik-regular-webfont.woff2') format('woff2');
-  font-weight: 300; /* Regular (300) weight */
+  font-weight: 400; /* Regular (400) weight */
   font-style: normal; /* Normal (non-italic) style */
 }
 
@@ -20,7 +20,15 @@
   font-family: 'Graphik';
   src: url('/fonts/graphik-medium-webfont.woff') format('woff'),
        url('/fonts/graphik-medium-webfont.woff2') format('woff2');
-  font-weight: 300; /* Medium (500) weight */
+  font-weight: 500; /* Medium (500) weight */
+  font-style: normal; /* Normal (non-italic) style */
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik-semibold-webfont.woff') format('woff'),
+       url('/fonts/graphik-semibold-webfont.woff2') format('woff2');
+  font-weight: 600; /* Semi-Bold (600) weight */
   font-style: normal; /* Normal (non-italic) style */
 }
 
@@ -32,6 +40,40 @@
   font-style: normal; /* Normal (non-italic) style */
 }
 
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik-black-webfont.woff') format('woff'),
+       url('/fonts/graphik-black-webfont.woff2') format('woff2');
+  font-weight: 900; /* Black (900) weight */
+  font-style: normal; /* Normal (non-italic) style */
+}
+
+:root {
+  --ff-primary: 'Graphik', sans-serif;
+  --ff-secondary: 'Graphik', sans-serif;
+  --ff-tertiary: 'Graphik', sans-serif;
+  --ff-caption: 'Graphik', sans-serif;
+
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+  --font-style-italic: italic;
+
+  /* Other custom properties */
+  /* ... */
+}
+
+/* Your other CSS styles */
+
+body {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-reg);
+  /* Other styles */
+}
+
+
 :root {
     --ff-primary: 'Graphik', sans-serif;
     --ff-secondary: 'Graphik', sans-serif;
@@ -40,8 +82,8 @@
   
 
 
-    --fw-reg: 100;
-    --fw-med:300;
+    --fw-reg: 400;
+    --fw-med: 500;
     --fw-bold: 700;
     --font-style-italic: italic;
     
@@ -78,7 +120,7 @@ body {
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
-    font-weight: 400;
+    font-weight: var(--fw-reg);
     line-height: 1.6;
     margin: auto;
 }
@@ -782,7 +824,7 @@ ul {
   border-radius: 1rem;
   background: #ffec4200;
   font-family: var(--ff-primary);
-  font-weight: var(--fw-med);
+  font-weight: var(--fw-reg);
   /* font-style: var(--font-style-italic); */
   border: none; /* Remove the border */
   font-size: 20px; /* Change the font size */
