@@ -322,7 +322,7 @@ h3 { font-size: var(--fs-h3) }
 
 a {
   font-size: 100%;
-  font-weight: 700;
+  font-weight: 500;
   vertical-align: baseline;
   background: transparent;
   margin: 0;
@@ -378,7 +378,6 @@ a:active {
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
-    font-weight: var(--fw-bold);
     font-weight: 400;
     max-width: 1400px;
     margin: 0.5em 0 0.3em;
@@ -783,7 +782,7 @@ ul {
   border-radius: 1rem;
   background: #ffec4200;
   font-family: var(--ff-primary);
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-med);
   /* font-style: var(--font-style-italic); */
   border: none; /* Remove the border */
   font-size: 20px; /* Change the font size */
