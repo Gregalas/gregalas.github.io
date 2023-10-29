@@ -425,10 +425,7 @@ a:active {
 }
 
 
-/* CSS for the modal */
 
-    
-    
 
 /* I'm a Senior Product Designer at MetaLab... */
 .section__introsubtitle {
@@ -832,7 +829,7 @@ ul {
 }
 
 .primarybutt button {
-  margin-top: -6px;
+  margin-top: -10px;
   display: flex;
   justify-content: flex-start; /* Align content to the left */
   align-items: center;
@@ -1168,7 +1165,7 @@ figure {
   flex-direction: column;
   margin: 0 0.25em 0.5em;
   padding: 1em 1.25em;
-  border: 2px solid #fff;
+  border: 2px solid #474747;
   max-width: 380px; 
   min-width: 380px;
   position: relative;
@@ -1185,7 +1182,9 @@ figure {
   flex-direction: column;
   margin: 0 0.25em 0.5em;
   padding: 1em 1.25em;
-  border: 12px solid (var --clr-accent);
+  border: 2px solid var(--clr-accent);
+  max-width: 380px; 
+  min-width: 380px;
   position: relative;
   text-decoration: none;
   transition: border-color .2s ease;
@@ -1204,15 +1203,19 @@ figure {
 .contact-card--email {
   flex-direction: column;
   display: flex;
-  font-family: var(--ff-body);
+  font-family: var(--fw-bold);
+  font-size: 1.2rem;
   color: var(--clr-light);
+  border-radius: 0.8em;
 }
 
 .contact-card--linkedin {
   flex-direction: column;
   display: flex;
-  font-family: var(--ff-body);
+  font-family: var(--fw-bold);
+  font-size: 1.2rem;
   color: var(--clr-light);
+  border-radius: 0.8em;
 }
 
 /* End of contact card */

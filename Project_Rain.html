@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <!-- Add a script for handling clicks outside a navigation menu -->
+    <script>
+        document.addEventListener('click', function(e) {
+            if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+                document.querySelector('.site-nav__menu').removeAttribute('open');
+            }
+        });
+    </script>
 
-        <script> document.addEventListener('click', function(e) {
-          if (!document.querySelector('.site-nav__menu').contains(e.target)) {
-            document.querySelector('.site-nav__menu').removeAttribute('open');
-          }
-        });</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg Schwartz - Digital Design For Impact</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Greg Schwartz's Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-      
-        <!-- Update these with your own fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        </head>
+    <!-- Favicon with various sizes -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc" crossorigin="anonymous">
+
+    <!-- Custom Stylesheet (Update with your own fonts and styles) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
 
 
 <!-- start of nav -->

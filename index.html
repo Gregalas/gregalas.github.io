@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <!-- Add a script for handling clicks outside a navigation menu -->
+    <script>
+        document.addEventListener('click', function(e) {
+            if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+                document.querySelector('.site-nav__menu').removeAttribute('open');
+            }
+        });
+    </script>
 
-        <script> document.addEventListener('click', function(e) {
-          if (!document.querySelector('.site-nav__menu').contains(e.target)) {
-            document.querySelector('.site-nav__menu').removeAttribute('open');
-          }
-        });</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg Schwartz - Digital Design For Impact</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Greg Schwartz's Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-      
-        <!-- Update these with your own fonts -->
-        <link rel="stylesheet" href="css/styles.css">
-        </head>
+    <!-- Favicon with various sizes -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc" crossorigin="anonymous">
+
+    <!-- Custom Stylesheet (Update with your own fonts and styles) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
 
 
 <!-- start of nav -->
@@ -97,7 +112,7 @@
 <h2 class="section__title">Then craft</h2>
         <body class="body__paragraph"></body>I love to create simple solutions to problems other people seem to overlook and that really need to be solved. My approach involves delivering solutions informally, beginning with the simplest version and then iterating rapidly.</body>
         <br><br>
-        <body class="body__paragraph"><strong>Here are some of my latest projects.</strong></body>
+        <body class="body__paragraph"><strong>Take a peak at some recent work</strong></body>
         
 <!-- Spacer -->
  <div class="container">
