@@ -1375,7 +1375,7 @@ a:hover {
 }
 
 .credits-projectsection li {
-  font-size: 20px;
+  font-size: var(--fs-body);
   display: flex;
   align-items: baseline;
   margin-bottom: 5px;
@@ -1607,6 +1607,31 @@ summary::-webkit-details-marker {
 }
 
 
+.Pill {
+  color: #2E2E2E;
+  font-family: VulfMono,"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  font-size: 0.8em;
+  font-weight: var(--fw-reg);
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+  padding: 10px 20px;
+  border-radius: 6.25rem; /* Applies a circular border */
+  border: 1px solid #000; /* 1px solid black border */
+  display: inline-block;
+  height: 100%; 
+  max-width: 100%; /* Allow pills to wrap when container width is exceeded */
+}
+
+.PillStack {
+  margin-top: 1.5em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Allow pills to wrap when container width is exceeded */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5em;
+}
 
 /* media queries for the text. What you see at full width ------------------------------------------------------------------------------------------------------ */
 
