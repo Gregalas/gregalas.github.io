@@ -390,9 +390,7 @@ a {
   color: var(--clr-dark);
   -webkit-text-decoration-style: wavy;
   text-decoration-style: wavy;
-  text-decoration-color: var(--clr-accent);
-  -webkit-text-decoration-color: var(--clr-light);
-  text-decoration-color: var(--color-theme);
+  text-decoration-color: var(--clr-accent-orange);
   text-underline-offset: 0.15em;
   text-decoration-thickness: 0.04em;
   -webkit-text-decoration-skip: ink;
@@ -411,7 +409,7 @@ a {
 }
 
 a:hover {
-  color: var(--clr-accent);
+  color: var(--clr-accent-orange);
   /* transform: skewY(-2deg) translateY(-0.1em); */
   cursor: pointer;
   /* box-shadow: 0.2em 0.2em 0 0.05em var(--clr-dark); */
@@ -874,7 +872,7 @@ ul {
     text-decoration-style: wavy;
     -webkit-text-decoration-color: var(--clr-dark);
     text-decoration-color: var(--clr-dark);
-    color: var(--clr-accent);
+    color: var(--clr-accent-orange);
     background-color: var(--clr-accent);
   }
   
@@ -1336,7 +1334,7 @@ h2 {
 
 
 a:hover {
-  color: var(--clr-accent);
+  color: var(--clr-accent-orange);
   -webkit-text-decoration-color: #ff1361;
   text-decoration-color: #ff1361;
   -webkit-text-decoration-color: var(--color-pink);
@@ -1571,7 +1569,7 @@ ol, ul {
 }
 
 a:hover {
-  color: var(--clr-accent);
+  color: var(--clr-accent-orange);
   text-decoration-color: var(--color-pink);
 }
 
