@@ -685,10 +685,10 @@ position: relative;
 .numbered-list__item:before {
   position: absolute;
   top: -0.1em;
-  left: 0.35em;
+  left: 0.40em;
   display: block;
   content: counter(numbered);
-  font-family: var(--ff-mono);
+  font-weight: 400;
   font-style: var(--font-style-italic);
   font-size: var(--fs-h3);
 }
@@ -1190,7 +1190,7 @@ figure {
   flex-direction: column;
   margin: 0 0.25em 0.5em;
   padding: 1em 1.25em;
-  border: 2px solid var(--clr-accent);
+  border: 2px solid var(--clr-accent-orange);
   max-width: 380px; 
   min-width: 380px;
   position: relative;
@@ -1203,7 +1203,7 @@ figure {
 .contact-card__type {
   text-transform: uppercase;
   font-weight: 200;
-  font-family: var(--ff-caption);
+  font-family: var(--ff-mono);
   font-size: 66%;
   color: var(--clr-light);
 }
@@ -1211,7 +1211,7 @@ figure {
 .contact-card--email {
   flex-direction: column;
   display: flex;
-  font-family: var(--fw-bold);
+  font-family: var(--ff-mono);
   font-size: 1.2rem;
   color: var(--clr-light);
   border-radius: 0.8em;
@@ -1220,7 +1220,7 @@ figure {
 .contact-card--linkedin {
   flex-direction: column;
   display: flex;
-  font-family: var(--fw-bold);
+  font-family: var(--ff-mono);
   font-size: 1.2rem;
   color: var(--clr-light);
   border-radius: 0.8em;
