@@ -64,11 +64,24 @@
   font-style: italic; /* Light italic style */
 }
 
+@font-face {
+  font-family: 'VulfMonoDemo-Regular';
+  src: url('path/to/VulfMonoDemo-Regular.woff2') format('woff2'),
+       url('path/to/VulfMonoDemo-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'VulfMonoDemo-light';
+  src: url('path/to/VulfMonoDemo-LightItalic.woff2') format('woff2'),
+       url('path/to/VulfMonoDemo-LightItalic.woff') format('woff');
+}
+
 :root {
   --ff-primary: 'Graphik', sans-serif;
   --ff-secondary: 'Graphik', sans-serif;
   --ff-tertiary: 'Graphik', sans-serif;
   --ff-caption: 'Graphik', sans-serif;
+  --ff-mono: 'VulfMonoDemo', monospace;
 
   --fw-reg: 400;
   --fw-med: 500;
@@ -77,7 +90,6 @@
   --fw-black: 900;
   --fw-light: 300;
   --fw-lightitalic: 300;
-  --font-style-italic: italic;
 }
 
 /* Your other CSS styles */
@@ -676,11 +688,11 @@ position: relative;
   left: 0.35em;
   display: block;
   content: counter(numbered);
-  font-family: VulfMono,"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
-  Font-style: italic;
-  font-size: 210%;
+  font-family: var(--ff-mono);
+  font-style: var(--font-style-italic);
   font-size: var(--fs-h3);
 }
+
 
 
 .numbered-list__item:after {
@@ -1512,7 +1524,7 @@ details > summary:first-of-type {
 
 .site-nav__button-bg {
   position: absolute;
-  background: #ffffff9e;
+  background: var(--clr-accent-orange);
   top: -0.55em;
   left: -0.75em;
   right: 0;
@@ -1521,7 +1533,7 @@ details > summary:first-of-type {
   border-radius: 3em;
   width: 3em;
   height: 3em;
-  border: 1px solid var(--clr-ink); /* Add a 1px solid border with a color of your choice */
+  border: none; /* Add a 1px solid border with a color of your choice */
 }
 
 
