@@ -1378,6 +1378,7 @@ a:hover {
 }
 
 .credits-projectsection li {
+  font-family: var(--ff-body);
   font-size: var(--fs-body);
   display: flex;
   align-items: baseline;
