@@ -1222,7 +1222,7 @@ figure {
   font-family: var(--ff-data);
   font-size: 1.5rem;
   color: var(--clr-light);
-  border-radius: 0.8em;
+  border-radius: 0.4em;
 }
 
 .contact-card--linkedin {
@@ -1231,7 +1231,7 @@ figure {
   font-family: var(--ff-data);
   font-size: 1.5rem;
   color: var(--clr-light);
-  border-radius: 0.8em;
+  border-radius: 0.4em;
 }
 
 /* End of contact card */
@@ -1691,7 +1691,7 @@ summary::-webkit-details-marker {
 
 @media (max-width: 65em) {
   .page__content {
-    padding: 0em 1.5em 1.5em 1.5em;
+    padding: 0em 1.5em 1.5em 1em;
   }
 }
 
@@ -2087,7 +2087,15 @@ summary::-webkit-details-marker {
 /* Large screens */
 @media screen and (max-width: 1040px) {
   .primarybutt {
-    left: 0.5em; /* Reset the left position for large screens */
+    left: 0.1em; /* Reset the left position for large screens */
   }
 }
 
+
+/* Greg icon media query */
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .site-nav__button {
+    right: 1.1em;
+  }
+  }
