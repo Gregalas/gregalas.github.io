@@ -82,14 +82,23 @@
        url('/fonts/VulfSansDemo-LightItalic.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'VulfSansDemo-Light';
+  src: url('/fonts/VulfSansDemo-Light.woff2') format('woff2'),
+       url('/fonts/VulfSansDemo-Light.woff') format('woff');
+}
+
 
 :root {
+  /* Font Families */
   --ff-primary: 'Graphik', sans-serif;
   --ff-secondary: 'Graphik', sans-serif;
   --ff-tertiary: 'Graphik', sans-serif;
   --ff-caption: 'Graphik', sans-serif;
-  --ff-data: 'VulfSansDemo-LightItalic', sans;
+  --ff-dataemphasis: 'VulfSansDemo-LightItalic', sans;
+  --ff-data: 'VulfSansDemo-Light', sans;
 
+  /* Font Weights */
   --fw-reg: 400;
   --fw-med: 500;
   --fw-semi-bold: 600;
@@ -97,52 +106,29 @@
   --fw-black: 900;
   --fw-light: 300;
   --fw-lightitalic: 300;
+
+  /* Font Styles */
+  --fw-italic: italic;
+
+  /* Colors */
+  --clr-light: #fff;
+  --clr-dark: #2E2E2E;
+  --clr-primary: #F8F5EF;
+  --clr-accent: #FFEC42;
+  --clr-accent-pink: #ec61ae;
+  --clr-accent-purple: #c94fe7;
+  --clr-accent-blue: #506EEC;
+  --clr-accent-orange: #f9a154;
+  --clr-background: #F4F2F1;
+  --clr-ink: #090408;
+
+  /* Font Sizes */
+  --fs-h1: 3.5rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.8rem;
+  --fs-body: 1.2rem;
+  --fs-caption: 1rem;
 }
-
-
-/* Your other CSS styles */
-
-body {
-  font-family: var(--ff-secondary);
-  font-weight: var(--fw-reg);
-  /* Other styles */
-}
-
-
-:root {
-    --ff-primary: 'Graphik', sans-serif;
-    --ff-secondary: 'Graphik', sans-serif;
-    --ff-tertiary: 'Graphik', sans-serif;
-    --ff-caption: 'Graphik', sans-serif;
-  
-
-
-    --fw-reg: 400;
-    --fw-med: 500;
-    --fw-bold: 700;
-    --font-style-italic: italic;
-    
-    --clr-light: #fff;
-    --clr-dark: #2E2E2E;
-    --clr-primary: #F8F5EF;
-    --clr-accent: #FFEC42;
-    --clr-accent-pink: #ec61ae;
-    --clr-accent-purple: #c94fe7;
-    --clr-accent-blue: #506EEC;
-    --clr-accent-orange: #f9a154;
-    --clr-background: #F4F2F1;
-    --clr-ink: #090408;
-    
-
-    
-    --fs-h1: 3.5rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.8rem;
-    --fs-body: 1.2rem;
-    --fs-caption: 1rem;
-    
-}
-
 
 
 
@@ -696,7 +682,7 @@ position: relative;
   left: 0.40em;
   display: block;
   content: counter(numbered);
-  font-family: var(--ff-data);
+  font-family: var(--ff-dataemphasis);
   font-weight: var(--fw-lightitalic);
   font-size: var(--fs-h3);
 }
@@ -1054,9 +1040,8 @@ figure {
 
 
 .faves-playlist span {
-  font-family: BatonTurbo,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  font-family: var(--font--caps-wide);
-  font-weight: 600;
+  font-family: var(--ff-data);
+  font-weight: var(--fw-bold);
   z-index: 2;
   font-size: 80%;
   font-size: var(--font-xx-small);
@@ -1626,8 +1611,8 @@ summary::-webkit-details-marker {
 
 
 .Pill {
-  color: #2E2E2E;
-  font-family: VulfMono,"SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  color: var(--clr-dark);
+  font-family: var(--ff-data);
   font-size: 0.8em;
   font-weight: var(--fw-reg);
   white-space: nowrap; /* Prevent text from wrapping */
@@ -1684,14 +1669,14 @@ summary::-webkit-details-marker {
 
 @media (max-width: 65em) {
   .intro {
-    padding: 2em 1.5em;
+    padding: 0.8em 1em;
   }
 }
 
 
 @media (max-width: 65em) {
   .page__content {
-    padding: 0em 1.5em 1.5em 1em;
+    padding: 0em 1.0em 1em 1.1em;
   }
 }
 
