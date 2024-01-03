@@ -66,20 +66,20 @@
 
 @font-face {
   font-family: 'VulfMonoDemo-Regular';
-  src: url('path/to/VulfMonoDemo-Regular.woff2') format('woff2'),
-       url('path/to/VulfMonoDemo-Regular.woff') format('woff');
+  src: url('/fonts/VulfMonoDemo-Regular.woff2') format('woff2'),
+       url('/fonts/VulfMonoDemo-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'VulfMonoDemo-light';
-  src: url('path/to/VulfMonoDemo-LightItalic.woff2') format('woff2'),
-       url('path/to/VulfMonoDemo-LightItalic.woff') format('woff');
+  src: url('/fonts/VulfMonoDemo-LightItalic.woff2') format('woff2'),
+       url('/fonts/VulfMonoDemo-LightItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'VulfSansDemo-LightItalic';
-  src: url('path/to/VulfSansDemo-LightItalic.woff2') format('woff2'),
-       url('path/to/VulfSansDemo-LightItalic.woff') format('woff');
+  src: url('/fonts/VulfSansDemo-LightItalic.woff2') format('woff2'),
+       url('/fonts/VulfSansDemo-LightItalic.woff') format('woff');
 }
 
 
@@ -98,6 +98,7 @@
   --fw-light: 300;
   --fw-lightitalic: 300;
 }
+
 
 /* Your other CSS styles */
 
