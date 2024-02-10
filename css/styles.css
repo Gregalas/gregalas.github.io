@@ -202,7 +202,7 @@ strong {
 .page__content {
     position: relative;
     z-index: 0;
-    max-width: 58rem;
+    max-width: 67rem;
     min-width: 12rem;
     margin: 0 auto;
     padding: 1.5em 2em 2em 2em;
@@ -678,13 +678,13 @@ position: relative;
 
 .numbered-list__item:before {
   position: absolute;
-  top: -0.2em;
-  left: 0.40em;
+  top: -0.3em;
+  left: 0.27em;
   display: block;
   content: counter(numbered);
   font-family: var(--ff-dataemphasis);
-  font-weight: var(--fw-lightitalic);
-  font-size: var(--fs-h3);
+  font-weight: var(--fw-italic);
+  font-size: 4rem;
 }
 
 
@@ -1657,10 +1657,10 @@ summary::-webkit-details-marker {
 /* Large screens */
 @media screen and (min-width: 769px) {
   :root {
-    --fs-h1: 5rem;
-    --fs-h2: 4.5rem;
-    --fs-h3: 2.8rem;
-    --fs-body: 1.7rem;
+    --fs-h1: 6rem;
+    --fs-h2: 5rem;
+    --fs-h3: 3rem;
+    --fs-body: 2rem;
     --fs-caption: 1rem;
   }
 }
@@ -1999,16 +1999,18 @@ summary::-webkit-details-marker {
 /* For screens with a maximum width of 769px */
 @media only screen and (max-width: 769px) {
   .numbered-list__item:before {
-    top: -0.1em;
-    left: 0.5em;
+      top: -0.3em;
+      left: 0.27em;
+      font-size: 2.5rem;
   }
 }
 
 /* For screens with a maximum width of 480px */
 @media only screen and (max-width: 480px) {
   .numbered-list__item:before {
-    top: 0.01em;
-    left: 0.6em;
+    top: -0.3em;
+    left: 0.27em;
+    font-size: 2.5rem;
   }
 }
 
