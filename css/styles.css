@@ -306,7 +306,7 @@ h3 { font-size: var(--fs-h3) }
 .intro {
     max-width: 88rem;
     min-width: 12rem;
-    padding: 4em 3em;
+    padding: 2.5em 3em;
     margin: auto;
 }
 
