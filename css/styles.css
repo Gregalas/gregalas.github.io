@@ -122,13 +122,41 @@
   --clr-background: #F4F2F1;
   --clr-ink: #090408;
 
-  /* Font Sizes */
+  /* Font Sizes – what you see at small sizs */
   --fs-h1: 3.5rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.8rem;
   --fs-body: 1.2rem;
   --fs-caption: 1rem;
 }
+
+
+/* media queries for the text. What you see at full width ------------------------------------------------------------------------------------------------------ */
+/* Media queries for the text: */
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  :root {
+    --fs-h1: 2.8rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.6rem;
+    --fs-body: 1.2rem;
+    --fs-caption: 0.8rem;
+  }
+}
+
+
+/* Large screens */
+@media screen and (min-width: 769px) {
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 4.5rem;
+    --fs-h3: 2.7rem;
+    --fs-body: 2rem;
+    --fs-caption: 1rem;
+  }
+}
+/* End of media queries for the text */
 
 
 
@@ -297,7 +325,7 @@ h3 { font-size: var(--fs-h3) }
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
   font-size: var(--fs-h1);
-  line-height: 1.2;
+  line-height: 1.1;
   padding: 0.3em 0em 0em 0em; 
 }
 
@@ -438,8 +466,7 @@ a:active {
     font-size: var(--fs-h3);
     font-weight: 400;
     max-width: 1400px;
-    margin: 1em 0 0.3em;
-    line-height: 1.3;
+    margin: 0.5em 0 0.3em
 }
 
 
@@ -1637,35 +1664,6 @@ summary::-webkit-details-marker {
   gap: 0.5em;
 }
 
-/* media queries for the text. What you see at full width ------------------------------------------------------------------------------------------------------ */
-
-
-
-/* Media queries for the text: */
-/* Small screens */
-@media screen and (max-width: 480px) {
-  :root {
-    --fs-h1: 2.8rem;
-    --fs-h2: 2rem;
-    --fs-h3: 1.6rem;
-    --fs-body: 1.2rem;
-    --fs-caption: 0.8rem;
-  }
-}
-
-
-/* Large screens */
-@media screen and (min-width: 769px) {
-  :root {
-    --fs-h1: 6rem;
-    --fs-h2: 5rem;
-    --fs-h3: 3rem;
-    --fs-body: 2rem;
-    --fs-caption: 1rem;
-  }
-}
-/* End of media queries for the text */
-
 
 
 @media (max-width: 65em) {
@@ -1702,7 +1700,7 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 65em) {
   .section__introsubtitle {
-    padding: 0.2em 0em 0em 0em;
+    padding: 0.1em 0em 0em 0em
   }
 }
 
@@ -1718,8 +1716,8 @@ summary::-webkit-details-marker {
 /* Section intro reduces */
 @media (max-width: 65em) {
   .section__introtitle {
-    line-height: 0.8em;
-    padding: 0.3em 0em 0em 0em; 
+    line-height: 1.2em;
+    padding: 0.1em 0em 0em 0em; 
   }
 }
 
@@ -1763,6 +1761,22 @@ summary::-webkit-details-marker {
     min-width: 280px;
   }
 }
+
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .contact-card--email, .contact-card--linkedin {
+    font-size: 1.2rem; /* Smaller font size for smaller screens */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .contact-card--email, .contact-card--linkedin {
+    font-size: 1rem; /* Even smaller font size for mobile screens */
+  }
+}
+
 
 
 
