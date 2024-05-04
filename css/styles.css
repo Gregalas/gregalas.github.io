@@ -1641,7 +1641,7 @@ summary::-webkit-details-marker {
 .Pill {
   color: var(--clr-dark);
   font-family: var(--ff-data);
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-weight: var(--fw-reg);
   white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden; /* Hide overflow text */
