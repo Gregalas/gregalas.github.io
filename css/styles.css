@@ -96,7 +96,7 @@
   --ff-tertiary: 'Graphik', sans-serif;
   --ff-caption: 'Graphik', sans-serif;
   --ff-dataemphasis: 'VulfSansDemo-LightItalic', sans;
-  --ff-data: 'VulfSansDemo-Light', sans;
+  --ff-data: 'VulfMonoDemo-Regular', sans;
 
   /* Font Weights */
   --fw-reg: 400;
@@ -202,7 +202,7 @@ strong {
 .page__content {
     position: relative;
     z-index: 0;
-    max-width: 67rem;
+    max-width: 58rem;
     min-width: 12rem;
     margin: 0 auto;
     padding: 1.5em 2em 2em 2em;
@@ -304,9 +304,9 @@ h3 { font-size: var(--fs-h3) }
 
 /* Home - Image and Hi i'm Greg Schwartz... */
 .intro {
-    max-width: 88rem;
+    max-width: 78rem;
     min-width: 12rem;
-    padding: 2.5em 3em;
+    padding: 1em 3em;
     margin: auto;
 }
 
@@ -438,7 +438,7 @@ a:active {
     font-size: var(--fs-h3);
     font-weight: 400;
     max-width: 1400px;
-    margin: 0.3em 0 0.3em;
+    margin: 1em 0 0.3em;
     line-height: 1.3;
 }
 
@@ -824,7 +824,7 @@ ul {
 
 .primarybutt {
     position: absolute;
-    top: 1.8em;
+    top: 2em;
     left: 1em;
     display: inline-flex;
     align-items: center;
@@ -1305,12 +1305,12 @@ img {
 .project__title {
   text-transform: uppercase;
   font-family: var(--ff-caption);
-  font-size: 66%;
-  font-weight: var(--fw-bold);
-  font-weight: 400;
+  font-size: 60%;
+  font-weight: 500; /* Keep this for bold text */
   margin-top: 0.5em!important;
-  color: var(--clr-dark) ;
+  color: var(--clr-dark);
 }
+
 
 .flush--bottom {
   margin-bottom: 0!important;
@@ -1718,7 +1718,7 @@ summary::-webkit-details-marker {
 /* Section intro reduces */
 @media (max-width: 65em) {
   .section__introtitle {
-    line-height: 1.1;
+    line-height: 0.8em;
     padding: 0.3em 0em 0em 0em; 
   }
 }
@@ -1740,6 +1740,10 @@ summary::-webkit-details-marker {
     }
 
   }
+
+
+
+
 
 
 @media only screen and (max-width: 767px) {
@@ -1816,16 +1820,6 @@ summary::-webkit-details-marker {
 
 
 
-/* Mobile Video protos */
-/* Large screens
-@media screen and (min-width: 769px) {
-  .video {
-    max-width: 40%;
-    height: auto;
-    border-radius: 24px;
-    overflow: hidden;
-  }
-} */
 
 /* Medium screens */
 @media screen and (max-width: 768px) {
@@ -1850,16 +1844,6 @@ summary::-webkit-details-marker {
 }
 
 
-/* Desktop Video protos */
-/* Large screens
-@media screen and (min-width: 769px) {
-  .video {
-    max-width: 40%;
-    height: auto;
-    border-radius: 24px;
-    overflow: hidden;
-  }
-} */
 
 /* Medium screens */
 @media screen and (max-width: 768px) {
@@ -1880,9 +1864,6 @@ summary::-webkit-details-marker {
     overflow: hidden;
   }
 }
-
-
-
 
 
 
@@ -1983,6 +1964,7 @@ summary::-webkit-details-marker {
 }
 
 
+
 /* Image captions */
 @media (min-width: 40em) {
   .captioned-image figcaption {
@@ -1990,8 +1972,20 @@ summary::-webkit-details-marker {
   }
 }
 
+/* Project titles */
+/* Medium screens */
+@media (max-width: 768px) {
+  .project__title {
+    font-size: 70%; /* Slightly smaller font size */
+  }
+}
 
-
+/* Small screens */
+@media (max-width: 480px) {
+  .project__title {
+    font-size: 66%; /* Even smaller font size */
+  }
+}
 
 
 
@@ -2080,10 +2074,22 @@ summary::-webkit-details-marker {
 }
 
 
-/* Greg icon media query */
-/* Small screens */
-@media screen and (max-width: 480px) {
-  .site-nav__button {
-    right: 1.1em;
+
+
+/* Burger menu background */
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .site-nav__button-bg {
+    position: absolute;
+    top: -0.20em;
   }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .site-nav__button-bg {
+    position: absolute;
+    top: -0.2em;
   }
+}
+
