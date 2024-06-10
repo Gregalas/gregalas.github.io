@@ -349,6 +349,7 @@ strong {
 
 /* Typography */
 .numbered-list__item strong {
+  font-weight: var(--fw-bold);
     display: block;
     margin: 1.5em 0 0.1em;
     line-height: 1.6;
