@@ -142,6 +142,14 @@ font-face {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'BatonNouveauTrial-Bold';
+  src: url('/fonts/BatonNouveauTrial-Bold.woff2') format('woff2'),
+       url('/fonts/BatonNouveauTrial-Bold.woff') format('woff');
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
 
 
 
