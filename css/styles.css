@@ -235,7 +235,7 @@ body {
 
 
 strong {
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
