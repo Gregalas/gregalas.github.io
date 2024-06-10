@@ -238,7 +238,7 @@ strong {
     font-weight: 700;
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-bold);
     line-height: 1.4;
     margin: auto;
   }
