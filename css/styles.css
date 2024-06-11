@@ -150,7 +150,7 @@
 :root {
   /* Font Families */
   --ff-primary: 'BatonNouveauTrial-Heavy', 'Graphik', sans-serif;
-  --ff-secondary: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
+  --ff-secondary: 'BatonNouveauTrial-Medium', 'Graphik', sans-serif;
   --ff-tertiary: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
   --ff-caption: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
   --ff-dataemphasis: 'VulfSansDemo-LightItalic', sans-serif;
@@ -230,7 +230,7 @@
 body {
     background: var(--clr-dark);
     color: var(--clr-dark);
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-tertiary);
     font-size: var(--fs-body);
     font-weight: var(--fw-reg);
     line-height: 1.6;
@@ -239,7 +239,7 @@ body {
 
 
 strong {
-    font-weight: var(--fw-black);
+    font-weight: var(--fw-med);
     color: var(--clr-dark);
     font-family: var(--ff-primary);
     line-height: 1.4;
@@ -345,7 +345,7 @@ strong {
 
 /* Typography */
 .numbered-list__item strong {
-  font-weight: var(--fw-black);
+    font-weight: var(--fw-med);
     display: block;
     margin: 1.5em 0 0.1em;
     line-height: 1.6;
