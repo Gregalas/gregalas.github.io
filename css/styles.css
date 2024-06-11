@@ -386,7 +386,7 @@ h3 { font-size: var(--fs-h3) }
 .section__introtitle {
   color: var(--clr-dark);
   font-family: var(--ff-primary);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-black);
   font-size: var(--fs-h1);
   line-height: 1.4;
   padding: 0.3em 0em 0em 0em; 
@@ -525,7 +525,7 @@ a:active {
 /* I'm a Senior Product Designer at MetaLab... */
 .section__introsubtitle {
     color: var(--clr-dark);
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-tertiary);
     font-size: var(--fs-h3);
     font-weight: 400;
     max-width: 1400px;
@@ -563,13 +563,6 @@ a:active {
     
 }
 
-/* .section__introtitledark {
-color: var(--clr-dark);
-font-family: var(--ff-primary);
-font-size: var(--fs-h1);
-line-height: 1.8;
-
-} */
 
 
 .principles {
