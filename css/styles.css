@@ -170,6 +170,7 @@
 
   /* Font Styles */
   --fw-italic: italic;
+  --fw-bold: bold;
 
   /* Colors */
   --clr-light: #fff;
@@ -237,7 +238,7 @@ body {
 
 
 strong {
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-black);
     color: var(--clr-dark);
     font-family: var(--ff-secondary);
     line-height: 1.4;
