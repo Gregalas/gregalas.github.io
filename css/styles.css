@@ -116,7 +116,7 @@
   font-family: 'BatonNouveauTrial-Heavy';
   src: url('/fonts/BatonNouveauTrial-Heavy.woff2') format('woff2'),
        url('/fonts/BatonNouveauTrial-Heavy.woff') format('woff');
-  font-weight: 800; /* Heavy weight, typically 800 */
+  font-weight: 900; /* Heavy weight, typically 800 */
   font-style: normal;
 }
 
