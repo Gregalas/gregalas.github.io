@@ -171,6 +171,7 @@
   /* Font Styles */
   --fw-italic: italic;
   --fw-bold: bold;
+  --fw-black: 900;
 
   /* Colors */
   --clr-light: #fff;
