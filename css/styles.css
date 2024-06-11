@@ -170,8 +170,6 @@
 
   /* Font Styles */
   --fw-italic: italic;
-  --fw-bold: bold;
-  --fw-black: 900;
 
   /* Colors */
   --clr-light: #fff;
@@ -1278,8 +1276,8 @@ figure {
 
 .contact-card__type {
   text-transform: uppercase;
-  font-weight: 200;
-  font-family: var(--ff-mono);
+  font-weight: var(--fw-reg);
+  font-family: var(--ff-caption);
   font-size: 66%;
   color: var(--clr-light);
 }
@@ -1289,6 +1287,7 @@ figure {
   display: flex;
   font-family: var(--ff-data);
   font-size: 1.5rem;
+  font-weight: var(--fw-lightitalic);
   color: var(--clr-light);
   border-radius: 0.4em;
 }
@@ -1298,6 +1297,7 @@ figure {
   display: flex;
   font-family: var(--ff-data);
   font-size: 1.5rem;
+  font-weight: var(--fw-italic);
   color: var(--clr-light);
   border-radius: 0.4em;
 }
