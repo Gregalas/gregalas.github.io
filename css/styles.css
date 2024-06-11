@@ -68,37 +68,39 @@
   font-family: 'VulfMonoDemo-Regular';
   src: url('/fonts/VulfMonoDemo-Regular.woff2') format('woff2'),
        url('/fonts/VulfMonoDemo-Regular.woff') format('woff');
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'VulfMonoDemo-light';
   src: url('/fonts/VulfMonoDemo-LightItalic.woff2') format('woff2'),
        url('/fonts/VulfMonoDemo-LightItalic.woff') format('woff');
+  font-weight: 300; /* Light weight */
+  font-style: italic; /* Italic style */
 }
 
 @font-face {
   font-family: 'VulfSansDemo-LightItalic';
   src: url('/fonts/VulfSansDemo-LightItalic.woff2') format('woff2'),
        url('/fonts/VulfSansDemo-LightItalic.woff') format('woff');
+  font-weight: 300; /* Light weight */
+  font-style: italic; /* Italic style */
 }
 
 @font-face {
   font-family: 'VulfSansDemo-Light';
   src: url('/fonts/VulfSansDemo-Light.woff2') format('woff2'),
        url('/fonts/VulfSansDemo-Light.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'VulfSansDemo-Light';
-  src: url('/fonts/VulfSansDemo-Light.woff2') format('woff2'),
-       url('/fonts/VulfSansDemo-Light.woff') format('woff');
+  font-weight: 300; /* Light weight */
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'VulfSansDemo-Bold';
   src: url('/fonts/VulfSansDemo-Bold.woff2') format('woff2'),
        url('/fonts/VulfSansDemo-Bold.woff') format('woff');
-  font-weight: bold;
+  font-weight: 700; /* Bold weight */
   font-style: normal;
 }
 
@@ -106,31 +108,23 @@
   font-family: 'VulfSansDemo-BoldItalic';
   src: url('/fonts/VulfSansDemo-BoldItalic.woff2') format('woff2'),
        url('/fonts/VulfSansDemo-BoldItalic.woff') format('woff');
-  font-weight: bold; /* Typically 700 */
-  font-style: italic;
-}
-
-font-face {
-  font-family: 'VulfSansDemo-BoldItalic';
-  src: url('/fonts/VulfSansDemo-Regular.woff2') format('woff2'),
-       url('/fonts/VulfSansDemo-Regular.woff') format('woff');
-  font-weight: bold; /* Typically 700 */
-  font-style: italic;
+  font-weight: 700; /* Bold weight */
+  font-style: italic; /* Italic style */
 }
 
 @font-face {
   font-family: 'BatonNouveauTrial-Heavy';
   src: url('/fonts/BatonNouveauTrial-Heavy.woff2') format('woff2'),
        url('/fonts/BatonNouveauTrial-Heavy.woff') format('woff');
-  font-weight: bold; /* Typically 700 */
-  font-style: normal; /* Corrected from 'heavy' to 'normal' */
+  font-weight: 800; /* Heavy weight, typically 800 */
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'BatonNouveauTrial-Regular';
   src: url('/fonts/BatonNouveauTrial-Regular.woff2') format('woff2'),
        url('/fonts/BatonNouveauTrial-Regular.woff') format('woff');
-  font-weight: normal; /* Typically 400 */
+  font-weight: 400; /* Regular weight */
   font-style: normal;
 }
 
