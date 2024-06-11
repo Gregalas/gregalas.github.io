@@ -153,7 +153,7 @@
   --ff-secondary: 'BatonNouveauTrial-Medium', 'Graphik', sans-serif;
   --ff-tertiary: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
   --ff-caption: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
-  --ff-dataemphasis: 'VulfSansDemo-LightItalic', sans-serif;
+  --ff-dataemphasis: 'VulfSansDemo-LightItalic', 'Graphik', sans-serif;
   --ff-data: 'VulfMonoDemo-Regular', sans-serif;
 }
 
