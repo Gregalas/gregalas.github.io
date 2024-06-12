@@ -160,15 +160,18 @@
 :root {
   /* Font Weights */
   --fw-light: 300;
-  --fw-light-italic: 300; /* Corrected variable name, assuming 300 is the correct weight for the italic version */
+  --fw-lightitalic: 300;
   --fw-reg: 400;
   --fw-med: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
   --fw-black: 900;
 
+
   /* Font Styles */
-  --fs-italic: italic; /* Italic style */
+  --fs-italic: italic;
+
+
 
   /* Colors */
   --clr-light: #fff;
@@ -182,13 +185,14 @@
   --clr-background: #F4F2F1;
   --clr-ink: #090408;
 
-  /* Font Sizes – what you see at small sizes */
+  /* Font Sizes – what you see at small sizs */
   --fs-h1: 3.5rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.8rem;
   --fs-body: 1.2rem;
   --fs-caption: 1rem;
 }
+
 
 
 /* media queries for the text. What you see at full width ------------------------------------------------------------------------------------------------------ */
@@ -238,7 +242,7 @@ body {
 strong {
     font-weight: var(--fw-med);
     color: var(--clr-dark);
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     line-height: 1.4;
     margin: auto;
   }
