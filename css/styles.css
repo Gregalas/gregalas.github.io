@@ -80,6 +80,15 @@
   font-style: italic; /* Italic style */
 }
 
+
+@font-face {
+  font-family: 'VulfMonoDemo-LightItalic';
+  src: url('/fonts/VulfMonoDemo-LightItalic.woff2') format('woff2'),
+       url('/fonts/VulfMonoDemo-LightItalic.woff') format('woff');
+  font-weight: 300; /* Light weight */
+  font-style: italic; /* Italic style */
+}
+
 @font-face {
   font-family: 'VulfSansDemo-LightItalic';
   src: url('/fonts/VulfSansDemo-LightItalic.woff2') format('woff2'),
@@ -153,8 +162,8 @@
   --ff-secondary: 'BatonNouveauTrial-Medium', 'Graphik', sans-serif;
   --ff-tertiary: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
   --ff-caption: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
-  --ff-dataemphasis: 'VulfSansDemo-LightItalic', sans-serif;
-  --ff-data: 'VulfMonoDemo-Regular', sans-serif;
+  --ff-dataemphasis: 'VulfMonoDemo-LightItalic', 'Graphik', sans-serif;
+  --ff-data: 'VulfMonoDemo-Regular', 'Graphik', sans-serif;
 }
 
 :root {
@@ -763,8 +772,8 @@ position: relative;
 
 .numbered-list__item:before {
   position: absolute;
-  top: -0.3em;
-  left: 0.27em;
+  top: -0.2em;
+  left: 0.26em;
   display: block;
   content: counter(numbered);
   font-family: var(--ff-dataemphasis);
@@ -2076,8 +2085,8 @@ summary::-webkit-details-marker {
 /* For screens with a maximum width of 480px */
 @media only screen and (max-width: 480px) {
   .numbered-list__item:before {
-    top: -0.3em;
-    left: 0.27em;
+    top: -0.2em;
+    left: 0.26em;
     font-size: 2.5rem;
   }
 }
