@@ -243,7 +243,7 @@ body {
     font-family: var(--ff-tertiary);
     font-size: var(--fs-body);
     font-weight: var(--fw-reg);
-    line-height: 1.6;
+    line-height: 1.4;
     margin: auto;
 }
 
@@ -540,7 +540,7 @@ a:active {
     font-size: var(--fs-h3);
     font-weight: 400;
     max-width: 1400px;
-    margin: 0.2em 0 0.3em
+    margin: 0.2em 0em 0em 0.0em
 }
 
 
@@ -813,7 +813,7 @@ position: relative;
 
 
 .numbered-list__text {
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 
@@ -1709,9 +1709,10 @@ summary::-webkit-details-marker {
 
 .Pill {
   color: var(--clr-dark);
-  font-family: var(--ff-data);
-  font-size: 0.7em;
+  font-family: var(--ff-tertiary);
+  font-size: 0.6em;
   font-weight: var(--fw-reg);
+  text-transform: uppercase;
   white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden; /* Hide overflow text */
   text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
@@ -1730,7 +1731,7 @@ summary::-webkit-details-marker {
   flex-wrap: wrap; /* Allow pills to wrap when container width is exceeded */
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 0.5em;
+  gap: 0.3em;
 }
 
 
