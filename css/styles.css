@@ -777,7 +777,6 @@ position: relative;
   display: block;
   content: counter(numbered);
   font-family: var(--ff-dataemphasis);
-  font-weight: var(--fw-italic);
   font-size: 4rem;
 }
 
@@ -2077,6 +2076,7 @@ summary::-webkit-details-marker {
 /* For screens with a maximum width of 769px */
 @media only screen and (max-width: 769px) {
   .numbered-list__item:before {
+      font-family: var(--ff-dataemphasis);
       top: -0.3em;
       left: 0.27em;
       font-size: 2.5rem;
@@ -2086,6 +2086,7 @@ summary::-webkit-details-marker {
 /* For screens with a maximum width of 480px */
 @media only screen and (max-width: 480px) {
   .numbered-list__item:before {
+    font-family: var(--ff-dataemphasis);
     top: -0.2em;
     left: 0.26em;
     font-size: 2.5rem;
