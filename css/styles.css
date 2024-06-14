@@ -97,6 +97,7 @@
   font-style: italic; /* Italic style */
 }
 
+
 @font-face {
   font-family: 'VulfSansDemo-Light';
   src: url('/fonts/VulfSansDemo-Light.woff') format('woff2'),
@@ -231,6 +232,12 @@
 }
 /* End of media queries for the text */
 
+
+/* // Base styles for numbered-list__item */
+.numbered-list__item:before {
+  font-family: var(--ff-dataemphasis);
+  font-size: 2.5rem;
+}
 
 
 
@@ -547,7 +554,8 @@ a:active {
 
 
 .section__title {
-    font-family: var(--ff-primary);
+    /* font-family: var(--ff-primary); */
+    font-family: var(--ff-dataemphasis);
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
     line-height: 1.3;
@@ -771,12 +779,12 @@ position: relative;
 
 
 .numbered-list__item:before {
+  font-family: var(--ff-dataemphasis);
   position: absolute;
   top: -0.2em;
   left: 0.26em;
   display: block;
   content: counter(numbered);
-  font-family: var(--ff-dataemphasis);
   font-size: 4rem;
 }
 
