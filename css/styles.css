@@ -86,7 +86,7 @@
   src: url('/fonts/VulfMonoDemo-LightItalic.woff2') format('woff2'),
        url('/fonts/VulfMonoDemo-LightItalic.woff') format('woff');
   font-weight: 300; /* Light weight */
-  font-style: italic; /* Italic style */
+  font-style: LightItalic; /* Italic style */
 }
 
 @font-face {
@@ -180,6 +180,7 @@
 
   /* Font Styles */
   --fs-italic: italic;
+  --fs-lightitalic: LightItalic;
 
 
 
@@ -554,8 +555,7 @@ a:active {
 
 
 .section__title {
-    /* font-family: var(--ff-primary); */
-    font-family: var(--ff-dataemphasis);
+    font-family: var(--ff-primary);
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
     line-height: 1.3;
