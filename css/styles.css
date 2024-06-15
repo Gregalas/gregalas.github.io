@@ -861,17 +861,6 @@ ol, p, ul {
 /* End of list item css */
 
 
-/* Unordered lists */
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
 
 /* Start of nav */
 .navheader {
@@ -1505,7 +1494,7 @@ ul {
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: -20px;
+  margin-inline-start: -32px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
