@@ -2172,3 +2172,11 @@ summary::-webkit-details-marker {
   }
 }
 
+
+/* Media query for unordered lists */
+/* Media small screens */
+@media (max-width: 768px) {
+  ul {
+    margin-inline-start: -20px;
+  }
+}
