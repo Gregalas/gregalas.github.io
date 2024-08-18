@@ -182,7 +182,7 @@
 
 
   /* Colors */
-  --clr-light: #fff;
+  --clr-text-primary: #D4D4D4;
   --clr-dark: #2E2E2E;
   --clr-primary: #F8F5EF;
   --clr-accent: #FFEC42;
@@ -190,7 +190,8 @@
   --clr-accent-purple: #c94fe7;
   --clr-accent-blue: #506EEC;
   --clr-accent-orange: #f9a154;
-  --clr-background: #F4F2F1;
+  --clr-background-dark: #1A1A1A;
+  --clr-background-light: #D4D4D4;
   --clr-ink: #090408;
 
   /* Font Sizes – what you see at small sizs */
@@ -242,16 +243,14 @@
 
 
 /* General styles */
-body {
-    background: var(--clr-dark);
-    color: var(--clr-dark);
-    font-family: var(--ff-tertiary);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-reg);
-    line-height: 1.4;
-    margin: auto;
-}
 
+body {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  line-height: 1.4;
+  margin: auto;
+}
 
 strong {
     font-weight: var(--fw-med);
@@ -277,14 +276,14 @@ strong {
   
 
 
- /* Intro section for home - entier green container */
- .header {
+ /* Old header 16 Aug 2024 */
+ /* .header {
     padding-top: 4em;
     padding-bottom: 2em;
     background: var(--clr-primary);
     margin-bottom: 0em;
     margin: auto;
-}
+} */
 
  /* Intro section for projects - light container */
  .header-project {
@@ -336,8 +335,9 @@ strong {
 
 
 .page {
+
     transition: transform .2s ease-in-out;
-    background: var(--clr-light);
+    background: var(--clr-background);
     padding-top: 1em;
     padding-bottom: 2em;
 }
@@ -396,9 +396,36 @@ h3 { font-size: var(--fs-h3) }
 .nav { display: none; }
 
 
-/* Type styles */
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  max-width: 1920px; /* Max width constraint for the header */
+  height: 100vh; /* Full viewport height, adjust as needed */
+  margin: 0 auto; /* Center the header horizontally */
+  overflow: hidden; /* Ensure the image stays within the header area */
+  back
+}
 
-/* Page title */
+.header-background {
+  position: absolute; /* Position the image absolutely within the header */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image */
+  max-width: 100%; /* Ensure the image does not exceed the header width */
+  max-height: 100%; /* Ensure the image does not exceed the header height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+/* End of header image */
+
+
+/* Page title
 .section__introtitle {
   color: var(--clr-dark);
   font-family: var(--ff-primary);
@@ -409,7 +436,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
-/* Home - Image and Hi i'm Greg Schwartz... */
+Home - Image and Hi i'm Greg Schwartz...
 .intro {
     max-width: 78rem;
     min-width: 12rem;
@@ -418,13 +445,13 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
-/* Project intro block */
+Project intro block
 .intro--project {
   max-width: 68rem;
   min-width: 12rem;
   padding: 3.8em 2.8em 0em 2.8em; 
   margin: auto;
-}
+} */
 
 
 /* Project section block */
@@ -1189,30 +1216,48 @@ figure {
 
 
 
-/* footer start */
-.page--footer:before {
-    content: " ";
-    display: block;
+/* Ensure the pagefooter is positioned correctly and has a high z-index */
+.footer--header {
+  color: var(--clr-light); /* Text color */
+  margin: 0; /* Remove margin if needed */
+  padding-bottom: 2em; /* Padding to create space below the header */
+  font-family: var(--ff-body); /* Font family */
+  text-align: center; /* Center-align text */
+  z-index: 2; /* Ensure the header is above other content */
+  position: relative; /* Ensure it is positioned correctly within the footer */
+}
+
+.pagefooter {
+  position: relative;
+  padding: 1em 3em 3em;
+  background-color: #3498db; /* Background color for footer */
+  z-index: 1; /* Ensure the footer is above other content */
+}
+
+/* Style for the skewed shape */ 
+  .pagefooter::before {
+    content: "";
     position: absolute;
-    top: -2em;
-    bottom: -4em;
+    top: 0em;
     left: 0;
     right: 0;
-    transform: skewY(0deg);
-    background: var(--clr-dark);
-    
-
+    height: 14em;
+    background-color: #3498db;
+    transform: skewY(352deg);
+    transform-origin: top left;
+    z-index: 0;
+  }
+  
+/* Ensure footer content is above the skewed shape */
+.pagefooter-content {
+  position: relative;
+  z-index: 15; /* Ensure content is above the skewed shape and the footer background */
 }
 
-.page--footer  {
-    position: relative;
-    text-align: center;
-    margin-top: 3.5em;
-    margin-bottom: 1em;
-    height: 3em;
-    margin: auto;
-    
-}
+
+
+
+
 
 
 .flex--column {
@@ -1312,13 +1357,7 @@ figure {
 
 
 
-.footer--header {
-   color: var(--clr-light);
-   margin: auto;
-   padding-bottom: 2em;
-   font-family: var(--ff-body);
 
-}
 
 
 .projects {
