@@ -966,6 +966,11 @@ ol, p, ul {
     align-items: center;
 }
 
+.primarybutt img {
+  width: 90%; /* Scale the image to fit the container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
 .primarybutt button {
   margin-top: -5rem;
   display: flex;
