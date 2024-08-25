@@ -961,13 +961,13 @@ ol, p, ul {
 .primarybutt {
     position: absolute;
     top: 3em;
-    left: -19px;
+    left: 1px;
     display: inline-flex;
     align-items: center;
 }
 
 .primarybutt img {
-  width: 90%; /* Scale the image to fit the container */
+  width: 95; /* Scale the image to fit the container */
   height: auto; /* Maintain the aspect ratio */
 }
 
@@ -1914,7 +1914,7 @@ summary::-webkit-details-marker {
 @media (max-width: 920px) {
   .primarybutt {
     top: 1.5em; /* Adjust top position */
-    left: -32px; /* Adjust horizontal position */
+    left: -15px; /* Adjust horizontal position */
     width: 80%; /* Adjust width if needed */
   }
 
@@ -1933,7 +1933,7 @@ summary::-webkit-details-marker {
 @media (max-width: 768px) {
   .primarybutt {
     top: 1.5em; /* Adjust top position */
-    left: -20px; /* Adjust horizontal position */
+    left: -5px; /* Adjust horizontal position */
     width: 90%; /* Adjust width if needed */
   }
 
@@ -1951,8 +1951,8 @@ summary::-webkit-details-marker {
 /* Media query for screens around 480px */
 @media (max-width: 480px) {
   .primarybutt {
-    top: -25px; /* Adjust top position */
-    left: -17px; /* Adjust horizontal position */
+    top: -15px; /* Adjust top position */
+    left: -5px; /* Adjust horizontal position */
     width: 95%; /* Adjust width if needed */
   }
 
