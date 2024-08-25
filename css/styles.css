@@ -9,62 +9,6 @@
 /* Custom Properties, update these for your own design. What you see less than 800px width */
 /* Updated @font-face rule with multiple font weights */
 @font-face {
-  font-family: 'Graphik';
-  src: url('/fonts/graphik-regular-webfont.woff') format('woff'),
-       url('/fonts/graphik-regular-webfont.woff2') format('woff2');
-  font-weight: 400; /* Regular (400) weight */
-  font-style: normal; /* Normal (non-italic) style */
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('/fonts/graphik-medium-webfont.woff') format('woff'),
-       url('/fonts/graphik-medium-webfont.woff2') format('woff2');
-  font-weight: 500; /* Medium (500) weight */
-  font-style: normal; /* Normal (non-italic) style */
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('/fonts/graphik-semibold-webfont.woff') format('woff'),
-       url('/fonts/graphik-semibold-webfont.woff2') format('woff2');
-  font-weight: 600; /* Semi-Bold (600) weight */
-  font-style: normal; /* Normal (non-italic) style */
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('/fonts/graphik-bold-webfont.woff') format('woff'),
-       url('/fonts/graphik-bold-webfont.woff2') format('woff2');
-  font-weight: 700; /* Bold (700) weight */
-  font-style: normal; /* Normal (non-italic) style */
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('/fonts/graphik-black-webfont.woff') format('woff'),
-       url('/fonts/graphik-black-webfont.woff2') format('woff2');
-  font-weight: 900; /* Black (900) weight */
-  font-style: normal; /* Normal (non-italic) style */
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('/fonts/graphik-light-webfont.woff') format('woff'),
-       url('/fonts/graphik-light-webfont.woff2') format('woff2');
-  font-weight: 300; /* Light (300) weight */
-  font-style: normal; /* Normal (non-italic) style */
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('/fonts/graphik-lightitalic-webfont.woff') format('woff'),
-       url('/fonts/graphik-lightitalic-webfont.woff2') format('woff2');
-  font-weight: 300; /* Light (300) weight */
-  font-style: italic; /* Light italic style */
-}
-
-@font-face {
   font-family: 'VulfMonoDemo-Regular';
   src: url('/fonts/VulfMonoDemo-Regular.woff') format('woff'),
        url('/fonts/VulfMonoDemo-Regular.woff2') format('woff');
@@ -178,28 +122,47 @@
   --fw-black: 900;
 
 
+  --clr-backgroundlight: #D4D4D4;
+  --clr-backgrounddark: #1A1A1A;
+  --clr-text-light: #D4D4D4;
+  --clr-text-dark: #1A1A1A;
+  --clr-text-dark2: #404040;
+  --clr-text-link: #FA3457;
+  --clr-surface-light: #D4D4D4;
+  --clr-surface-dark: #1A1A1A;
+  --clr-surface-link: #FA3457;
+  --clr-surface-accent: #62F087;
+
+
+    /* Font Sizes – what you see at small sizes */
+    --fs-h1: 3.5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.8rem;
+    --fs-h4: 1.5rem;
+    --fs-body: 1.2rem;
+    --fs-caption: 1rem;
+  
+}
 
 
 
-  /* Colors */
-  --clr-light: #fff;
+
+
+  /* OldColors */
+  /* --clr-light: #D4D4D4;
   --clr-dark: #2E2E2E;
-  --clr-primary: #F8F5EF;
+  --clr-primary: #D4D4D4;
   --clr-accent: #FFEC42;
   --clr-accent-pink: #ec61ae;
   --clr-accent-purple: #c94fe7;
   --clr-accent-blue: #506EEC;
-  --clr-accent-orange: #f9a154;
-  --clr-background: #F4F2F1;
-  --clr-ink: #090408;
+  --clr-accent-orange: #FA3457;
+  --clr-background: #F4F2F1; */
 
-  /* Font Sizes – what you see at small sizs */
-  --fs-h1: 3.5rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.8rem;
-  --fs-body: 1.2rem;
-  --fs-caption: 1rem;
-}
+/* New colours */
+
+
+
 
 
 
@@ -228,11 +191,16 @@
     --fs-caption: 1rem;
   }
 }
-/* End of media queries for the text */
+
+
+
+
+
 
 
 /* // Base styles for numbered-list__item */
 .numbered-list__item:before {
+  color: var(--clr-text-dark);
   font-family: var(--ff-dataemphasis);
   font-size: 2.5rem;
 }
@@ -242,8 +210,36 @@
 
 
 /* General styles */
+
+/* Captions */
+.caption_regular {
+  font-family: var(--ff-tertiary);
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-caption);
+  line-height: 1.4;
+}
+
+.body__paragraph {
+  color: var(--clr-text-light);
+  font-family: var(--ff-tertiary);
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-body);
+  line-height: 1.4;
+}
+
+
+.title_small {
+  color: var(--clr-dark);
+  font-family: var(--ff-tertiary);
+  font-weight: var(--fw-med);
+  font-size: var(--fs-h3);
+  padding-top: 1rem;
+  line-height: 1;
+}
+
+
 body {
-    background: var(--clr-dark);
+    background-color: var(--clr-surface-dark);
     color: var(--clr-dark);
     font-family: var(--ff-tertiary);
     font-size: var(--fs-body);
@@ -274,24 +270,80 @@ strong {
   }
 
   
-  
+  .text-inversedark {
+    color: var(--clr-text-dark); 
+  }
 
 
- /* Intro section for home - entier green container */
- .header {
-    padding-top: 4em;
-    padding-bottom: 2em;
-    background: var(--clr-primary);
-    margin-bottom: 0em;
-    margin: auto;
+/* Home Intro block */
+.header {
+  padding: 2em 2em 8em 2em; /* top right bottom left */
+  background-color: var(--clr-backgrounddark);
+  margin-bottom: 6em;
+  margin: auto;
+}
+
+.header-logo {
+  display: block;
+  max-width: 1400px; /* Set the maximum width of the image */
+  width: 100%; /* Scale image with screen size */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position relative to the intro */
+  top: calc(35rem); /* Position below the intro content */
+  left: 50%;
+  transform: translateX(-50%); /* Center the image */
+}
+
+
+
+/* Intro container */
+.intro {
+  background-color: var(--clr-backgrounddark);
+  width: 100%; /* Full width of its container */
+  max-width: 1400px; /* Maximum width */
+  min-width: 320px; /* Minimum width */
+  height: 75rem; /* Minimum height to ensure it's tall enough on large screens */
+  margin: 2em auto; /* Margins around the container */
+  padding: 6rem; /* Padding inside the container */
+  border-radius: 32px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width */
+  position: relative;
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+/* Content inside the intro */
+.intro-content {
+  color: var(--clr-text-light);
+  max-width: 560px; /* Maximum width for the content */
+  padding-left: 1rem;
+  margin: 0; /* Align content to the left */
+  text-align: left; /* Ensure text is left-aligned */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+
+
+
+
+
+
+
+/* Container for title and body paragraph */
+.title-body-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the left */
+  gap: 0.2em; /* Space between elements */
 }
 
  /* Intro section for projects - light container */
  .header-project {
-  padding-top: 2em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
-  margin: auto;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    margin: auto;
 }
 
 
@@ -337,7 +389,7 @@ strong {
 
 .page {
     transition: transform .2s ease-in-out;
-    background: var(--clr-light);
+    background: var(--clr-backgrounddark);
     padding-top: 1em;
     padding-bottom: 2em;
 }
@@ -396,7 +448,6 @@ h3 { font-size: var(--fs-h3) }
 .nav { display: none; }
 
 
-/* Type styles */
 
 /* Page title */
 .section__introtitle {
@@ -409,13 +460,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
-/* Home - Image and Hi i'm Greg Schwartz... */
-.intro {
-    max-width: 78rem;
-    min-width: 12rem;
-    padding: 1em 3em;
-    margin: auto;
-}
+
 
 
 /* Project intro block */
@@ -437,6 +482,15 @@ h3 { font-size: var(--fs-h3) }
 
 
 /* Icon styles */
+
+
+/* Style for 2pixel icon */
+.icon-2pixel {
+  width: 16px; /* Adjust the width as needed */
+  height: 16px; /* Adjust the height as needed */
+  display: block; /* Ensures the icon behaves as a block element */
+}
+
 .u-nowrap {
   white-space: nowrap;
 }
@@ -503,7 +557,7 @@ a {
   color: var(--clr-dark);
   -webkit-text-decoration-style: wavy;
   text-decoration-style: wavy;
-  text-decoration-color: var(--clr-accent-orange);
+  text-decoration-color: var(--clr-text-link);
   text-underline-offset: 0.15em;
   text-decoration-thickness: 0.04em;
   -webkit-text-decoration-skip: ink;
@@ -552,6 +606,7 @@ a:active {
 
 
 .section__title {
+    color: var(--clr-text-light);
     font-family: var(--ff-primary);
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
@@ -647,6 +702,7 @@ position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--clr-surface-dark);
 }
 
 
@@ -654,16 +710,15 @@ position: relative;
   text-transform: uppercase;
   font-family: var(--ff-caption);
   font-size: var(--fs-h3);
-  color: var(--clr-dark);
+  color: var(--clr-text-light);
   font-size: 60%;
-  /* font-weight: var(--fw-bold); */
   padding: 0.5em 1em;
   transform: skewY(-2deg);
-  border-top: 2px solid var(--clr-dark);
-  border-bottom: 2px solid var(--clr-dark);
+  border-top: 2px solid var(--clr-surface-light);
+  border-bottom: 2px solid var(--clr-text-light);
   max-width: 60%;
   margin: -1.5em -1px 0 0;
-  background: var(--clr-light);
+  background: var(--clr-surface-dark);
   letter-spacing: -.025em;
 }
 
@@ -672,16 +727,15 @@ position: relative;
   text-transform: uppercase;
   font-family: var(--ff-caption);
   font-size: var(--fs-h3);
-  color: var(--clr-dark);
   font-size: 60%;
   /* font-weight: var(--fw-bold); */
   padding: 0.5em 1em;
   transform: skewY(-2deg);
-  border-top: 2px solid var(--clr-dark);
-  border-bottom: 2px solid var(--clr-dark);
+  border-top: 2px solid var(--clr-surface-light);
+  border-bottom: 2px solid var(--clr-surface-light);
   max-width: 60%;
   margin: -1.5em -1px 0 0;
-  background: var(--clr-light);
+  background: var(--clr-surface-dark);
   letter-spacing: -.025em;
 }
 
@@ -700,15 +754,14 @@ position: relative;
   text-transform: uppercase;
   font-family: var(--ff-caption);
   font-size: var(--fs-h3);
-  color: var(--clr-dark);
   font-size: 60%;
   padding: 0.5em 1em;
   transform: skewY(-2deg);
-  border-top: 2px solid var(--clr-dark);
-  border-bottom: 2px solid var(--clr-dark);
+  border-bottom: 2px solid var(--clr-surface-light);
+  border-bottom: 2px solid var(--clr-surface-light);
   max-width: 60%;
   margin: -1.5em -1px 0 0;
-  background: var(--clr-light);
+  background: var(--clr-surface-dark);
   letter-spacing: -.025em;
 }
 
@@ -717,15 +770,15 @@ position: relative;
   text-transform: uppercase;
   font-family: var(--ff-caption);
   font-size: var(--fs-h3);
-  color: var(--clr-dark);
+  color: var(--clr-text-light);
   font-size: 60%;
   padding: 0.5em 1em;
   transform: skewY(-2deg);
-  border-top: 2px solid var(--clr-dark);
-  border-bottom: 2px solid var(--clr-dark);
+  border-top: 2px solid var(--clr-surface-light);
+  border-bottom: 2px solid var(--clr-surface-light);
   max-width: 60%;
   margin: -1.5em -1px 0 0;
-  background: var(--clr-light);
+  background: var(--clr-surface-dark);
   letter-spacing: -.025em;
 }
 /* end of captioned videos */
@@ -796,7 +849,7 @@ position: relative;
     height: 2.5em;
     transform: skew(-20deg) rotate(-8deg);
     border-radius: 2em;
-    background: #afeeee;
+    background-color: var(--clr-surface-accent);
     z-index: -1;
 }
 
@@ -817,6 +870,7 @@ position: relative;
 
 
 .numbered-list__text {
+    font-family: var(--ff-tertiary);
     line-height: 1.4;
 }
 
@@ -853,7 +907,7 @@ ol, ul {
 ol, p, ul {
     font-size: 120%;
     font-size: var(--font-small);
-    margin: 0 0 1em;
+    margin: 0 0 0em;
     padding: 0em;
     line-height: 1.4;
     letter-spacing: -.015em;
@@ -868,7 +922,7 @@ ol, p, ul {
   padding: 0px 16px;
   position: absolute;
   /* background-color: var(--clr-accent); */
-  z-index: 1;
+  z-index: 1000;
   position: sticky;
   top: 0;
 }
@@ -878,19 +932,19 @@ ol, p, ul {
   transition: background-color 0.3s ease;
 }
 
-.navheader::before {
-  content: '';
-  display: block;
-  height: 5em;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  /* border-bottom: solid #e4e1d9; */
-  background-color: #f8f5ef00;
-  transform: skew(0, 0deg);
-  transform-origin: top left;
+
+  .navheader::before {
+    content: '';
+    display: block;
+    height: 3.5em;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: var(--clr-text-dark2);
+    transform: skew(0, -1deg);
+    transform-origin: top left;
 }
 
 
@@ -903,38 +957,24 @@ ol, p, ul {
     text-align: center;
 }
 
-.primarybutt button {
-  /* Your existing button styles here */
-  text-decoration-line: none;
-  text-decoration-style: none;
-}
 
 .primarybutt {
     position: absolute;
-    top: 2em;
-    left: 1em;
+    top: 3em;
+    left: -19px;
     display: inline-flex;
     align-items: center;
 }
 
 .primarybutt button {
-  margin-top: -10px;
+  margin-top: -5rem;
   display: flex;
   justify-content: flex-start; /* Align content to the left */
   align-items: center;
   padding: 0.2rem 1rem;
-  border-radius: 1rem;
-  background: #ffec4200;
-  font-family: var(--ff-primary);
-  font-weight: var(--fw-reg);
-  /* font-style: var(--font-style-italic); */
-  border: none; /* Remove the border */
-  font-size: 20px; /* Change the font size */
-  text-transform: uppercase; /* Apply text transform */
-  text-decoration: none; /* Remove text underline */
-  color: var(--clr-dark); /* Text color */
+  background-color: transparent;
+  border-color: transparent;
   cursor: pointer;
-
   /* Add the transition property to control the animation behavior */
   transition: all 0.2s ease;
 }
@@ -942,20 +982,7 @@ ol, p, ul {
 
 
 
-
-.primarybutt img {
-  /* Adjust the custom icon styles here, if needed */
-  /* Do not set width and height to 100% */
-  margin-right: 8px; /* Adjust the margin as per your desired spacing */
-  vertical-align: middle; /* Align the icon vertically within the button */
-}
-
-
-
-    
-
-
-
+  
 
   /* Style the active/current link*/
   a.active {
@@ -963,10 +990,10 @@ ol, p, ul {
     text-decoration-line: underline;
     -webkit-text-decoration-style: wavy;
     text-decoration-style: wavy;
-    -webkit-text-decoration-color: var(--clr-dark);
-    text-decoration-color: var(--clr-dark);
-    color: var(--clr-accent-orange);
-    background-color: var(--clr-accent);
+    -webkit-text-decoration-color: var(--clr-text-link); /* Underline color */
+    text-decoration-color: var(--clr-text-link); /* Ensure the underline color applies */
+    color: var(--clr-text-light); /* Text color */
+    background-color: var(--clr-backgroundlight); /* Background color */
   }
   
   
@@ -1190,28 +1217,33 @@ figure {
 
 
 /* footer start */
-.page--footer:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: -2em;
-    bottom: -4em;
-    left: 0;
-    right: 0;
-    transform: skewY(0deg);
-    background: var(--clr-dark);
-    
-
+.pagefooter {
+  position: relative;
+  padding: 1em 1em 4em;
+  background-color: var(--clr-surface-light);
+  z-index: 1; /* Ensure the footer is above other content */
 }
 
-.page--footer  {
-    position: relative;
-    text-align: center;
-    margin-top: 3.5em;
-    margin-bottom: 1em;
-    height: 3em;
-    margin: auto;
-    
+
+/* Style for the skewed shape */ 
+.pagefooter::before {
+  content: "";
+  position: absolute;
+  top: -2em; /* Adjust this value to move the shape higher */
+  left: 0;
+  right: 0;
+  height: 14em;
+  background-color: var(--clr-surface-light);
+  transform: skewY(358deg);
+  transform-origin: top left;
+  z-index: 0;
+}
+
+  
+/* Ensure footer content is above the skewed shape */
+.pagefooter-content {
+  position: relative;
+  z-index: 15; /* Ensure content is above the skewed shape and the footer background */
 }
 
 
@@ -1245,80 +1277,130 @@ figure {
 
 
 
+/* Footer Container */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+/* Footer Image */
+.footer-symbol {
+  width: 400px; /* Initial size for the image */
+  height: auto;
+  z-index: 10;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer Header */
+.footer--header {
+  font-family: var(--ff-tertiary);
+  color: var(--clr-text-dark); /* Text color */
+  margin: 0; /* Remove margin if needed */
+  padding-bottom: 1em; /* Padding to create space below the header */
+  text-align: center; /* Center-align text */
+  z-index: 2; /* Ensure the header is above other content */
+  position: relative; /* Ensure it is positioned correctly within the footer */
+}
+
 /* Start of contact card */
 .contact-card {
-  display: row;
+  display: flex; /* Use flex instead of row for proper alignment */
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0 0.25em 0.5em;
   padding: 1em 1.25em;
-  border: 2px solid #474747;
+  border: 2px solid var(--clr-surface-dark); /* Fixed border size */
   max-width: 380px; 
   min-width: 380px;
   position: relative;
   text-decoration: none;
-  transition: border-color .2s ease;
+  transition: border-color .2s ease; /* Only transition the border color */
 }
-
-
 
 .contact-card:hover {
-  display: row;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 0.25em 0.5em;
-  padding: 1em 1.25em;
-  border: 2px solid var(--clr-accent-orange);
-  max-width: 380px; 
-  min-width: 380px;
-  position: relative;
-  text-decoration: none;
-  transition: border-color .2s ease;
+  border-color: var(--clr-accent-orange); /* Change border color on hover */
 }
 
-
-
+/* Additional card styles */
 .contact-card__type {
   text-transform: uppercase;
   font-weight: var(--fw-reg);
   font-family: var(--ff-caption);
   font-size: 66%;
-  color: var(--clr-light);
+  color: var(--clr-text-dark);
 }
 
-.contact-card--email {
+.contact-card--email, .contact-card--linkedin {
   flex-direction: column;
   display: flex;
   font-family: var(--ff-data);
   font-size: 1.5rem;
   font-weight: var(--fw-lightitalic);
-  color: var(--clr-light);
+  color: var(--clr-text-dark);
   border-radius: 0.4em;
 }
-
-.contact-card--linkedin {
-  flex-direction: column;
-  display: flex;
-  font-family: var(--ff-data);
-  font-size: 1.5rem;
-  font-weight: var(--fw-italic);
-  color: var(--clr-light);
-  border-radius: 0.4em;
-}
-
 /* End of contact card */
 
+/* Media Queries */
+/* Medium screens */
+@media only screen and (max-width: 1000px) {
+  .footer-container {
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+  }
 
+  .footer-symbol {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
 
-.footer--header {
-   color: var(--clr-light);
-   margin: auto;
-   padding-bottom: 2em;
-   font-family: var(--ff-body);
+  .contact-card {
+    max-width: 280px; 
+    min-width: 280px;
+  }
 
+  .contact-card--email, .contact-card--linkedin {
+    font-size: 1.2rem; /* Smaller font size for smaller screens */
+  }
 }
+
+/* Small screens */
+@media only screen and (max-width: 480px) {
+
+    .footer-container {
+      flex-direction: column; 
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+  .footer-symbol {
+    width: 150px;
+  }
+
+  .contact-card {
+    max-width: 280px; 
+    min-width: 280px;
+  }
+
+  .contact-card--email, .contact-card--linkedin {
+    font-size: 1rem; /* Even smaller font size for mobile screens */
+  }
+}
+/* end of footer */
+
+
+
 
 
 .projects {
@@ -1527,7 +1609,7 @@ ul {
   position:absolute;
   top: 4.5em;
   right: 0.5em;
-  z-index: 999; /* ensures no menu items are selected */
+  z-index: 2000; /* ensures no menu items are selected */
 }
 
 
@@ -1579,10 +1661,12 @@ details > summary:first-of-type {
   right: 1.5em;
   text-indent: -999em;
   transition: transform .2s ease;
+
 }
 
 .site-nav[open] .site-nav__button-line1 {
   transform: translateY(0.2em) rotate(45deg);
+
 }
 
 
@@ -1593,10 +1677,11 @@ details > summary:first-of-type {
   top: 1rem;
   left: 0;
   right: 0;
-  border-top: 2px solid var(--clr-ink);
+  border-top: 2px solid var(--clr-surface-dark);
   transform-origin: center;
   transition: all .2s ease;
   z-index: 1;
+
 }
 
 .site-nav[open] .site-nav__button-line2 {
@@ -1617,6 +1702,7 @@ details > summary:first-of-type {
   width: 3em;
   height: 3em;
   border: none; /* Add a 1px solid border with a color of your choice */
+  background-color: var(--clr-surface-light)
 }
 
 
@@ -1657,14 +1743,14 @@ ol, ul {
   text-decoration: none;
   padding: 0.5em 1em 0.3em;
   display: block;
-  background: var(--clr-ink);
-  border-bottom: 0.5rem solid var(--clr-light);
+  background: var(--clr-surface-light);
+  border-bottom: 0.5rem solid var(--clr-surface-dark);
   transition: transform .1s ease;
-  color: var(--clr-light);
+  color: var(--clr-text-dark);
 }
 
 a:hover {
-  color: var(--clr-accent-orange);
+  color: var(--clr-text-link);
   text-decoration-color: var(--color-pink);
 }
 
@@ -1701,8 +1787,8 @@ summary::-webkit-details-marker {
 
 
 .Pill {
-  color: var(--clr-dark);
-  font-family: var(--ff-tertiary);
+  color: var(--clr-text-light);
+  font-family: var(--ff-caption);
   font-size: 0.6em;
   font-weight: var(--fw-reg);
   text-transform: uppercase;
@@ -1711,7 +1797,7 @@ summary::-webkit-details-marker {
   text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
   padding: 10px 20px;
   border-radius: 6.25rem; /* Applies a circular border */
-  border: 1px solid #000; /* 1px solid black border */
+  border: 1px solid var(--clr-text-dark2); /* 1px solid black border */
   display: inline-block;
   height: 100%; 
   max-width: 100%; /* Allow pills to wrap when container width is exceeded */
@@ -1728,12 +1814,27 @@ summary::-webkit-details-marker {
 }
 
 
+/* Header and intro block media queries */
 
-@media (max-width: 65em) {
+@media screen and (max-width: 768px) {
   .intro {
-    padding: 0.8em 1em;
+    height: 70vh; /* Adjust the height to 70% of the viewport height */
+    min-height: 32rem; /* Ensure the minimum height */
+    padding: 1rem; /* General padding */
+    padding-top: 3rem; /* Additional padding at the top */
   }
 }
+
+
+
+/* Media query for small screens (mobile devices) */
+@media (max-width: 480px) {
+  .header {
+    padding: 2em 1em 4em 1em; /* Further decrease padding */
+  }
+}
+
+
 
 
 @media (max-width: 65em) {
@@ -1803,86 +1904,165 @@ summary::-webkit-details-marker {
   }
 
 
+  /* Media queries for Greg icon in the top */
+/* Media query for screens around 920px */
+@media (max-width: 920px) {
+  .primarybutt {
+    top: 1.5em; /* Adjust top position */
+    left: -32px; /* Adjust horizontal position */
+    width: 80%; /* Adjust width if needed */
+  }
 
+  .primarybutt button {
+    padding: 0.15rem 0.8rem; /* Adjust padding */
+    margin-top: -35px; /* Adjust margin-top */
+    margin-left: 0.5em; /* Adjust horizontal position */
+  }
 
-
-
-@media only screen and (max-width: 767px) {
-  .contact-card {
-    flex-direction: column;
-    display: flex;
-    max-width: 280px; 
-    min-width: 280px;
+  .primarybutt img {
+    width: 80%; /* Adjust image size */
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .contact-card {
-    flex-direction: column;
-    display: flex;
-    max-width: 280px; 
-    min-width: 280px;
-  }
-}
-
-
-/* Media query for tablets and smaller devices */
+/* Media query for screens around 768px */
 @media (max-width: 768px) {
-  .contact-card--email, .contact-card--linkedin {
-    font-size: 1.2rem; /* Smaller font size for smaller screens */
+  .primarybutt {
+    top: 1.5em; /* Adjust top position */
+    left: -20px; /* Adjust horizontal position */
+    width: 90%; /* Adjust width if needed */
+  }
+
+  .primarybutt button {
+    padding: 0.1rem 0.6rem; /* Adjust padding */
+    margin-top: -20px; /* Adjust margin-top */
+    margin-left: 0.4em; /* Adjust horizontal position */
+  }
+
+  .primarybutt img {
+    width: 70%; /* Adjust image size */
   }
 }
 
-/* Media query for mobile devices */
+/* Media query for screens around 480px */
 @media (max-width: 480px) {
-  .contact-card--email, .contact-card--linkedin {
-    font-size: 1rem; /* Even smaller font size for mobile screens */
+  .primarybutt {
+    top: -25px; /* Adjust top position */
+    left: -17px; /* Adjust horizontal position */
+    width: 95%; /* Adjust width if needed */
+  }
+
+  .primarybutt button {
+    padding: 0.1rem 0.5rem; /* Adjust padding */
+    margin-top: 35px; /* Adjust margin-top */
+    margin-left: 0.3em; /* Adjust horizontal position */
+  }
+
+  .primarybutt img {
+    width: 60%; /* Adjust image size */
   }
 }
 
 
 
 
-  /* Media queries for logo */
- /* Medium screens */
-@media screen and (max-width: 768px) {
-  .logo {
-    font-size: 2rem;
-    line-height: 1.9;
-    padding: 0.2em 1em 0.5em;
-    left: 1.5em;
-  }
 
+/* Media queries for header section and innner content */
+.header {
+  padding: 2em 2em 8em 2em; /* top right bottom left */
+  background-color: var(--clr-backgrounddark);
+  margin-bottom: 6em; /* Ensure proper margin below the header */
+  margin: auto; /* Center the header block horizontally */
+}
 
-
-  .logo__name {
-    font-size: 1rem;
-  }
-
-  .logo__byline {
-    font-size: 0.8rem;
+/* Media queries for header block */
+@media (max-width: 1230px) {
+  .header {
+    padding: 1.5em 1.5em 2em 1.5em; /* top right bottom left */
   }
 }
 
-/* Small screens */
-@media screen and (max-width: 480px) {
-  .logo {
-    font-size: 1rem;
-    line-height: 1.9;
-    padding: 0.2em 1em 0.2em 1em;
-    left: 1em;
-  }
-
-  .logo__name {
-    font-size: 0.8rem;
-    padding-top: 1em;
-  }
-
-  .logo__byline {
-    font-size: 0.8rem;
-    
+@media (max-width: 920px) {
+  .header {
+    padding: 1em 1em 5em 1em; /* top right bottom left */
+    margin-bottom: 4em; /* Adjust margin below the header */
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1em 1em 4em 1em; /* top right bottom left */
+    margin-bottom: 0em; /* Adjust margin below the header */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75em 0.75em 0em 0.75em; /* top right bottom left */
+    margin-bottom: 0em; /* Adjust margin below the header */
+  }
+}
+
+
+
+@media (max-width: 920px) {
+  .header-logo {
+    top: calc(35rem); /* Adjust position for screens around 920px */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-logo {
+    top: calc(25rem); /* Adjust position for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo {
+    top: calc(24rem); /* Adjust position for small screens */
+  }
+}
+
+/* Media query for intro content */
+@media (max-width: 920px) {
+  .intro {
+    height: 65vh; /* Adjust height for screens around 920px */
+    min-height: 50rem; /* Adjust minimum height for screens around 920px */
+    padding: 6rem 2rem 2rem 2rem; /* top right bottom left */
+  }
+
+  .intro-content {
+    margin: 0.75rem; /* Adjust margin for screens around 920px */
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    height: 70vh; /* Adjust height for smaller screens */
+    min-height: 55rem; /* Adjust minimum height for medium screens */
+    padding: 6rem 1rem 1rem 1rem; /* top right bottom left */
+  }
+
+  .intro-content {
+    max-width: 80%; /* Allow the content to take up the full width on medium screens */
+    margin: 1rem; /* Reduce margin around the content for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    height: 60vh; /* Adjust height for very small screens */
+    min-height: 36rem; /* Adjust minimum height for small screens */
+    padding: 5rem 0rem 0rem 0rem; /* top right bottom left */
+  }
+
+  .intro-content {
+    max-width: 100%; /* Allow the content to take up the full width on small screens */
+    margin: 0.5rem; /* Further reduce margin around the content for small screens */
+  }
+}
+
+
+
 
 
 
@@ -1894,6 +2074,7 @@ summary::-webkit-details-marker {
     max-width: 100%;
   }
 }
+
 
 
 
@@ -2137,21 +2318,6 @@ summary::-webkit-details-marker {
 
 
 
-/* Greg icon media query */
-/* Small screens */
-@media screen and (max-width: 480px) {
-  .primarybutt {
-    left: -0.5em; /* Adjust the left position for small screens */
-  }
-}
-
-/* Large screens */
-@media screen and (max-width: 1040px) {
-  .primarybutt {
-    left: 0.1em; /* Reset the left position for large screens */
-  }
-}
-
 
 
 
@@ -2180,3 +2346,33 @@ summary::-webkit-details-marker {
     margin-inline-start: -20px;
   }
 }
+
+
+
+
+/* media quesries for Title_small */
+/* Media query for screens 920px and below */
+@media (max-width: 920px) {
+  .title_small {
+    font-size: var(--fs-h3); /* Adjust font size for screens around 920px */
+    padding-top: 0.75rem; /* Adjust top padding */
+  }
+}
+
+/* Medium screens (768px and below) */
+@media (max-width: 768px) {
+  .title_small {
+    font-size: var(--fs-h3); /* Adjust font size for medium screens */
+    padding-top: 0.5rem; /* Adjust top padding */
+  }
+}
+
+/* Small screens (480px and below) */
+@media (max-width: 480px) {
+  .title_small {
+    font-size: var(--fs-h4); /* Adjust font size for small screens */
+    padding-top: 0.5rem; /* Adjust top padding */
+  }
+}
+
+/* End of media queries for the text */
