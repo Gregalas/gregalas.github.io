@@ -335,7 +335,7 @@ strong {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   align-items: flex-start; /* Align items to the left */
-  gap: 0.2em; /* Space between elements */
+  gap: 1em; /* Space between elements */
 }
 
  /* Intro section for projects - light container */
