@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F1FP48J2Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6F1FP48J2Q');
+  </script>
+
+  <!-- Add a script for handling clicks outside a navigation menu -->
+  <script>
+    document.addEventListener('click', function(e) {
+      if (!document.querySelector('.site-nav__menu').contains(e.target)) {
+        document.querySelector('.site-nav__menu').removeAttribute('open');
+      }
+    });
+  </script>
+
+  <!-- Password Protection Script -->
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("passwordInput").value;
+      if (password === "HeyGreg1234") {
+        document.getElementById("loginOverlay").style.display = "none";
+        document.getElementById("pageContent").style.display = "block";
+      } else {
+        alert("Wrong password. Please try again.");
+      }
+    }
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greg Schwartz – Super Natural Design</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg"  href="images/favicon_io/Greg Icon.svg">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLsFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet (Update with your own fonts and styles) -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Login Overlay -->
+  <div id="loginOverlay">
+    <div id="loginForm">
+      <h2>Add the secret password</h2>
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button onclick="checkPassword()">Enter</button>
+    </div>
+  </div>
+
+  <!-- Page Content (initially hidden) -->
+  <div id="pageContent" style="display:none;">
+    <!-- start of nav -->
+    <div class="navheader">
+      <div class="primarybutt">
+        <a href="index.html" class="undecorated txt--normal backlink"> 
+          <button><img src="images/Greg Icon.svg" alt="Greg's Icon"><span id="buttonText"></span></button>
+        </a>
+      </div>
+
+      <div class="navheader-right">
+        <details class="site-nav" data-controller="nav" closed="">
+        <summary for="menu">
+          <div class="site-nav__button">"Menu "<span class="site-nav__button-line1"></span> 
+          <span class="site-nav__button-line2"></span> 
+          <span class="site-nav__button-bg"></span></div>
+        </summary>
+        
+        <ul class="site-nav__menu">
+          <li class="site-nav__item site-nav__item--home"><a href="index.html" class="site-nav__link">Home</a></li>
+          <li class="site-nav__item"><a href="Recentprojects.html" class="site-nav__link">Projects</a></li>
+          <li class="site-nav__item"><a href="About me.html" class="site-nav__link">About</a></li>
+          <li class="site-nav__item"><a href="Inspo.html" class="site-nav__link">Inspiration</a></li>
+        </ul>
+        
+        </details>
+      </div>
+    </div>
+    <!-- End of navigation --> 
+
+
+    <!-- Page content -->
+    <section class="page">
+      <div class="page__content">
+        <!-- Project Header -->
+        <div class="header-project">
+          <div class="arrowlink">
+            <a href="Recentprojects.html" class="undecorated txt--normal backlink">← All Projects</a>
+          </div>
+          <h1 class="section__introtitle">Torc</h1>
+          <p class="section__introsubtitle">Reinventing Tech Recruitment</p>
+        </div>
+        <!-- Rest of your project content -->
+        
+        <!-- Header image -->
+        <div class="largeimage__content">
+          <figure class="captioned-image"><img src="images/Project_Torc/Torc_intro.png"></figure>
+        </div>
+
+<!-- Main header - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__subtitle">Project Overview</h2>
+  <body class="body__paragraph">We started off 2025 with my first big project of the year - helping Torc shape the future of recruitment for tech builders by reimagining their digital talent marketplace. What makes Torc different is that they actually match talent with jobs based on their skills, as opposed to the feeding frenzy that's created by traditional job boards like LinkedIn or Indeed. So on all sides of the marketplace, things become more streamlined – Talent are served jobs they actually care about and have a good chance of landing, and recruiters in turn receive high quality talent for them to place.
+  </body>
+
+  <h2 class="section__subtitle">What I did</h2>
+  <body class="body__paragraph">Being the product design lead on this one, my main objective was to ensure the overall success of the project, at a Metalab and client level. I've been involved in all stages of the project, mainly focused in the day to day of the product, but also overseeing and art directing the visual direction for the website alongside Matt, our exec design director.
+  </body>
+  <div class="PillStack">
+    <div class="Pill">Product Leadership</div>
+    <div class="Pill">UX Research</div>
+    <div class="Pill">UI Design</div>
+    <div class="Pill">Workshop Facilitation</div>
+    <div class="Pill">Art Direction</div> 
+  </div>
+</div>
+<!-- End of project section -->
+
+<div class="container">
+  <div class="spacer"></div>
+</div>
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__subtitle">The Challenge</h2>
+  <body class="body__paragraph">Our initial scope for this project was focused around designing a vision for the talent profile that we'd eventually take into development and help Torc build over the next few months. Being a marketplace, one of the big challenges was to think about the talent, community and multiple personas on the Torc's side at all levels of the product. Bearing in mind that much of what we designed didn't exist, just the data that we could leverage, we also needed to build features and systems that create lasting engagement beyond job hunting, how to build a Torc community, and of course how to really differentiate the platform in a way that Torc could position themselves as serious contenders alongside the big dogs and avoid another clone war.
+    <br><br>
+    At the same time, we're also designing Torc's marketing site with a completely new visual direction which we could then translate to the new product experience. Torc was recently acquired by a massive talent company called Randstad, which has also meant that we had a slightly more nuanced stakeholder dynamic to manage.
+  </body>
+</div>
+<!-- End of project section -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_profile.png">
+  <figcaption>PRODUCT DESIGN CONCEPT FOR THE TORC PLATFORM</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__subtitle">REH and Research</h2>
+  <body class="body__paragraph">After a 31 hr flight and several litres of New England's finest java, we kicked things off in Boston where I got to facilitate a 3-day workshop with the goal of consuming as much knowledge about the product and business as possible, and of course getting to know our awesome client team.
+  <br><br>
+  We've since run a 2 week research sprint where I worked in tandem with a UX researcher to generate concepts and learn where and how we could make the most impact for Torc over the coming months. Based on some initial hypotheses packaged in what we call an REH (Ridiculously Early Hypothesis) This basically involves me whipping quick sketch concepts that we can test and get feedback on. I love this phase of the project as it allows me to really innovate and push things without constraints while really getting to understand the problems we need to solve.
+  </body>
+</div>
+<!-- End of project section -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_research.png">
+  <figcaption>OUR TEAM CONDUCTING RESEARCH SESSIONS</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__subtitle">Defining the vision</h2>
+  <body class="body__paragraph">Our research centered around two big questions. The first was understanding if our hypothesis of creating Career Hub that goes beyond job hunting was the right approach. We saw this as a way of building a long-term home base for Talent and setting a new standard in the industry. The other was how we should be position the profile considering that we knew we needed to move away from a static resume type approach to something more dynamic that tells a more vivid story about a candidate.
+  </body>
+</div>
+<!-- End of project section -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_Taskconcept.png">
+  <figcaption>A CAREER HUB CONCEPT FOCUSED AROUND TASK ORIENTED UI</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_Growthconcept.png">
+  <figcaption>A CAREER HUB CONCEPT FOCUSING ON GROWTH</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__subtitle">Designing for different sides of the marketplace</h2>
+  <body class="body__paragraph">Profiles don't exist in isolation. They exist as part of bigger journeys to perform a task. So although we had a lot of emphasis on the profile from a scope and brief perspective, it was my job as lead to make sure profiles function within the context of the Torc system. At a scope level this means pushing beyond the initial requirements toward designing a journey as a functional prototype that we could then go and build. So a huge part of this became about understanding the unique workflows and needs of all sides of the market place and how they influence each other.
+  <br><br>
+  For example, when Matchers – one of the many consultants we designed for on the recruiter side – come into profiles at specific point in their workflow, they would've already narrowed down a pool of candidates in the source and match experience (essentially an applicant tracking tool). So the features we designed aimed at helping recrtuiters retain context about the job and required skills as they scan through profiles to make a decicision. We also designed for people who require different levels of depth when understanding candidate experience. For example, a recruiter scans for surface level evidence in terms of experience with a given skill, but a hiring manager looks to understand those skill at more more depth. We solved this by allowing you expose different levels of skill evidence as you ineracti with the skill.
+  </body>
+</div>
+<!-- End of project section -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_ProfileInteraction.png">
+  <figcaption>HOVERING OVER A SKILL IN THE TIMELINE SHOWS LIGHT DETAIL</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_SkillDrawer.png">
+  <figcaption>EXPOSING MORE SKILL EVIDENCE IN THE DRAWER</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_ProfileTimeline.png">
+  <figcaption>EXPLORE SKILL USAGE OVER TIME</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__subtitle">Creating lasting engagement</h2>
+  <body class="body__paragraph">Some things add huge amounts of value and are absolutely the right direction for the business to go, but those things aren't immediately feasible. Even though we had to make a few big cuts, that didn't limit our thinking on this project and it's really what made things so exciting and is helping shape Torc's future roadmap. We pushed the boundaries as much as possible, even though we knew some of the data we'd need to make it happen wasn't immediately available. In doing so we worked on growth and community features (both of which don't currently exist) for the product that elevate Torc's value proposition significantly and deliver on the promise of creating long term value for talent and recrtuiters.
+  <br><br>
+  For growth, I worked on a system that leverages Torc's existing awards, but in a way that helps talent feel like they're actually growing on the platform as they move to different levels. That system is tied directly to Torc engagement, community and skill related behaviour. In addition, it also introduces step-level growth, where as you validate your skills on the platform through Torc assessments, you'll increase your chances of being matched with opportunities at higher skill levels.
+  </body>
+</div>
+<!-- End of project section -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_Growth.png">
+  <figcaption>CONCEPT FOR THE GROWTH SECTION</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__subtitle">Avoiding clone wars (differentiation)</h2>
+  <body class="body__paragraph">Aside the product thinking, one of the big differentiators was the visual direction. Torc is for people who create, innovate, and shape the digital world. So I wanted our visual approach to reflect that spirit, and develop a design language that feels functional, opinionated, and distinctly different from any other talent marketplace. The last thing we wanted to make this product feel like LinkedIn or anything that feels standard, so we had to find ways of making this product feel different but highly usable.
+  <br><br>
+  The visual language derives inspiration from the Torc logo. We played with the idea of using sharp edges and very dense UI to create something that feels unique, but highly functional to ensure things are scannable as possible. Something that stemmed from our research insights was this idea that recruiters want to see skills as more of a narrative, so we designed a skills timeline that tells more of a story around when and how skills were developed. It's more of a utility, that's interactive and playful, as opposed to just showing a list with some data. Through many rounds of iteration we landed on something that's super scannable and visually interesting too.
+  </body>
+</div>
+<!-- End of project section -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_UIelements.png">
+  <figcaption>ELEMENTS FROM THE DESIGN LANGAUGE</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Image content -->
+<div class="largeimage__content">
+  <figure class="captioned-image"><img src="images/Project_Torc/Torc_CodeExplorer.png">
+  <figcaption>BRAND MOMENTS WHERE WE INJECT PERSONALITY AND BUILD CONNECTION</figcaption></figure>
+</div>
+<!-- End of image content -->
+
+<!-- Project Section - Copy and Edit -->
+<div class="header-projectsection">
+  <h2 class="section__title">Progress</h2>
+  <body class="body__paragraph">We're currently in a production phase of the project where myself and Luciano are building out the high-fidelity direction, design system and ensuring everything is responsive and works well for mobile. We're also making high-fidelity prototypes using framer and Figma to refine our interaction behaviours and experimenting with different ways of generating 3D assets for the growth section of the app. 
+    <br><br>Overall, this has been one of the most exciting projects and I've learned a ton. Being able to execute on so many different areas of design, while really getting a chance to understand the product and Torc's business deeply is exactly what I'm about and has made a huge difference in producing what we feel is a game changing product for the client.
+  </body>
+</div>
+<!-- End of project section -->
+
+<div class="credits-projectsection">
+<h2 class="section__title">The Team</h2>
+<ul>
+  <li class="item">
+    <span>Product Design Lead</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com">Greg Schwartz</a></span>
+  </li>
+  <li class="item">
+    <span>Executive Design Director</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Matt Steenburg</a></span>
+  </li>
+  <li class="item">
+    <span>UX Researcher</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Quill Huntely</a></span>
+  </li>
+  <li class="item">
+    <span>Product Designer</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Luciano Infanty</a></span>
+  </li>
+  <li class="item">
+    <span>Product Manager</span>
+    <span class="dots"></span>
+    <span><a class="blue" href="http://linkedin.com/">Susan Bucknor</a></span>
+  </li>
+</ul>
+</div>
+
+<!-- Spacer -->
+<div class="container">
+  <div class="spacer"></div>
+</div>
+
+
+<div class="container">
+  <div class="spacer"></div>
+</div>
+
+<!-- End of spacer -->
+
+
+ <div class="arrowlink">
+  <a href="Project_Exiger.html" class="undecorated txt--normal backlink">Next project → </a>
+</div>
+
+
+<!-- Spacer -->
+<div class="container">
+  <div class="spacer"></div>
+</div>
+
+
+<div class="container">
+  <div class="spacer"></div>
+</div>
+
+<!-- End of spacer -->
+
+
+<!-- Close page__content div -->
+</div>
+<!-- Close page section div -->
+    </section>
+
+    <!-- Footer -->
+    <section class="pagefooter" id="Footer">
+      <div class="footer-container">
+        <img src="images/atsymbol.png" alt="Symbol" class="footer-symbol" />
+        <div class="footer-content">
+          <p class="footer--header">Stay in touch</p>
+          <div class="flex flex--column flex--center push--top">
+            <a class="contact-card contact-card--email" href="mailto:gregalas@gmail.com">
+              <span class="contact-card__type">Email: </span>gregalas@gmail.com
+            </a>
+            <a class="contact-card contact-card--linkedin" href="https://www.linkedin.com/in/greg-schwartz-2603a022/" rel="noopener noreferrer" target="_blank">
+              <span class="contact-card__type">LinkedIn: </span>Greg Schwartz
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closes the menu when clicking outside of it -->
+    <script>
+      const menu = document.querySelector('.site-nav');
+      const summary = menu.querySelector('summary');
+
+      document.addEventListener('click', (event) => {
+        if (!menu.contains(event.target) && !summary.contains(event.target)) {
+          menu.removeAttribute('open');
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>
