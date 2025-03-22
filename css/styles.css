@@ -106,20 +106,6 @@
 
 
 
-  /* OldColors */
-  /* --clr-light: #D4D4D4;
-  --clr-dark: #2E2E2E;
-  --clr-primary: #D4D4D4;
-  --clr-accent: #FFEC42;
-  --clr-accent-pink: #ec61ae;
-  --clr-accent-purple: #c94fe7;
-  --clr-accent-blue: #506EEC;
-  --clr-accent-orange: #FA3457;
-  --clr-background: #F4F2F1; */
-
-/* New colours */
-
-
 
 
 
@@ -156,12 +142,7 @@
 
 
 
-/* // Base styles for numbered-list__item */
-.numbered-list__item:before {
-  color: var(--clr-text-dark);
-  font-family: var(--ff-dataemphasis);
-  font-size: 2.5rem;
-}
+
 
 
 
@@ -1544,9 +1525,8 @@ figure {
 .contact-card--email, .contact-card--linkedin {
   flex-direction: column;
   display: flex;
-  font-family: var(--ff-data);
+  font-family: var(--ff-tertiary);
   font-size: 1.5rem;
-  font-weight: var(--fw-lightitalic);
   color: var(--clr-text-dark);
   border-radius: 0.4em;
 }
@@ -1637,7 +1617,7 @@ figure {
 
 .project {
   text-decoration: none;
-  width: 90%;
+  width: 95%;
   height: 11em;
   padding: 0.5em;
   display: flex;
@@ -1645,11 +1625,13 @@ figure {
   justify-content: center;
   text-align: center;
   box-shadow: 0 0 0 1px #2b2b2b, 0.25em 0.3em 0 0.25em #161616;
-  border-radius: 0.8em;
+  border-radius: 0.5em;
   transition: all .2s ease;
   background-color: #1f1f1f; /* Added background fill */
   color: var(--clr-text); /* Ensure text is visible */
 }
+
+
 
 .project figure {
   margin: 0;
