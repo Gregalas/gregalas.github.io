@@ -67,7 +67,6 @@
   --ff-tertiary: 'BatonNouveauTrial-Regular', 'Graphik', sans-serif;
   --ff-caption: 'BatonNouveauTrial-Medium', 'Graphik', sans-serif;
   --ff-dataemphasis: 'VulfSansDemo-MediumItalic', 'Graphik', sans-serif;
-  --ff-data: 'VulfMonoDemo-Regular', 'Graphik', sans-serif;
 }
 
 :root {
@@ -1863,11 +1862,10 @@ details > summary:first-of-type {
   top: 1rem;
   left: 0;
   right: 0;
-  border-top: 2px solid var(--clr-surface-dark);
+  border-top: 3.5px solid var(--clr-surface-dark);
   transform-origin: center;
   transition: all .2s ease;
   z-index: 1;
-
 }
 
 .site-nav[open] .site-nav__button-line2 {
