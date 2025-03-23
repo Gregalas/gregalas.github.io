@@ -10,50 +10,48 @@
 /* Updated @font-face rule with multiple font weights */
 @font-face {
   font-family: 'VulfSansDemo-Medium';  
-  src: url('/fonts/VulfSansDemo-Medium.woff') format('woff');
-  src: url('/fonts/VulfSansDemo-Medium.woff') format('woff2');
+  src: url('../fonts/VulfSansDemo-Medium.woff') format('woff'),
+       url('../fonts/VulfSansDemo-Medium.woff2') format('woff2');
   font-weight: 500; /* Match your --fw-med variable */
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'VulfSansDemo-MediumItalic';  
-  src: url('/fonts/VulfSansDemo-MediumItalic.woff') format('woff');
-  src: url('/fonts/VulfSansDemo-MediumItalic.woff2') format('woff2');
+  src: url('../fonts/VulfSansDemo-MediumItalic.woff') format('woff'),
+       url('../fonts/VulfSansDemo-MediumItalic.woff2') format('woff2');
   font-weight: 500; /* Match your --fw-med variable */
   font-style: italic;
 }
 
-
 @font-face {
   font-family: 'BatonNouveauTrial-Regular';
-  src: url('/fonts/BatonNouveauTrial-Regular.woff2') format('woff2'),
-       url('/fonts/BatonNouveauTrial-Regular.woff') format('woff');
+  src: url('../fonts/BatonNouveauTrial-Regular.woff2') format('woff2'),
+       url('../fonts/BatonNouveauTrial-Regular.woff') format('woff');
   font-weight: 400; /* Regular weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BatonNouveauTrial-Medium';
-  src: url('/fonts/BatonNouveauTrial-Medium.woff2') format('woff2'),
-       url('/fonts/BatonNouveauTrial-Medium.woff') format('woff');
+  src: url('../fonts/BatonNouveauTrial-Medium.woff2') format('woff2'),
+       url('../fonts/BatonNouveauTrial-Medium.woff') format('woff');
   font-weight: 500; /* Medium weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BatonNouveauTrial-Bold';
-  src: url('/fonts/BatonNouveauTrial-Bold.woff2') format('woff2'),
-       url('/fonts/BatonNouveauTrial-Bold.woff') format('woff');
+  src: url('../fonts/BatonNouveauTrial-Bold.woff2') format('woff2'),
+       url('../fonts/BatonNouveauTrial-Bold.woff') format('woff');
   font-weight: 700; /* Bold weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BatonNouveauTrial-Heavy';
-  src: url('/fonts/BatonNouveauTrial-Heavy.woff2') format('woff2'),
-       url('/fonts/BatonNouveauTrial-Heavy.woff') format('woff');
+  src: url('../fonts/BatonNouveauTrial-Heavy.woff2') format('woff2'),
+       url('../fonts/BatonNouveauTrial-Heavy.woff') format('woff');
   font-weight: 900; /* Heavy weight, typically 800 */
   font-style: normal;
 }
