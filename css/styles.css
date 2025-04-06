@@ -228,6 +228,8 @@ strong {
 }
 
 .header-logo {
+  pointer-events: none; /* Makes clicks pass through the image */
+  z-index: 0; /* Sets a baseline z-index */
   display: block;
   max-width: 1400px; /* Set the maximum width of the image */
   width: 100%; /* Scale image with screen size */
@@ -334,7 +336,7 @@ strong {
 .page {
     transition: transform .2s ease-in-out;
     background: var(--clr-backgrounddark);
-    padding-top: 1em;
+    padding-top: 3em;
     padding-bottom: 2em;
 }
 
@@ -499,17 +501,18 @@ a {
   background: transparent;
   margin: 0;
   padding: 0;
-  color: inherit;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
   color: var(--clr-dark);
-  -webkit-text-decoration-style: dotted;
+  text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: var(--clr-text-link);
   text-underline-offset: 0.15em;
   text-decoration-thickness: 0.04em;
-  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
+  
+  /* For webkit browsers */
+  -webkit-text-decoration-line: underline;
+  -webkit-text-decoration-style: dotted;
+  -webkit-text-decoration-skip: ink;
 }
 
 

@@ -231,28 +231,4 @@
 </script>
 
 
-<script>
-  function handleTransparentHeaderOnScroll() {
-    var header = document.querySelector('.navheader');
 
-    function updateHeaderBackground() {
-      var currentScrollY = window.scrollY;
-
-      if (currentScrollY > 0) {
-        header.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-        header.querySelector('.navheader::before').style.backgroundColor = 'transparent';
-      } else {
-        header.style.backgroundColor = 'var(--clr-accent)';
-        header.querySelector('.navheader::before').style.backgroundColor = 'var(--clr-accent)';
-      }
-    }
-
-    window.addEventListener('scroll', updateHeaderBackground);
-
-    // Call the function initially to set the header's initial state
-    updateHeaderBackground();
-  }
-
-  // Call the function to initialize the transparent header functionality
-  handleTransparentHeaderOnScroll();
-</script>
